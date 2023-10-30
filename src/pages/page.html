@@ -2,15 +2,118 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>static-site-boilerplate about</title>
+    <title>О проекте</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
     <analytics></analytics>
   </head>
 
   <body class="page">
-    <div class="images"></div>
+    <div class="bg"></div>
+    <div class="menu">
+      <a href="../index.html">ПРОМО</a>
+      <a href="page.html">О ПРОЕКТЕ</a>
+      <div class="socials">
+        <a href="https://vk.com/public223208948" id="vk" class="socials__link"
+          ><img src="../images/вк.svg" alt="" />
+        </a>
+        <a href="https://t.me/garadge_new_wave" id="tg" class="socials__link"
+          ><img src="../images/телега.svg" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/ru-RU/" id="tt" class="socials__link"
+          ><img src="../images/тикток.svg" alt=""
+        /></a>
+      </div>
+    </div>
 
-    <div>This is an internal page</div>
-    <div id="reactComponentRoot"></div>
-    <a href="../index.html">Back to the landing page</a>
+    <div class="container">
+      <h1>
+        привет, гайс, <br />
+        помните <span style="color: #818b42">2к17</span>?
+      </h1>
+      <p class="text">
+        когда музыка была басистее и душевнее, мода была осуждаемой, мемы
+        угарнее, да и мы были моложе…
+      </p>
+    </div>
+
+    <div class="container_2">
+      <h1 style="color: black">
+        НЕ ПОМНИТЕ? НЕ СТРАШНО, <br />С НАШИМ СЕРВИСОМ <br />ВСЯ ИНФОРМАЦИЯ
+        <br />ОБ АНДЕРГРАУНДЕ <br />
+        ВСЕГДА ПОД РУКОЙ
+      </h1>
+      <!-- <h1 style="color: black">
+        МЫ СОБЕРЕМ ВСЕ ТВОИ ЛЮБИМЫЕ ГРУППЫ <br />В ОДНОМ МЕСТЕ
+      </h1> -->
+      <img class="mobil" src="../images/mobile.png" alt="" />
+    </div>
+
+    <div class="container_3">
+      <h1 class="text_h">
+        гараж — платформа <br />
+        о <span style="color: #bb7298">нашей</span> музыке
+      </h1>
+      <img class="desktop" src="../images/desktop.png" alt="" />
+    </div>
+
+    <div class="footer">
+      <div class="form">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/xdorbvzr"
+          method="POST"
+        >
+          <label
+            >Оставьте контакты, чтобы узнать о дате запуска платформы</label
+          >
+          <input type="email" name="email" />
+          <button id="my-form-button">Подписаться</button>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+      <div class="names">
+        <div style="color: black">@neemdogs | @neamiunis</div>
+        <img class="logo" src="../images/logo.svg" alt="" />
+        <img class="logo_hse" src="../images/logo_hse.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Place this script at the end of the body tag -->
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Спасибо!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML = 'Упс! Возникла ошибка'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Упс! Возникла ошибка '
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
 </html>
