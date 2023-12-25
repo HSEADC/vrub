@@ -2,26 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Гараж</title>
+    <title>Главная</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
     <analytics></analytics>
   </head>
 
-  <body class="index">
-    <div class="main">
-      <h1>Вруб</h1>
-      <h2>платформа о новой русской волне музыки</h2>
-
-      <div class="menu">
-        <a href="index.html">ПРОМО</a>
-        <a href="./pages/page.html">О ПРОЕКТЕ</a>
+  <body>
+    <div class="main_screen">
+      <div class="vinyl"></div>
+      <div class="guitar"></div>
+      <div class="tape"></div>
+      <div class="decor_main"></div>
+      <div class="text_main">
+        <div class="vrubim">
+          <h2>ВРУБИМ ТЕБЯ</h2>
+        </div>
+        <div class="v_alt">
+          <h2>
+            <span class="text_v">В</span
+            ><span class="text_alt">АЛЬТЕРНАТИВУ</span>
+          </h2>
+        </div>
+        <div class="logo_main"></div>
       </div>
-
+    </div>
+    <div class="main">
       <div class="bg_video">
-        <video preload="auto" muted autoplay loop>
-          <source src="videos/видос.webm" type="video/webm" />
-        </video>
-        <div class="form">
+        <!-- <div class="form">
           <form
             id="my-form"
             action="https://formspree.io/f/xdorbvzr"
@@ -34,7 +41,14 @@
             <button id="my-form-button">Подписаться</button>
             <p id="my-form-status"></p>
           </form>
-        </div>
+        </div> -->
+      </div>
+      <div class="header">
+        <div class="logo_header"></div>
+        <a href="index.html">ИСПОЛНИТЕЛИ</a>
+        <a href="index.html">ЖАНРЫ</a>
+        <a href="index.html">СТАТЬИ</a>
+        <div class="search"></div>
       </div>
 
       <!-- форма для сбора почт -->
@@ -74,7 +88,7 @@
               status.innerHTML = 'Упс! Возникла ошибка '
             })
         }
-        form.addEventListener('submit', handleSubmit)
+        addEventListener('submit', handleSubmit)
       </script>
     </div>
   </body>

@@ -1,8 +1,113 @@
-body.index {
+html {
+  margin: 0px;
+  height: 5110px;
+  width: 100%;
+}
+// body::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: url(images/main.jpg);
+//   background-repeat: no-repeat;
+//   opacity: 0.3;
+// }
+body {
+  height: 5110px;
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;
-  background-color: black;
+  background-color: #000000;
+}
+h2 {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3.3vw;
+  position: absolute;
+  text-align: center;
+}
+.main_screen {
+  position: absolute;
+  width: 100vw;
+  height: 50vw;
+  top: 7vw;
+  background: url(images/main_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  border-radius: 50vw 48vw 0vw 0vw;
+}
+.vinyl {
+  position: absolute;
+  width: 17vw;
+  height: 16vw;
+  top: -3vw;
+  left: 36vw;
+  background: url(images/vinyl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.guitar {
+  position: absolute;
+  width: 19vw;
+  height: 56vw;
+  top: -10vw;
+  left: 14vw;
+  background: url(images/guitar.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  rotate: 35deg;
+}
+.tape {
+  position: absolute;
+  width: 31vw;
+  height: 20vw;
+  top: 23vw;
+  right: 0vw;
+  background: url(images/tape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  rotate: 9deg;
+}
+.decor_main {
+  position: absolute;
+  width: 90vw;
+  height: 45vw;
+  background: url(images/decor_main.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 5vw 0vw 5vw;
+}
+.text_main {
+  position: absolute;
+  width: 100%;
+  height: 50vw;
+}
+.vrubim {
+  position: absolute;
+  top: 10vw;
+  margin: 0vw 51vw 0vw 39vw;
+  padding: 1vw;
+  width: 16vw;
+  height: 5vw;
+  text-decoration-color: black;
+  background-color: #bd8a96;
+  rotate: -3deg;
+}
+.v_alt {
+  width: 10vw;
+  height: 10vw;
+}
+.logo_main {
+  width: 29vw;
+  height: 16.2vw;
+  background: url(images/logo_pg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 16vw auto;
 }
 .main {
   width: 100vw;
@@ -26,39 +131,6 @@ video {
   object-fit: fill;
   z-index: -100;
 }
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2vw;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
-  font-size: 2.5vw;
-}
-a {
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  text-decoration: none;
-  color: white;
-}
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-h2 {
-  font-family: 'SA No Rules';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.6vw;
-  position: absolute;
-  color: white;
-  text-align: center;
-  margin-top: 8vw;
-}
-
 .form {
   position: absolute;
   align-items: center;
@@ -66,8 +138,8 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 45vw;
-  width: 100vw;
+  top: 57vw;
+  width: 35vw;
   height: 10vw;
   z-index: 1;
   font-size: 0.9vw;
@@ -99,4 +171,39 @@ input {
   font-size: 0.8vw;
   margin-left: 2vw;
   margin-top: 2vw;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6vw;
+  font-size: 2.5vw;
+  background-color: #000000;
+}
+.logo_header {
+  width: 7.2vw;
+  height: 4vw;
+  background: url(images/logo_pb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 42vw 0vw 2vw;
+}
+.header a {
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  color: #f5f5f5;
+}
+.search {
+  width: 4vw;
+  height: 4vw;
+  background: url(images/search_icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 2vw 0vw 0vw;
 }
