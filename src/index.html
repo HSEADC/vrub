@@ -2,16 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Главная</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
-    <analytics></analytics>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Users/lisa/Documents/B22DZ09-09/src/images/favicon.svg"
+    />
+    <!-- <analytics></analytics> -->
   </head>
 
   <body>
+    <!-- Главный экран -->
     <div class="main_screen">
-      <div class="vinyl"></div>
-      <div class="guitar"></div>
-      <div class="tape"></div>
+      <div class="vinyl spin"></div>
+      <div class="guitar rotate"></div>
+      <div class="tape shake"></div>
       <div class="decor_main"></div>
       <div class="text_main">
         <div class="vrubim">
@@ -19,77 +25,338 @@
         </div>
         <div class="v_alt">
           <h2>
-            <span class="text_v">В</span
-            ><span class="text_alt">АЛЬТЕРНАТИВУ</span>
+            <span class="bebas_bold">В</span>
+            <span class="h2_london">АЛЬТЕРНАТИВУ</span>
           </h2>
         </div>
         <div class="logo_main"></div>
       </div>
     </div>
-    <div class="main">
-      <div class="bg_video">
-        <!-- <div class="form">
-          <form
-            id="my-form"
-            action="https://formspree.io/f/xdorbvzr"
-            method="POST"
-          >
-            <label
-              >Оставьте контакты, чтобы узнать о дате запуска платформы</label
-            >
-            <input type="email" name="email" />
-            <button id="my-form-button">Подписаться</button>
-            <p id="my-form-status"></p>
-          </form>
-        </div> -->
+
+    <!-- Бегущая строка -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span class="item-collection-1">
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+        </span>
+        <span class="item-collection-2">
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+          <span class="item"
+            >Пройди тест и узнай какой ты музыкальный жанр
+            <div class="arrow"></div
+          ></span>
+        </span>
       </div>
-      <div class="header">
-        <div class="logo_header"></div>
-        <a href="index.html">ИСПОЛНИТЕЛИ</a>
-        <a href="index.html">ЖАНРЫ</a>
-        <a href="index.html">СТАТЬИ</a>
+    </div>
+
+    <!-- Статьи -->
+    <div class="articles">
+      <div class="block_title">
+        <h3>СТАТЬИ</h3>
+      </div>
+      <div class="grid_articles">
+        <div class="ar1">
+          <div class="filter">
+            <h5>Статья</h5>
+            <h5>#сбпч #инди</h5>
+          </div>
+          <div class="title">
+            <h4>Спектакль «Потерянное <br />зеркальце» от группы СПБЧ</h4>
+          </div>
+        </div>
+        <div class="ar2">
+          <div class="filter">
+            <h5>Статья</h5>
+            <h5>#инди #рок #революция</h5>
+          </div>
+          <div class="title">
+            <h4>Что такое новая русская <br />волна?</h4>
+          </div>
+        </div>
+        <div class="ar3">
+          <div class="filter">
+            <h5>Плейлист</h5>
+            <h5>#вайб #пост-панк</h5>
+          </div>
+          <div class="title">
+            <h4>Для зимних прогулок <br />поздней ночью</h4>
+          </div>
+        </div>
+        <div class="ar4">
+          <div class="filter">
+            <h5>Статья</h5>
+            <h5>#creamsoda #электронная</h5>
+          </div>
+          <div class="title">
+            <h4>
+              Из андера в мейнстрим:<br />
+              как Cream Soda повлияли<br />
+              на поп-музыку
+            </h4>
+          </div>
+        </div>
+        <div class="ar5">
+          <div class="filter f_ar5">
+            <h5>Статья</h5>
+            <h5>#вайб #почему</h5>
+          </div>
+          <h1>Почему русская музыка <br />такая грустная?</h1>
+        </div>
+        <div class="ar6">
+          <div class="filter">
+            <h5>Тест</h5>
+            <h5>#пасош #панкрок</h5>
+          </div>
+          <div class="title">
+            <h4>Насколько ты трушный <br />фанат группы Пасош?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="more_btn">
+        <a href="index.html" class="more button_articles"></a>
+      </div>
+    </div>
+
+    <!-- Жанры -->
+    <div class="genres">
+      <div class="block_title">
+        <h3>ЖАНРЫ</h3>
+      </div>
+      <div class="grid_genres">
+        <div class="ge1">
+          <h2 class="postpunk">ПОСТ-ПАНК</h2>
+        </div>
+        <div class="ge2">
+          <h2 class="shoegaze">ШУГЕЙЗ</h2>
+        </div>
+        <div class="ge3">
+          <h2 class="indierock">ИНДИ-РОК</h2>
+        </div>
+        <div class="ge4">
+          <h2 class="electro">ЭЛЕКТРОНИКА</h2>
+        </div>
+        <div class="ge5">
+          <h2 class="punkrock">панк-рок</h2>
+        </div>
+        <div class="ge6">
+          <h2 class="noiserock">нойз-рок</h2>
+        </div>
+      </div>
+      <div class="more_btn">
+        <a href="index.html" class="more button_genres"></a>
+      </div>
+    </div>
+
+    <!-- Исполнители -->
+    <div class="artists">
+      <div class="block_title">
+        <h3>ИСПОЛНИТЕЛИ</h3>
+      </div>
+      <div class="container">
+        <div
+          class="itc-slider"
+          data-slider="itc-slider"
+          data-loop="true"
+          data-autoplay="false"
+          data-interval="2000"
+        >
+          <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+              <a href="index.html" class="itc-slider-item">
+                <div class="kedr">
+                  <!-- Контент 1 слайда -->
+                  <h2>КЕДР ЛИВАНСКИЙ</h2>
+                </div>
+              </a>
+              <a href="serdobol.html" class="itc-slider-item">
+                <div class="serdobol">
+                  <!-- Контент 2 слайда -->
+                  <h2>СЕРДОБОЛЬ</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="hadndadn">
+                  <!-- Контент 3 слайда -->
+                  <h2>ХАДН ДАДН</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="pasosh">
+                  <!-- Контент 4 слайда -->
+                  <h2>ПАСОШ</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="sbpch">
+                  <!-- Контент 5 слайда -->
+                  <h2>СБПЧ</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="buerak">
+                  <!-- Контент 6 слайда -->
+                  <h2>БУЕРАК</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="soyuz">
+                  <!-- Контент 7 слайда -->
+                  <h2>СОЮЗ</h2>
+                </div>
+              </a>
+              <a href="index.html" class="itc-slider-item">
+                <div class="sirotkin">
+                  <!-- Контент 8 слайда -->
+                  <h2>СИРОТКИН</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="itc-slider-btn itc-slider-btn-prev"></button>
+          <button class="itc-slider-btn itc-slider-btn-next"></button>
+        </div>
+      </div>
+      <div class="more_btn">
+        <a href="index.html" class="more button_artists"></a>
+      </div>
+    </div>
+
+    <!-- Помоги -->
+    <div class="help">
+      <div class="help_block">
+        <h2>
+          <span class="bebas_bold"
+            >ПОМОГИ НАМ РАССКАЗЫВАТЬ ГРОМЧЕ О ТВОИХ ЛЮБИМЫХ <br />
+            ИСПОЛНИТЕЛЯХ,</span
+          >
+          <span class="h2_london">ВРУБАЙСЯ!</span>
+        </h2>
+      </div>
+      <div class="form">
+        <form
+          class="my-form"
+          action="https://formspree.io/f/xdorbvzr"
+          method="POST"
+        >
+          <h2>Оставь контакты, <br />чтобы узнать о запуске</h2>
+          <div class="input_block">
+            <input type="email" name="email" />
+            <button class="my-form-button">Подписаться</button>
+          </div>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="icons_footer">
+        <div class="hse_logo"></div>
+        <div class="socials">
+          <div class="tiktok_logo"></div>
+          <div class="vk_logo"></div>
+          <div class="tg_logo"></div>
+        </div>
+      </div>
+      <div class="text_footer">
+        <h5>
+          Мейд бай:<br /><br />Аня Коршунова<br />Лиза Давыдович<br />Нарыйаана
+          Парникова
+        </h5>
+        <h5>Кураторы:<br /><br />Аня Комкова<br />Соня Каем<br />Захар День</h5>
+      </div>
+    </footer>
+
+    <!-- Хэдер -->
+    <div class="header">
+      <a href="index.html" class="logo_header"></a>
+      <div class="sections">
+        <a href="serdobol.html" class="header_artists">ИСПОЛНИТЕЛИ</a>
+        <a href="index.html" class="header_genres">ЖАНРЫ</a>
+        <a href="index.html" class="header_articles">СТАТЬИ</a>
         <div class="search"></div>
       </div>
+      <div class="menu_mob_icon"></div>
+    </div>
 
-      <!-- форма для сбора почт -->
+    <!-- Меню мобилка -->
+    <div class="menu_mob none">
+      <div class="icons_menu">
+        <a href="index.html" class="logo_header"></a>
+        <div class="esc"></div>
+      </div>
+      <nav class="side_menu_text">
+        <a href="serdobol.html" class="menu_artists"><h2>ИСПОЛНИТЕЛИ</h2></a>
+        <a href="index.html" class="menu_genres"><h2>ЖАНРЫ</h2></a>
+        <a href="index.html" class="menu_articles"><h2>СТАТЬИ</h2></a>
+      </nav>
+    </div>
 
-      <!-- Place this script at the end of the body tag -->
-      <script>
-        var form = document.getElementById('my-form')
+    <!-- форма для сбора почт -->
 
-        async function handleSubmit(event) {
-          event.preventDefault()
-          var status = document.getElementById('my-form-status')
-          var data = new FormData(event.target)
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-              Accept: 'application/json'
+    <!-- Place this script at the end of the body tag -->
+    <script>
+      var form = document.getElementById('my-form')
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Спасибо!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML = 'Упс! Возникла ошибка'
+                }
+              })
             }
           })
-            .then((response) => {
-              if (response.ok) {
-                status.innerHTML = 'Спасибо!'
-                form.reset()
-              } else {
-                response.json().then((data) => {
-                  if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data['errors']
-                      .map((error) => error['message'])
-                      .join(', ')
-                  } else {
-                    status.innerHTML = 'Упс! Возникла ошибка'
-                  }
-                })
-              }
-            })
-            .catch((error) => {
-              status.innerHTML = 'Упс! Возникла ошибка '
-            })
-        }
-        addEventListener('submit', handleSubmit)
-      </script>
-    </div>
+          .catch((error) => {
+            status.innerHTML = 'Упс! Возникла ошибка '
+          })
+      }
+      addEventListener('submit', handleSubmit)
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

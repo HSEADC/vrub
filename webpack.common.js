@@ -9,7 +9,9 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx'
+    page: './src/page.jsx',
+    articles: './src/articles.js',
+    article_1: './src/articles.js'
   },
   output: {
     filename: '[name].js',
@@ -82,6 +84,14 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
       chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/serdobol.html',
+      filename: './serdobol.html',
+      chunks: ['article_1']
     }),
 
     // Internal pages
