@@ -1,0 +1,61 @@
+// Главный экран
+.Q_Icon_Search {
+  width: 1.7vw;
+  height: 1.7vw;
+  background: url(images/search_icon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Блок со статьями
+.Q_Chapter_Title {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.4vw;
+  color: var(--white);
+}
+.Q_Arrow_Handdrawed {
+  width: 8vw;
+  height: 1vw;
+  background: url(images/draw_right.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_Type {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: var(--grey);
+}
+.Q_Tag {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: var(--grey);
+}
+.Q_Title {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: var(--white);
+}
+.Shape1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 9.5vw;
+  margin: 4vw auto 0vw;
+}
+.Shape2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 11.5vw;
+  margin: 2vw auto 0vw;
+}

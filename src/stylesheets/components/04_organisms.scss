@@ -1,0 +1,37 @@
+// Главный экран
+.O_Header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5.8vw;
+  font-size: 2vw;
+  background-color: var(--black);
+}
+.O_MainScreen {
+  background: url(images/main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 9vw;
+  width: 100vw;
+  height: 44.4vw;
+  margin-bottom: 5vw;
+}
+
+// Блок со статьями
+.O_Articles_Grid {
+  position: relative;
+  display: grid;
+  width: 94vw;
+  height: 54vw;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1vw;
+  margin: 0vw auto;
+  padding-top: 3vw;
+}

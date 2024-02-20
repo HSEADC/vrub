@@ -1,0 +1,75 @@
+// Главный экран
+.A_MainScreen_Title {
+  background: url(images/Q_MainScreen_Text.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.A_Button_Article {
+  position: absolute;
+  width: 3vw;
+  height: 2vw;
+  background-color: var(--black);
+  font-size: 1.042vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: medium;
+  font-style: normal;
+  padding: 1vw 2vw;
+  color: var(--white);
+}
+
+// Хэдер
+.A_Header_Text {
+  display: flex;
+  width: 36vw;
+  justify-content: space-between;
+  padding-top: 1.4vw;
+
+  a {
+    text-decoration: none;
+    font-size: 1.875vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    color: var(--white);
+  }
+}
+.A_Logo {
+  width: 7.2vw;
+  height: 4vw;
+  background: url(images/A_Logo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .Q_Icon_Search {
+    position: relative;
+  }
+}
+
+// Блок со статьями
+.A_Block_Title {
+  width: 94vw;
+
+  .Q_Chapter_Title {
+    position: relative;
+  }
+  .Q_Arrow_Handdrawed {
+    position: relative;
+  }
+}
+.A_Article_Image {
+}
+.A_Title {
+  width: 22.5vw;
+  padding: 1vw 1vw;
+}
+.A_Filter {
+  width: 22.5vw;
+  color: var(--grey);
+  padding: 0vw 1vw;
+}
+.Filter_Ar5 {
+  width: 70vw;
+  height: 1vw;
+  margin-top: 13vw;
+}

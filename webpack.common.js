@@ -86,6 +86,7 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Serdobol page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',

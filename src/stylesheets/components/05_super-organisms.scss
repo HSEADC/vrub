@@ -1,0 +1,21 @@
+.S_Articles_Block {
+  position: relative;
+  width: 100%;
+  height: 56.4vw;
+  top: 9vw;
+  margin-top: 6vw;
+
+  .A_Block_Title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+  }
+  h2 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-size: 4.7vw;
+    position: absolute;
+  }
+}
