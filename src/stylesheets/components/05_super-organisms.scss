@@ -1,9 +1,10 @@
+// Главная / Блок со статьями
 .S_Articles_Block {
   position: relative;
   width: 100%;
   height: 56.4vw;
   top: 9vw;
-  margin-top: 6vw;
+  margin-top: 7vw;
 
   .A_Block_Title {
     position: relative;
@@ -17,5 +18,68 @@
     font-style: normal;
     font-size: 4.7vw;
     position: absolute;
+  }
+}
+
+// Главная / Блок с жанрами
+.S_Genres_Block {
+  position: relative;
+  width: 100%;
+  height: 29.7vw;
+  top: 9vw;
+  margin-top: 7vw;
+
+  .A_Block_Title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+  }
+  h6 {
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: var(--white);
+  }
+}
+
+// Главная / Блок с рекомендациями
+.S_OurRecs {
+  position: relative;
+  width: 100%;
+  height: 53.3vw;
+  top: 9vw;
+  margin-top: 7vw;
+  background-image: url(images/our_recs.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .Q_Title_Mixed {
+    color: var(--black);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10vw 0vw 3vw;
+  }
+  .Mag_Letter {
+    color: var(--black);
+  }
+}
+
+// Главная / Блок с артистами
+.S_Artists_Block {
+  position: relative;
+  width: 100%;
+  height: 29.7vw;
+  top: 9vw;
+  margin-top: 7vw;
+
+  .A_Block_Title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
   }
 }

@@ -10,8 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     page: './src/page.jsx',
-    articles: './src/articles.js',
-    article_1: './src/articles.js'
+    articles: './src/articles.js'
+    // article_1: './src/articles.js'
   },
   output: {
     filename: '[name].js',
@@ -86,14 +86,14 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Serdobol page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/articles/serdobol.html',
-      filename: './serdobol.html',
-      chunks: ['article_1']
-    }),
+    // // Serdobol page
+    // new HtmlWebpackPlugin({
+    //   hash: true,
+    //   scriptLoading: 'blocking',
+    //   template: './src/pages/articles/serdobol.html',
+    //   filename: './serdobol.html',
+    //   chunks: ['article_1']
+    // }),
 
     // Internal pages
     new HtmlWebpackPlugin({
