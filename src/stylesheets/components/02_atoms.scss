@@ -1,21 +1,14 @@
-// Главный экран
-.A_MainScreen_Title {
-  background: url(images/Q_MainScreen_Text.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.A_Button_Article {
+.A_Button {
   position: absolute;
-  width: 3vw;
-  height: 2vw;
-  background-color: var(--black);
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--white);
   font-size: 1.042vw;
   font-family: 'GolosUIWebRegular';
   font-weight: medium;
   font-style: normal;
-  padding: 1vw 2vw;
-  color: var(--white);
+  padding: 1vw 1vw;
+  color: var(--black);
 }
 
 // Хэдер
@@ -46,14 +39,22 @@
   }
 }
 
-// Блок со статьями
+// Главная / Первый экран
+.A_MainScreen_Title {
+  background: url(images/Q_MainScreen_Text.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// Главная / Блок со статьями
 .A_Block_Title {
-  width: 94vw;
+  width: 93vw;
 
   .Q_Chapter_Title {
     position: relative;
   }
-  .Q_Arrow_Handdrawed {
+  .Q_Arrow {
     position: relative;
   }
 }
@@ -64,12 +65,116 @@
   padding: 1vw 1vw;
 }
 .A_Filter {
+  display: flex;
   width: 22.5vw;
   color: var(--grey);
   padding: 0vw 1vw;
+  align-items: center;
+
+  .C_Tags {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+  }
 }
-.Filter_Ar5 {
-  width: 70vw;
-  height: 1vw;
-  margin-top: 13vw;
+.F_Card5 {
+  display: flex;
+  width: 69.5vw;
+  color: var(--grey);
+  padding: 0vw 1vw;
+  align-items: center;
+}
+.T_Card5 {
+  width: 69.5vw;
+  padding: 1vw 1vw;
+}
+.Shape1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 9.5vw;
+  margin: 4vw auto 0vw;
+}
+.Shape2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 11.5vw;
+  margin: 2vw auto 0vw;
+}
+.Img1 {
+  background-image: url(images/A_Article_Image.webp);
+}
+.Img2 {
+  background-image: url(images/sasosh.webp);
+}
+.Img3 {
+  background-image: url(images/red.webp);
+}
+.Img4 {
+  background-image: url(images/red.webp);
+}
+.Img6 {
+  background-image: url(images/red.webp);
+}
+
+// Главная / Большая статья
+.A_Big_Shape {
+  position: relative;
+  width: 42.4vw;
+  height: 26.6vw;
+  background-image: url(images/Big_Shape.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Главная / Блок с жанрами
+.A_Genre_Image {
+  position: relative;
+  width: 4.2vw;
+  height: 4.2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.G_Img1 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img2 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img3 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img4 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img5 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img6 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img7 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img8 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img9 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img10 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img11 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img12 {
+  background-image: url(images/genre_img.webp);
+}
+
+// Главная / Наши рекомендации
+.A_Artist_Image {
+  background-repeat: no-repeat;
+  background-size: cover;
 }

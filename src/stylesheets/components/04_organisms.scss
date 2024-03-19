@@ -1,4 +1,4 @@
-// Главный экран
+// Главная / Первый экран
 .O_Header {
   display: flex;
   align-items: center;
@@ -19,18 +19,43 @@
   position: relative;
   top: 9vw;
   width: 100vw;
-  height: 44.4vw;
+  height: 43.4vw;
   margin-bottom: 5vw;
 }
 
-// Блок со статьями
+// Главная / Блок со статьями
 .O_Articles_Grid {
   position: relative;
   display: grid;
-  width: 94vw;
+  width: 93vw;
   height: 54vw;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1vw;
+  margin: 0vw auto;
+  padding-top: 3vw;
+}
+
+// Главная / Большая статья
+.O_Article_Mixed {
+  position: relative;
+  top: 9vw;
+  width: 85.5vw;
+  height: 26.5vw;
+  margin: 7vw auto 0vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Главная / Блок с жанрами
+.O_Genres_Grid {
+  position: relative;
+  display: grid;
+  width: 93vw;
+  height: 23vw;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 1vw;
   margin: 0vw auto;
   padding-top: 3vw;

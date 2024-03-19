@@ -1,4 +1,4 @@
-// Главный экран
+// Главная / Первый экран
 .M_MainScreen_Text {
   background: url(images/MainScreen_TextBg.webp);
   background-repeat: no-repeat;
@@ -17,12 +17,10 @@
     width: 38vw;
     height: 23vw;
   }
-  .A_Button_Article {
-    position: relative;
-    top: 22vw;
-    margin-left: 36vw;
-    width: fit-content;
-    height: 3vw;
+  .A_Button {
+    margin: 22vw 0vw 0vw 37vw;
+    background-color: var(--black);
+    color: var(--white);
   }
 }
 .M_HeaderText {
@@ -34,7 +32,7 @@
   justify-content: space-between;
 }
 
-// Блок со статьями
+// Главная / Блок со статьями
 .M_ArticleSmall {
   background-repeat: no-repeat;
   background-size: 95%;
@@ -45,7 +43,6 @@
   }
   .A_Filter {
     margin: 1vw auto;
-    display: flex;
     justify-content: space-between;
   }
   .A_Title {
@@ -55,146 +52,180 @@
 }
 .Card1 {
   background-color: var(--green);
-  .Shape1 {
-    background-image: url(images/A_Article_Image.webp);
-  }
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
 }
 .Card2 {
   background-color: var(--pink);
-  .Shape2 {
-    background-image: url(images/sasosh.webp);
-  }
+  grid-column: 7 / 13;
+  grid-row: 1 / 2;
 }
 .Card3 {
   background-color: var(--blue);
-  .Shape1 {
-    background-image: url(images/red.webp);
-  }
+  grid-column: 13 / 19;
+  grid-row: 1 / 2;
 }
 .Card4 {
   background-color: var(--green);
+  grid-column: 19 / 25;
+  grid-row: 1 / 2;
 }
-
 .M_ArticleBig {
   background-repeat: no-repeat;
   background-size: cover;
 
   .A_Filter {
-    position: relative;
-    top: 17vw;
-    margin: 0 auto;
-    display: flex;
+    margin: 11vw auto 1vw;
     justify-content: space-between;
   }
   .A_Title {
-    position: relative;
     margin: 0vw auto;
-    top: 17vw;
   }
   .Q_Title {
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-style: normal;
-    font-size: 6.3vw;
+    font-size: 4.7vw;
     color: var(--white);
   }
 }
-
-.M_Ar1 {
-  grid-column: 1 / 7;
-  grid-row: 1 / 2;
-  background-image: url(images/ar1.webp);
-  color: var(--black);
-}
-.M_Ar2 {
-  grid-column: 7 / 13;
-  grid-row: 1 / 2;
-  background: url(images/ar2.webp);
-
-  color: #f5f5f5;
-}
-.M_Ar3 {
-  grid-column: 13 / 19;
-  grid-row: 1 / 2;
-  background: url(images/ar3.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #000000;
-
-  .A_Filter {
-    position: relative;
-    margin-top: 10vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .A_Title {
-    position: relative;
-    margin: 0vw auto;
-    top: 17vw;
-  }
-}
-.M_Ar4 {
-  grid-column: 19 / 25;
-  grid-row: 1 / 2;
-  background: url(images/ar4.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #f5f5f5;
-
-  .A_Filter {
-    position: relative;
-    top: 17vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .A_Title {
-    position: relative;
-    margin: 0vw auto;
-    top: 17vw;
-  }
-}
-.M_Ar5 {
+.Card5 {
+  background-image: url(images/panelki.webp);
   grid-column: 1 / 19;
   grid-row: 2 / 3;
-  background: url(images/ar5.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #f5f5f5;
-  font-weight: bold;
-
-  .A_Filter {
-    position: relative;
-    top: 15vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .A_Title {
-    position: relative;
-    top: 15vw;
-    width: fit-content;
-  }
 }
-.M_Ar6 {
+
+.Card6 {
+  background-color: var(--green);
   grid-column: 19 / 25;
   grid-row: 2 / 3;
-  background: url(images/ar6.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #000000;
+}
+
+// Главная / Большая статья
+.M_Article_Mixed_Text {
+  width: 38.4vw;
+  height: 26.5vw;
+  width: 31vw;
 
   .A_Filter {
-    position: relative;
-    top: 17vw;
-    margin: 0 auto;
-    display: flex;
+    width: 32vw;
+    margin: 1vw auto;
     justify-content: space-between;
+    padding: 0vw;
   }
-  .A_Title {
-    position: relative;
-    margin: 0vw auto;
-    top: 17vw;
+  .Ar_Mix_Text {
+    color: var(--white);
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3vw;
+    margin-bottom: 2vw;
+  }
+  .A_Button {
+    color: var(--black);
+  }
+}
+
+// Главная / Блок с жанрами
+.M_Genre {
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center 6vw;
+  background-color: var(--darkgrey);
+  border-radius: 0.3vw;
+  display: flex;
+  align-items: center;
+
+  .A_Genre_Image {
+    float: left;
+    align-items: center;
+    margin: 0.5vw 0.5vw;
+  }
+  .A_Genre_Title {
+    width: 22.5vw;
+  }
+}
+.Genre1 {
+  grid-column: 1 / 9;
+  grid-row: 1 / 2;
+}
+
+.Genre2 {
+  grid-column: 9 / 17;
+  grid-row: 1 / 2;
+}
+.Genre3 {
+  grid-column: 17 / 25;
+  grid-row: 1 / 2;
+}
+.Genre4 {
+  grid-column: 1 / 9;
+  grid-row: 2 / 3;
+}
+
+.Genre5 {
+  grid-column: 9 / 17;
+  grid-row: 2 / 3;
+}
+.Genre6 {
+  grid-column: 17 / 25;
+  grid-row: 2 / 3;
+}
+.Genre7 {
+  grid-column: 1 / 9;
+  grid-row: 3 / 4;
+}
+.Genre8 {
+  grid-column: 9 / 17;
+  grid-row: 3 / 4;
+}
+.Genre9 {
+  grid-column: 17 / 25;
+  grid-row: 3 / 4;
+}
+.Genre10 {
+  grid-column: 1 / 9;
+  grid-row: 4 / 5;
+}
+
+.Genre11 {
+  grid-column: 9 / 17;
+  grid-row: 4 / 5;
+}
+.Genre12 {
+  grid-column: 17 / 25;
+  grid-row: 4 / 5;
+}
+
+// Главная / Наши рекомендации
+.M_Recs_Grid {
+  position: relative;
+  display: grid;
+  width: 58vw;
+  height: 18vw;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1vw;
+  margin: 0vw auto;
+
+  .lisa {
+    background-image: url(images/lisa_recs.webp);
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+  }
+  .anya {
+    background-image: url(images/anya_recs.webp);
+    grid-column: 7 / 13;
+    grid-row: 1 / 2;
+  }
+  .nana {
+    background-image: url(images/nana_recs.webp);
+    grid-column: 13 / 19;
+    grid-row: 1 / 2;
+  }
+  .lisa:hover,
+  .anya:hover,
+  .nana:hover {
+    scale: 0.95;
   }
 }

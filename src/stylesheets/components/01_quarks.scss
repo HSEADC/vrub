@@ -15,10 +15,10 @@
   font-size: 2.4vw;
   color: var(--white);
 }
-.Q_Arrow_Handdrawed {
-  width: 8vw;
-  height: 1vw;
-  background: url(images/draw_right.webp);
+.Q_Arrow {
+  width: 4vw;
+  height: 3vw;
+  background: url(images/arrow_w_next.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,7 +28,7 @@
   font-style: normal;
   font-size: 1.1vw;
   line-height: 1.2vw;
-  color: var(--grey);
+  color: var(--white);
 }
 .Q_Tag {
   font-family: 'GolosUIWebRegular';
@@ -36,7 +36,11 @@
   font-style: normal;
   font-size: 1.1vw;
   line-height: 1.2vw;
-  color: var(--grey);
+  color: var(--black);
+  background-color: var(--white);
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4vw;
 }
 .Q_Title {
   font-family: 'GolosUIWebRegular';
@@ -45,17 +49,20 @@
   font-size: 1.5vw;
   color: var(--white);
 }
-.Shape1 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21vw;
-  height: 9.5vw;
-  margin: 4vw auto 0vw;
+
+// Главная / Большая статья
+.Q_Title_Mixed {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5vw;
+  color: var(--white);
+  margin-bottom: 1vw;
 }
-.Shape2 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21vw;
-  height: 11.5vw;
-  margin: 2vw auto 0vw;
+.Mag_Letter {
+  font-family: 'Phorssa', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5vw;
+  color: var(--white);
 }
