@@ -60,15 +60,3 @@
   margin: 0vw auto;
   padding-top: 3vw;
 }
-
-// Главная / Наши рекомендации
-.O_OurRecs_Grid {
-  position: relative;
-  display: grid;
-  width: 70vw;
-  height: 25.4vw;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 1vw;
-  margin: 0vw auto;
-}

@@ -10,8 +10,10 @@ module.exports = {
   entry: {
     index: './src/index.js',
     page: './src/page.jsx',
+    materials: './src/materials.js',
+    genres: './src/genres.js',
+    artists: './src/artists.js',
     articles: './src/articles.js'
-    // article_1: './src/articles.js'
   },
   output: {
     filename: '[name].js',
@@ -85,15 +87,34 @@ module.exports = {
       filename: './index.html',
       chunks: ['index']
     }),
-
-    // // Serdobol page
-    // new HtmlWebpackPlugin({
-    //   hash: true,
-    //   scriptLoading: 'blocking',
-    //   template: './src/pages/articles/serdobol.html',
-    //   filename: './serdobol.html',
-    //   chunks: ['article_1']
-    // }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/materials.html',
+      filename: './materials.html',
+      chunks: ['materials']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres.html',
+      filename: './genres.html',
+      chunks: ['genres']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists.html',
+      filename: './artists.html',
+      chunks: ['artists']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/serdobol.html',
+      filename: './serdobol.html',
+      chunks: ['articles']
+    }),
 
     // Internal pages
     new HtmlWebpackPlugin({
@@ -109,6 +130,14 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'heading',
         template_filename: '*',
         priority: 'replace'
       }

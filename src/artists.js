@@ -1,2 +1,2 @@
-import './index.css'
+import './artists.css'
 import './javascript/menu_mob.js'
