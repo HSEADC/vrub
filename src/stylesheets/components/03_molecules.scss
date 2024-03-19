@@ -198,18 +198,34 @@
 }
 
 // Главная / Наши рекомендации
-.Rec1 {
-  background-color: var(--green);
-  grid-column: 1 / 7;
-  grid-row: 1 / 2;
-}
-.Rec2 {
-  background-color: var(--pink);
-  grid-column: 7 / 13;
-  grid-row: 1 / 2;
-}
-.Rec3 {
-  background-color: var(--blue);
-  grid-column: 13 / 19;
-  grid-row: 1 / 2;
+.M_Recs_Grid {
+  position: relative;
+  display: grid;
+  width: 58vw;
+  height: 18vw;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1vw;
+  margin: 0vw auto;
+
+  .lisa {
+    background-image: url(images/lisa_recs.webp);
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+  }
+  .anya {
+    background-image: url(images/anya_recs.webp);
+    grid-column: 7 / 13;
+    grid-row: 1 / 2;
+  }
+  .nana {
+    background-image: url(images/nana_recs.webp);
+    grid-column: 13 / 19;
+    grid-row: 1 / 2;
+  }
+  .lisa:hover,
+  .anya:hover,
+  .nana:hover {
+    scale: 0.95;
+  }
 }

@@ -21,6 +21,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  &.article {
+    background-color: white;
+  }
 }
 
 @media all and (min-width: 431px) {
