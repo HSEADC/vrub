@@ -1,0 +1,68 @@
+// Главный экран
+.Q_Icon_Search {
+  width: 1.7vw;
+  height: 1.7vw;
+  background: url(images/search_icon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Блок со статьями
+.Q_Chapter_Title {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.4vw;
+  color: var(--white);
+}
+.Q_Arrow {
+  width: 4vw;
+  height: 3vw;
+  background: url(images/arrow_w_next.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_Type {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: var(--white);
+}
+.Q_Tag {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: var(--black);
+  background-color: var(--white);
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4vw;
+}
+.Q_Title {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: var(--white);
+}
+
+// Главная / Большая статья
+.Q_Title_Mixed {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5vw;
+  color: var(--white);
+  margin-bottom: 1vw;
+}
+.Mag_Letter {
+  font-family: 'Phorssa', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5vw;
+  color: var(--white);
+}

@@ -1,0 +1,180 @@
+.A_Button {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--white);
+  font-size: 1.042vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: medium;
+  font-style: normal;
+  padding: 1vw 1vw;
+  color: var(--black);
+}
+
+// Хэдер
+.A_Header_Text {
+  display: flex;
+  width: 36vw;
+  justify-content: space-between;
+  padding-top: 1.4vw;
+
+  a {
+    text-decoration: none;
+    font-size: 1.875vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    color: var(--white);
+  }
+}
+.A_Logo {
+  width: 7.2vw;
+  height: 4vw;
+  background: url(images/A_Logo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .Q_Icon_Search {
+    position: relative;
+  }
+}
+
+// Главная / Первый экран
+.A_MainScreen_Title {
+  background: url(images/Q_MainScreen_Text.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// Главная / Блок со статьями
+.A_Block_Title {
+  width: 93vw;
+
+  .Q_Chapter_Title {
+    position: relative;
+  }
+  .Q_Arrow {
+    position: relative;
+  }
+}
+.A_Article_Image {
+}
+.A_Title {
+  width: 22.5vw;
+  padding: 1vw 1vw;
+}
+.A_Filter {
+  display: flex;
+  width: 22.5vw;
+  color: var(--grey);
+  padding: 0vw 1vw;
+  align-items: center;
+
+  .C_Tags {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+  }
+}
+.F_Card5 {
+  display: flex;
+  width: 69.5vw;
+  color: var(--grey);
+  padding: 0vw 1vw;
+  align-items: center;
+}
+.T_Card5 {
+  width: 69.5vw;
+  padding: 1vw 1vw;
+}
+.Shape1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 9.5vw;
+  margin: 4vw auto 0vw;
+}
+.Shape2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 11.5vw;
+  margin: 2vw auto 0vw;
+}
+.Img1 {
+  background-image: url(images/A_Article_Image.webp);
+}
+.Img2 {
+  background-image: url(images/sasosh.webp);
+}
+.Img3 {
+  background-image: url(images/red.webp);
+}
+.Img4 {
+  background-image: url(images/red.webp);
+}
+.Img6 {
+  background-image: url(images/red.webp);
+}
+
+// Главная / Большая статья
+.A_Big_Shape {
+  position: relative;
+  width: 42.4vw;
+  height: 26.6vw;
+  background-image: url(images/Big_Shape.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Главная / Блок с жанрами
+.A_Genre_Image {
+  position: relative;
+  width: 4.2vw;
+  height: 4.2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.G_Img1 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img2 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img3 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img4 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img5 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img6 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img7 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img8 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img9 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img10 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img11 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img12 {
+  background-image: url(images/genre_img.webp);
+}
+
+// Главная / Наши рекомендации
+.A_Artist_Image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
