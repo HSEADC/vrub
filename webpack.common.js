@@ -113,7 +113,7 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/serdobol.html',
-      filename: './serdobol.html',
+      filename: './src/articles/serdobol.html',
       chunks: ['articles']
     }),
 
