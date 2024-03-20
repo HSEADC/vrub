@@ -112,44 +112,44 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/serdobol.html',
-      filename: './articles/serdobol.html',
-      chunks: ['articles']
+      template: './src/artists/serdobol.html',
+      filename: './artists/serdobol.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/hadndadn.html',
-      filename: './articles/hadndadn.html',
-      chunks: ['articles']
+      template: './src/artists/hadndadn.html',
+      filename: './artists/hadndadn.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/sirotkin.html',
-      filename: './articles/sirotkin.html',
-      chunks: ['articles']
+      template: './src/artists/sirotkin.html',
+      filename: './artists/sirotkin.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/ushko.html',
-      filename: './articles/ushko.html',
-      chunks: ['articles']
+      template: './src/artists/ushko.html',
+      filename: './artists/ushko.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/sova.html',
-      filename: './articles/sova.html',
-      chunks: ['articles']
+      template: './src/artists/sova.html',
+      filename: './artists/sova.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/sbpch.html',
-      filename: './articles/sbpch.html',
-      chunks: ['articles']
+      template: './src/artists/sbpch.html',
+      filename: './artists/sbpch.html',
+      chunks: ['index']
     }),
 
     // Internal pages
@@ -174,6 +174,14 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/header.html'),
         location: 'heading',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/basement.html'),
+        location: 'basement',
         template_filename: '*',
         priority: 'replace'
       }

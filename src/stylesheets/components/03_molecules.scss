@@ -317,3 +317,61 @@
   justify-content: space-between;
   height: 18vw;
 }
+
+// Раздел исполнители
+.M_Artist_Card {
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center 6vw;
+  background-color: var(--darkgrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .A_Article_Image {
+    position: relative;
+  }
+  .A_Filter {
+    margin: 1vw auto;
+    justify-content: space-between;
+  }
+  .A_Title {
+    width: 22.5vw;
+    padding: 0vw 1vw;
+  }
+}
+.M_Artist_Card:hover {
+  scale: 0.95;
+}
+.Artist1 {
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+}
+.Artist2 {
+  grid-column: 7 / 13;
+  grid-row: 1 / 2;
+}
+.Artist3 {
+  grid-column: 13 / 19;
+  grid-row: 1 / 2;
+}
+.Artist4 {
+  grid-column: 19 / 25;
+  grid-row: 1 / 2;
+}
+.Artist5 {
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+}
+.Artist6 {
+  grid-column: 7 / 13;
+  grid-row: 2 / 3;
+}
+.Artist7 {
+  grid-column: 13 / 19;
+  grid-row: 2 / 3;
+}
+.Artist8 {
+  grid-column: 19 / 25;
+  grid-row: 2 / 3;
+}

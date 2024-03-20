@@ -32,8 +32,7 @@
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1vw;
-  margin: 0vw auto;
-  padding-top: 3vw;
+  margin: 3vw auto 0vw;
 }
 
 // Главная / Большая статья
@@ -57,8 +56,7 @@
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 1vw;
-  margin: 0vw auto;
-  padding-top: 3vw;
+  margin: 3vw auto 0vw;
 }
 
 // Главная / Блок с артистами
@@ -84,4 +82,16 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 3.5vw;
+}
+
+// Раздел исполнители
+.O_Artists_Grid {
+  position: relative;
+  display: grid;
+  width: 93vw;
+  height: 59vw;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1vw;
+  margin: 3vw auto 0vw;
 }

@@ -33,15 +33,20 @@
   }
 }
 .A_Logo {
-  width: 7.2vw;
+  width: 7.7vw;
   height: 4vw;
-  background: url(images/A_Logo.webp);
+  background: url(images/A_Logo_White.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
   .Q_Icon_Search {
     position: relative;
   }
+}
+.A_Logo:hover {
+  background: url(images/A_Logo_Green.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // Главная / Первый экран
@@ -188,6 +193,29 @@
 .A_Artist_Image {
   background-repeat: no-repeat;
   background-size: cover;
+}
+.artist_grid {
+  width: 18.7vw;
+  height: 17.7vw;
+  margin: 2vw auto;
+}
+.hadndadn_card {
+  background-image: url(images/hadndadn_card.webp);
+}
+.sirotkin_card {
+  background-image: url(images/sirotkin_card.webp);
+}
+.ushko_card {
+  background-image: url(images/ushko_card.webp);
+}
+.serdobol_card {
+  background-image: url(images/serdobol_card.webp);
+}
+.sova_card {
+  background-image: url(images/sova_card.webp);
+}
+.sbpch_card {
+  background-image: url(images/sbpch_card.webp);
 }
 
 // Футер
