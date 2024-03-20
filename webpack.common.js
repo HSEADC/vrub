@@ -13,7 +13,8 @@ module.exports = {
     materials: './src/materials.js',
     genres: './src/genres.js',
     artists: './src/artists.js',
-    articles: './src/articles.js'
+    articles: './src/articles.js',
+    shoegaze: './src/shoegaze.js'
   },
   output: {
     filename: '[name].js',
@@ -86,7 +87,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index'] //откуда берет стиль
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -149,6 +150,14 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/artists/sbpch.html',
       filename: './artists/sbpch.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/shoegaze.html',
+      filename: './genres/shoegaze.html',
       chunks: ['index']
     }),
 
