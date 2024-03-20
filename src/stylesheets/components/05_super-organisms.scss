@@ -36,6 +36,11 @@
     margin: 0 auto;
     align-items: center;
   }
+  .Q_Chapter_Title:hover {
+    background-image: url(images/Q_Menu_Text2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   h6 {
     font-family: 'GolosUIWebRegular';
     font-weight: bold;
@@ -67,7 +72,7 @@
 .S_Artists_Block {
   position: relative;
   width: 100%;
-  height: 29.7vw;
+  height: 24.4vw;
   top: 9vw;
   margin-top: 7vw;
 
@@ -77,5 +82,10 @@
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+  }
+  .Q_Chapter_Title:hover {
+    background-image: url(images/Q_Menu_Text3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

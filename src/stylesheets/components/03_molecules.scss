@@ -20,7 +20,18 @@
   .A_Button {
     margin: 22vw 0vw 0vw 37vw;
     background-color: var(--black);
-    color: var(--white);
+
+    .Button_Text {
+      text-decoration: none;
+      color: var(--white);
+    }
+  }
+  .A_Button:hover {
+    background-color: transparent;
+
+    .Button_Text {
+      color: var(--black);
+    }
   }
 }
 .M_HeaderText {
@@ -123,6 +134,19 @@
   }
   .A_Button {
     color: var(--black);
+    border: 0.2vw solid var(--white);
+
+    .Button_Text {
+      text-decoration: none;
+      color: var(--black);
+    }
+  }
+  .A_Button:hover {
+    background-color: transparent;
+
+    .Button_Text {
+      color: var(--white);
+    }
   }
 }
 
@@ -228,4 +252,68 @@
   .nana:hover {
     scale: 0.95;
   }
+}
+
+// Главная / Блок с артистами
+.M_Recs_Grid {
+  .hadndadn_card {
+    background-image: url(images/hadndadn_card.webp);
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+  }
+  .sirotkin_card {
+    background-image: url(images/sirotkin_card.webp);
+    grid-column: 7 / 13;
+    grid-row: 1 / 2;
+  }
+  .ushko_card {
+    background-image: url(images/ushko_card.webp);
+    grid-column: 13 / 19;
+    grid-row: 1 / 2;
+  }
+  .serdobol_card {
+    background-image: url(images/serdobol_card.webp);
+    grid-column: 19 / 25;
+    grid-row: 1 / 2;
+  }
+  .sova_card {
+    background-image: url(images/sova_card.webp);
+    grid-column: 25 / 31;
+    grid-row: 1 / 2;
+  }
+  .sbpch_card {
+    background-image: url(images/sbpch_card.webp);
+    grid-column: 31 / 37;
+    grid-row: 1 / 2;
+  }
+  .hadndadn_card:hover,
+  .sirotkin_card:hover,
+  .ushko_card:hover,
+  .serdobol_card:hover,
+  .sova_card:hover,
+  .sbpch_card:hover {
+    scale: 0.95;
+  }
+}
+.Artists_Sroll {
+  grid-template-columns: repeat(36, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 117.4vw;
+  height: 18vw;
+  margin: 0vw 3.5vw;
+}
+
+// Футер
+.M_Form {
+  height: 19vw;
+  width: 39.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.M_Footer_Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18vw;
 }

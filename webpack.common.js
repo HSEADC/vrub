@@ -93,27 +93,62 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/materials.html',
       filename: './materials.html',
-      chunks: ['materials']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/genres.html',
       filename: './genres.html',
-      chunks: ['genres']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/artists.html',
       filename: './artists.html',
-      chunks: ['artists']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/serdobol.html',
-      filename: './src/articles/serdobol.html',
+      filename: './articles/serdobol.html',
+      chunks: ['articles']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/hadndadn.html',
+      filename: './articles/hadndadn.html',
+      chunks: ['articles']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/sirotkin.html',
+      filename: './articles/sirotkin.html',
+      chunks: ['articles']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/ushko.html',
+      filename: './articles/ushko.html',
+      chunks: ['articles']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/sova.html',
+      filename: './articles/sova.html',
+      chunks: ['articles']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/sbpch.html',
+      filename: './articles/sbpch.html',
       chunks: ['articles']
     }),
 

@@ -5,10 +5,15 @@
   background-color: var(--white);
   font-size: 1.042vw;
   font-family: 'GolosUIWebRegular';
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
-  padding: 1vw 1vw;
+  border: 0.2vw solid var(--black);
+  padding: 1vw 2vw;
   color: var(--black);
+
+  .A_Button:hover {
+    padding: 0.8vw 0.8vw;
+  }
 }
 
 // Хэдер
@@ -53,6 +58,12 @@
 
   .Q_Chapter_Title {
     position: relative;
+    height: 3vw;
+  }
+  .Q_Chapter_Title:hover {
+    background-image: url(images/Q_Menu_Text1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .Q_Arrow {
     position: relative;
@@ -177,4 +188,53 @@
 .A_Artist_Image {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+// Футер
+.A_Form_Input {
+  position: relative;
+  width: 39.8vw;
+  height: 11vw;
+}
+.A_Links {
+  height: 8vw;
+  width: 37vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'GolosUIWebRegular';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: #eeeeee;
+  color: var(--white);
+}
+.A_Links p {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 3vw;
+}
+.A_Links a {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--white);
+  line-height: 2vw;
+}
+.A_Links a:hover {
+  color: var(--pink);
+}
+.Menu,
+.Made_By,
+.Curated_By {
+  display: flex;
+  flex-direction: column;
+}
+.A_Socials {
+  width: 10vw;
+  height: 2.2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

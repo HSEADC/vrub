@@ -1,3 +1,20 @@
+// Хэдер
+.Q_Menu_Text1:hover {
+  background-image: url(images/Q_Menu_Text1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_Menu_Text2:hover {
+  background-image: url(images/Q_Menu_Text2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_Menu_Text3:hover {
+  background-image: url(images/Q_Menu_Text3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // Главный экран
 .Q_Icon_Search {
   width: 1.7vw;
@@ -13,12 +30,19 @@
   font-weight: bold;
   font-style: normal;
   font-size: 2.4vw;
+  text-decoration: none;
   color: var(--white);
+  height: 3vw;
 }
 .Q_Arrow {
   width: 4vw;
   height: 3vw;
-  background: url(images/arrow_w_next.webp);
+  background: url(images/arrow_w_next_def.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_Arrow:hover {
+  background: url(images/arrow_w_next_hov.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,4 +89,24 @@
   font-style: normal;
   font-size: 5vw;
   color: var(--white);
+}
+
+// Футер
+.Footer {
+  font-size: 3vw;
+}
+.Q_Socials {
+  width: 2.4vw;
+  height: 2.2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .Vk {
+    background-image: url(images/vk.webp);
+  }
+  .Tiktok {
+    background-image: url(images/tiktok.webp);
+  }
+  .Telegram {
+    background-image: url(images/tg.webp);
+  }
 }

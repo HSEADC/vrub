@@ -9,7 +9,7 @@ body {
   font-weight: normal;
   font-style: normal;
   background-color: var(--black);
-  overflow: scroll;
+  overflow-x: hidden;
 
   &::before {
     height: 213vw;
@@ -23,86 +23,48 @@ body {
   }
 
   &.article {
-    background-color: white;
+    background-color: var(--white);
   }
-}
-// Бегущая строка
-.ticker-wrap {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 4vw;
-  width: 100%;
-  top: -4vw;
-  background-color: var(--pink);
-  overflow: hidden;
-  margin: 0 auto;
-  white-space: nowrap;
-}
-.ticker {
-  display: inline-block;
-  animation: take 30s linear infinite;
-  height: 4vw;
-}
-@keyframes take {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.item-collection-1 {
-  animation: swap 30s linear infinite;
-  display: inline-block;
-  height: 4vw;
-}
-.item-collection-2 {
-  animation: swap 30s linear infinite;
-  display: inline-block;
-  height: 4vw;
-}
-@keyframes swap {
-  0%,
-  50% {
-    left: 0%;
-  }
-  50.01%,
-  100% {
-    left: 100%;
-  }
-}
-.item {
-  display: inline-flex;
-  align-items: center;
-  padding: 1vw 0vw;
-  color: var(--black);
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2.5vw;
-}
-.star {
-  height: 3vw;
-  width: 3vw;
-  background: url(images/star.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 1.5vw;
 }
 
-.more {
-  margin: 2vw auto 6vw;
-  position: relative;
-  display: block;
-  width: 11.4vw;
-  height: 2.9vw;
-  background: url(images/button_more.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+.my-form {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+.input_block {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 40.9vw;
+  margin-top: 4vw;
+}
+input {
+  background: none;
+  height: 3.5vw;
+  width: 27vw;
+  font-size: 0.8vw;
+  border: 0.2vw solid var(--white);
+  color: var(--white);
+  font-size: 1.4vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  padding: 1vw;
+}
+.my-form-button {
+  height: 3.5vw;
+  width: 12vw;
+  border: none;
+  position: relative;
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 1.4vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  cursor: pointer;
+}
+
 // @media all and (min-width: 431px) {
 //   h1 {
 //     font-family: 'Bebas Neue';

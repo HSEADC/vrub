@@ -60,3 +60,28 @@
   margin: 0vw auto;
   padding-top: 3vw;
 }
+
+// Главная / Блок с артистами
+.O_Artists_Inline {
+  width: 100vw;
+  height: 18vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 3vw;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+// Футер
+.O_Footer {
+  background-color: var(--black);
+  height: 30.6vw;
+  width: 100%;
+  position: relative;
+  top: 9vw;
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.5vw;
+}
