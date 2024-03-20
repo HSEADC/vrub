@@ -178,3 +178,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// Cортировка
+.A_Tags_Genres {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5vw;
+  justify-content: space-between;
+
+  .Q_Tag_Genre {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    color: var(--white);
+  }
+}

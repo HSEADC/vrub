@@ -13,7 +13,8 @@ module.exports = {
     materials: './src/materials.js',
     genres: './src/genres.js',
     artists: './src/artists.js',
-    articles: './src/articles.js'
+    articles: './src/articles.js',
+    shoegaze: './src/shoegaze.js'
   },
   output: {
     filename: '[name].js',
@@ -38,6 +39,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -85,35 +87,43 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index'] //откуда берет стиль
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/materials.html',
       filename: './materials.html',
-      chunks: ['materials']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/genres.html',
       filename: './genres.html',
-      chunks: ['genres']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/artists.html',
       filename: './artists.html',
-      chunks: ['artists']
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/serdobol.html',
-      filename: './serdobol.html',
+      filename: './articles/serdobol.html',
       chunks: ['articles']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/shoegaze.html',
+      filename: './genres/shoegaze.html',
+      chunks: ['index']
     }),
 
     // Internal pages
