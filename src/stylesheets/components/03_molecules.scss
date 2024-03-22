@@ -169,6 +169,18 @@
   .A_Genre_Title {
     width: 22.5vw;
   }
+  p {
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: var(--white);
+    margin-left: 1vw;
+  }
+}
+.M_Genre:hover {
+  scale: 0.97;
+  background-color: rgb(61, 61, 61);
 }
 .M_Genre:hover {
   scale: 0.97;
@@ -294,7 +306,7 @@
   .lisa:hover,
   .anya:hover,
   .nana:hover {
-    scale: 0.95;
+    scale: 0.97;
   }
 }
 
@@ -342,7 +354,7 @@
   .serdobol_card:hover,
   .sova_card:hover,
   .sbpch_card:hover {
-    scale: 0.95;
+    scale: 0.97;
   }
 }
 .Artists_Sroll {
@@ -376,7 +388,8 @@
   background-color: var(--darkgrey);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-decoration: none;
+  color: var(--white);
   transition: 0.2s;
 
   .A_Article_Image {
@@ -385,14 +398,21 @@
   .A_Filter {
     margin: 1vw auto;
     justify-content: space-between;
+    width: 20.5vw;
+    font-size: 1.5vw;
   }
   .A_Title {
     width: 22.5vw;
-    padding: 0vw 1vw;
+    padding: 0vw 1vw 2vw;
+    width: 20.5vw;
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
   }
 }
 .M_Artist_Card:hover {
-  scale: 0.95;
+  scale: 0.97;
+  background-color: rgb(61, 61, 61);
 }
 .Artist1 {
   grid-column: 1 / 7;

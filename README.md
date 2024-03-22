@@ -1,12 +1,6 @@
-# Static Site Boilerplate
+# Вруб — медиа о музыке
 
-## How to start
 
-Clone the repository, install packages, start
 
-```
-git clone https://github.com/ZakharDay/static-site-boilerplate.git
-cd static-site-boilerplate
-yarn
-yarn start
-```
+Вруб — медиа о современной музыке, содержащее информацию в виде статей, тестов и подборок биографий исполнителей, основных жанрах и в целом о музыкальной культуре cовременности.
+
