@@ -168,6 +168,14 @@
   .A_Genre_Title {
     width: 22.5vw;
   }
+  p {
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: var(--white);
+    margin-left: 1vw;
+  }
 }
 .Genre1 {
   grid-column: 1 / 9;
@@ -362,7 +370,8 @@
   background-color: var(--darkgrey);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-decoration: none;
+  color: var(--white);
 
   .A_Article_Image {
     position: relative;
@@ -370,10 +379,15 @@
   .A_Filter {
     margin: 1vw auto;
     justify-content: space-between;
+    width: 20.5vw;
+    font-size: 1.5vw;
   }
   .A_Title {
     width: 22.5vw;
-    padding: 0vw 1vw;
+    padding: 0vw 1vw 2vw;
+    width: 20.5vw;
+    margin-left: 1vw;
+    font-size: 1.1vw;
   }
 }
 .M_Artist_Card:hover {
