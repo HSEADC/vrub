@@ -3,29 +3,31 @@
   width: fit-content;
   height: fit-content;
   background-color: var(--white);
-  font-size: 1.042vw;
+  font-size: 1vw;
   font-family: 'GolosUIWebRegular';
   font-weight: 500;
   font-style: normal;
-  border: 0.2vw solid var(--black);
+  border: 0.17vw solid var(--black);
   padding: 1vw 2vw;
   color: var(--black);
+  text-decoration: none;
+  transition: 0.2s;
 
   .A_Button:hover {
-    padding: 0.8vw 0.8vw;
+    padding: 0.5vw 0.5vw;
   }
 }
 
 // Хэдер
 .A_Header_Text {
   display: flex;
-  width: 36vw;
+  width: 28vw;
   justify-content: space-between;
   padding-top: 1.4vw;
 
   a {
     text-decoration: none;
-    font-size: 1.875vw;
+    font-size: 1.8vw;
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-style: normal;
@@ -33,11 +35,12 @@
   }
 }
 .A_Logo {
-  width: 7.7vw;
-  height: 4vw;
+  width: 7vw;
+  height: 3.5vw;
   background: url(images/A_Logo_White.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  transition: 0.2s;
 
   .Q_Icon_Search {
     position: relative;
@@ -46,7 +49,7 @@
 .A_Logo:hover {
   background: url(images/A_Logo_Green.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 // Главная / Первый экран
@@ -60,22 +63,24 @@
 // Главная / Блок со статьями
 .A_Block_Title {
   width: 93vw;
+  line-height: 3.5vw;
 
   .Q_Chapter_Title {
     position: relative;
     height: 3vw;
   }
-  .Q_Chapter_Title:hover {
-    background-image: url(images/Q_Menu_Text1.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  // .Q_Chapter_Title:hover {
+  //   background-image: url(images/Q_Menu_Text1.webp);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
   .Q_Arrow {
     position: relative;
   }
 }
-.A_Article_Image {
-}
+// .A_Article_Image {
+
+// }
 .A_Title {
   width: 22.5vw;
   padding: 1vw 1vw;
@@ -153,39 +158,66 @@
   background-size: cover;
 }
 .G_Img1 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/IndieRock.webp);
 }
 .G_Img2 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/PostPunk.webp);
 }
 .G_Img3 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/ElectroPop.webp);
 }
 .G_Img4 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/PunkRock.webp);
 }
 .G_Img5 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/Lofi.webp);
 }
 .G_Img6 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/IndiePop.webp);
 }
 .G_Img7 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/Shoegaze.webp);
 }
 .G_Img8 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/Hyperpop.webp);
 }
 .G_Img9 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/DreamPop.webp);
 }
 .G_Img10 {
   background-image: url(images/genre_img.webp);
 }
 .G_Img11 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/PopRock.webp);
 }
 .G_Img12 {
+  background-image: url(images/GarageRock.webp);
+}
+.G_Img13 {
+  background-image: url(images/IndieFolk.webp);
+}
+.G_Img14 {
+  background-image: url(images/PopPunk.webp);
+}
+.G_Img15 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img16 {
+  background-image: url(images/House.webp);
+}
+.G_Img17 {
+  background-image: url(images/BedroomPop.webp);
+}
+.G_Img18 {
+  background-image: url(images/DancePunk.webp);
+}
+.G_Img19 {
+  background-image: url(images/NoiseRock.webp);
+}
+.G_Img20 {
+  background-image: url(images/genre_img.webp);
+}
+.G_Img21 {
   background-image: url(images/genre_img.webp);
 }
 
@@ -226,23 +258,24 @@
 }
 .A_Links {
   height: 8vw;
-  width: 37vw;
+  width: 32vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: 'GolosUIWebRegular';
   font-weight: bold;
   font-style: normal;
-  font-size: 1.1vw;
-  line-height: 1.2vw;
+  font-size: 1vw;
+  line-height: 1vw;
   color: #eeeeee;
   color: var(--white);
+  margin-right: 1.5vw;
 }
 .A_Links p {
   text-decoration: none;
   font-weight: bold;
   color: var(--white);
-  margin-bottom: 3vw;
+  margin-bottom: 1.5vw;
 }
 .A_Links a {
   text-decoration: none;
@@ -284,4 +317,30 @@
     font-size: 2vw;
     color: var(--white);
   }
+}
+
+.A_Button_404 {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--white);
+  font-size: 1vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  font-style: normal;
+  border: 0.1vw solid var(--black);
+  padding: 1vw 2vw;
+  color: var(--black);
+  text-decoration: none;
+
+  .A_Button_404:hover {
+    padding: 0.8vw 0.8vw;
+  }
+}
+.A_Search_bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 24vw;
+  margin-left: 26vw;
 }

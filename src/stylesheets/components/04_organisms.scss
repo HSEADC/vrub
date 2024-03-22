@@ -38,7 +38,7 @@
 // Главная / Большая статья
 .O_Article_Mixed {
   position: relative;
-  top: 9vw;
+  top: 10vw;
   width: 85.5vw;
   height: 26.5vw;
   margin: 7vw auto 0vw;
@@ -121,4 +121,17 @@ h6 {
   font-size: 1.5vw;
   color: var(--white);
   margin-left: 1vw;
+}
+
+//404
+.O_404_main {
+  width: 52vw;
+  height: 32vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 24vw;
+  margin-top: 10vw;
 }

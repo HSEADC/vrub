@@ -92,6 +92,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/404.html',
+      filename: './404.html',
+      chunks: ['index'] //откуда берет стиль
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/materials.html',
       filename: './materials.html',
       chunks: ['index']

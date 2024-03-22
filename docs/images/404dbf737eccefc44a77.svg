@@ -1,0 +1,7 @@
+<svg width="76" height="56" viewBox="0 0 76 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_580_11197" fill="white">
+<path d="M76 0H0V56H76V0Z"/>
+</mask>
+<path d="M76 0V-2H78V0H76ZM0 0H-2V-2H0V0ZM0 56V58H-2V56H0ZM76 56H78V58H76V56ZM76 2H0V-2H76V2ZM2 0V56H-2V0H2ZM0 54H76V58H0V54ZM74 56V0H78V56H74Z" fill="#EEEEEE" mask="url(#path-1-inside-1_580_11197)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.1032 38.7033L52 27.8516L37.1032 17L37.1032 24.2342L27.1722 17V38.7033L37.1032 31.4691L37.1032 38.7033Z" fill="#EEEEEE"/>
+</svg>

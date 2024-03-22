@@ -2,17 +2,17 @@
 .Q_Menu_Text1:hover {
   background-image: url(images/Q_Menu_Text1.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .Q_Menu_Text2:hover {
   background-image: url(images/Q_Menu_Text2.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .Q_Menu_Text3:hover {
   background-image: url(images/Q_Menu_Text3.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 // Главный экран
@@ -37,14 +37,15 @@
 .Q_Arrow {
   width: 4vw;
   height: 3vw;
-  background: url(images/arrow_w_next_def.webp);
+  background: url(images/Q_Arrow.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  transition: 0.2s;
 }
 .Q_Arrow:hover {
-  background: url(images/arrow_w_next_hov.webp);
+  background: url(images/Q_Arrow_hover.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .Q_Type {
   font-family: 'GolosUIWebRegular';
@@ -137,4 +138,27 @@
 }
 .Telegram {
   background-image: url(images/tg.webp);
+}
+
+// 404
+.Q_Text_404 {
+  font-family: 'Phorssa', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15vw;
+  color: var(--pink);
+}
+.pink {
+  color: var(--pink);
+  position: absolute;
+  margin: -13vw 0vw 0vw 82vw;
+  transform: rotate(344deg);
+}
+.green {
+  color: var(--green);
+  position: absolute;
+}
+.blue {
+  color: var(--blue);
+  position: absolute;
 }
