@@ -294,7 +294,7 @@
   .lisa:hover,
   .anya:hover,
   .nana:hover {
-    scale: 0.95;
+    scale: 0.97;
   }
 }
 
@@ -336,7 +336,7 @@
   .serdobol_card:hover,
   .sova_card:hover,
   .sbpch_card:hover {
-    scale: 0.95;
+    scale: 0.97;
   }
 }
 .Artists_Sroll {
@@ -388,10 +388,12 @@
     width: 20.5vw;
     margin-left: 1vw;
     font-size: 1.1vw;
+    line-height: 1.3vw;
   }
 }
 .M_Artist_Card:hover {
-  scale: 0.95;
+  scale: 0.97;
+  background-color: rgb(61, 61, 61);
 }
 .Artist1 {
   grid-column: 1 / 7;
