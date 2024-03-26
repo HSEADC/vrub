@@ -14,7 +14,8 @@ module.exports = {
     genres: './src/genres.js',
     artists: './src/artists.js',
     articles: './src/articles.js',
-    shoegaze: './src/shoegaze.js'
+    shoegaze: './src/shoegaze.js',
+    test: './src/javascript/test.js'
   },
   output: {
     filename: '[name].js',
@@ -165,6 +166,15 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/genres/shoegaze.html',
       filename: './genres/shoegaze.html',
+      chunks: ['index']
+    }),
+
+    // Тесты
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/tests/yourgenretest.html',
+      filename: './tests/yourgenretest.html',
       chunks: ['index']
     }),
 

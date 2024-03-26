@@ -53,7 +53,7 @@
     position: relative;
   }
   .A_Filter {
-    margin: 1vw auto;
+    margin: 3vw 0vw 1vw;
     justify-content: space-between;
   }
   .A_Title {
@@ -86,7 +86,7 @@
   background-size: cover;
 
   .A_Filter {
-    margin: 11vw auto 1vw;
+    margin: 11vw 2vw 1vw;
     justify-content: space-between;
   }
   .A_Title {
@@ -130,6 +130,7 @@
     font-style: normal;
     font-size: 1.3vw;
     margin-bottom: 2vw;
+    line-height: 1.8vw;
   }
   .A_Button {
     color: var(--black);
@@ -390,6 +391,7 @@
   flex-direction: column;
   text-decoration: none;
   color: var(--white);
+  border-radius: 0.3vw;
   transition: 0.2s;
 
   .A_Article_Image {
@@ -411,7 +413,7 @@
   }
 }
 .M_Artist_Card:hover {
-  scale: 0.97;
+  scale: 0.98;
   background-color: rgb(61, 61, 61);
 }
 .Artist1 {
@@ -445,4 +447,14 @@
 .Artist8 {
   grid-column: 19 / 25;
   grid-row: 2 / 3;
+}
+.M_TestProgress {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: flex-start;
+}
+.M_Test_QA {
+  text-align: center;
+  margin-top: 4vw;
 }

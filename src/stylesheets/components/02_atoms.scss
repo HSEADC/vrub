@@ -24,6 +24,7 @@
   width: 28vw;
   justify-content: space-between;
   padding-top: 1.4vw;
+  transition: 0.4s;
 
   a {
     text-decoration: none;
@@ -100,14 +101,14 @@
 }
 .F_Card5 {
   display: flex;
-  width: 69.5vw;
+  width: 65.5vw;
   color: var(--grey);
   padding: 0vw 1vw;
   align-items: center;
 }
 .T_Card5 {
   width: 69.5vw;
-  padding: 1vw 1vw;
+  padding: 1vw 3vw;
 }
 .Shape1 {
   background-repeat: no-repeat;
@@ -343,4 +344,25 @@
   flex-direction: row;
   width: 24vw;
   margin-left: 26vw;
+}
+.A_ProgressBar {
+  height: 0.5vw;
+  background-color: var(--green);
+  // width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+.A_QuestionCount {
+  color: var(--black);
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2vw;
+}
+.A_Question {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2vw;
+  padding: 1vw;
 }

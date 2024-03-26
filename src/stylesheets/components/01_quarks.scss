@@ -1,18 +1,13 @@
 // Хэдер
 .Q_Menu_Text1:hover {
-  background-image: url(images/Q_Menu_Text1.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  color: var(--green);
 }
 .Q_Menu_Text2:hover {
-  background-image: url(images/Q_Menu_Text2.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  color: var(--pink);
 }
+
 .Q_Menu_Text3:hover {
-  background-image: url(images/Q_Menu_Text3.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  color: var(--blue);
 }
 
 // Главный экран
@@ -51,7 +46,7 @@
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1vw;
+  font-size: 1vw;
   line-height: 1.2vw;
   color: var(--white);
 }
@@ -59,7 +54,7 @@
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1vw;
+  font-size: 1vw;
   line-height: 1.2vw;
   color: var(--black);
   background-color: var(--white);
@@ -71,7 +66,7 @@
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: var(--white);
 }
 
@@ -161,4 +156,20 @@
 .blue {
   color: var(--blue);
   position: absolute;
+}
+
+.Q_Answer {
+  //кнопка ответов теста
+  margin: 0.5vw;
+  padding: 1.5vw;
+  background-color: var(--pink);
+  font-size: 1.2vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.Q_Answer:hover {
+  opacity: 0.7;
 }

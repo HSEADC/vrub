@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кто ты из жанров?</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
+    <analytics></analytics>
+  </head>
+  <body class="yourgenretest">
+    <div class="S_Test">
+      <!-- Прогресс бар -->
+      <div class="M_TestProgress">
+        <div class="A_QuestionCount">Вопрос 0 из 0</div>
+        <div id="progress-container">
+          <div class="A_ProgressBar"></div>
+        </div>
+      </div>
+
+      <!-- Тест -->
+      <div class="M_Test_QA">
+        <div class="A_Question"></div>
+        <div id="choices"></div>
+        <button id="prev-btn">назад</button>
+        <button id="next-btn">дальше</button>
+        <button id="restart-btn" style="display: none">повторить</button>
+      </div>
+
+      <div id="result-container">
+        <h2>Результат</h2>
+        <p id="result-text"></p>
+        <div id="result-image" alt="Картинка результата"></div>
+      </div>
+    </div>
+    <script src="../javascript/test.js"></script>
+  </body>
+
+  <heading></heading>
+  <basement></basement>
+</html>
