@@ -1,9 +1,16 @@
-.S_Test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 9vw;
+.textcolor {
+  color: var(--black);
+  width: fit-content;
+}
+
+.btnstyles {
+  position: relative;
+  background-color: var(--black);
+  color: var(--white);
+}
+.btnstyles:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 #progress-container {
@@ -25,11 +32,28 @@
   width: 10vw;
   margin-top: 20px;
 }
-
+//Картинки ответов
 .house {
   background: url('./images/House.webp');
 }
 
 .shoegaze {
   background: url('./images/buerak.png');
+}
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9vw;
+  gap: 1vw;
+}
+
+.start-screen h1,
+.start-screen p {
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }

@@ -37,7 +37,7 @@
     font-family: 'GolosUIWebRegular';
     font-weight: bold;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: var(--white);
     margin-left: 1vw;
   }
@@ -79,4 +79,12 @@
   //   background-repeat: no-repeat;
   //   background-size: cover;
   // }
+}
+
+.S_Test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 9vw;
 }

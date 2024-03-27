@@ -15,7 +15,8 @@ module.exports = {
     artists: './src/artists.js',
     articles: './src/articles.js',
     shoegaze: './src/shoegaze.js',
-    test: './src/javascript/test.js'
+    test: './src/javascript/test.js',
+    filter: './src/javascript/filter.js'
   },
   output: {
     filename: '[name].js',

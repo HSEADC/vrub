@@ -3,38 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кто ты из жанров?</title>
+    <title>Тест. Какой ты музыкальный жанр</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
     <analytics></analytics>
   </head>
   <body class="yourgenretest">
-    <div class="S_Test">
-      <!-- Прогресс бар -->
-      <div class="M_TestProgress">
-        <div class="A_QuestionCount">Вопрос 0 из 0</div>
-        <div id="progress-container">
-          <div class="A_ProgressBar"></div>
+    <!-- Стартовый экран -->
+
+    <div id="start-screen" class="start-screen">
+      <p class="A_Header_Text textcolor">ТЕСТ</p>
+      <h1 class="Q_Title_Mixed textcolor">
+        <span class="Mag_Letter textcolor">К</span>АК<span
+          class="Mag_Letter textcolor"
+          >о</span
+        >й т<span class="Mag_Letter textcolor">Ы</span> му<span
+          class="Mag_Letter textcolor"
+          >з</span
+        >ык<span class="Mag_Letter textcolor">А</span>аль<span
+          class="Mag_Letter textcolor"
+          >нЫ</span
+        >й Жа<span class="Mag_Letter textcolor">Н</span>р?
+      </h1>
+      <p class="Q_test_text">
+        Типы личности? Типы крови? Лучше! Узнайте какой музыкальный жанр лучше
+        всего соответствует вашей личности
+      </p>
+      <img
+        src="../images/test_bg.webp"
+        alt="Music Genres"
+        style="width: 55vw; padding: 1.2vw 0vw 0vw"
+      />
+      <button id="start-btn" class="A_Button btnstyles">Пройти тест</button>
+    </div>
+
+    <!-- Тест -->
+    <div id="question-container" class="container hide">
+      <div class="S_Test">
+        <!-- Прогресс бар -->
+        <div class="M_TestProgress">
+          <div class="A_QuestionCount">Вопрос 0 из 0</div>
+          <div id="progress-container">
+            <div class="A_ProgressBar"></div>
+          </div>
+        </div>
+
+        <!-- Тело теста -->
+        <div class="M_Test_QA">
+          <div class="A_Question"></div>
+          <div id="choices"></div>
+          <div class="M_Test_Nav">
+            <button class="A_button_secondary_back">
+              <div class="Q_Arrow_back_black"></div>
+              <p class="Q_Arrow_text">вернуться</p>
+            </button>
+            <button class="A_button_secondary_next">
+              <div class="Q_Arrow_next_black"></div>
+              <p class="Q_Arrow_text">пропустить</p>
+            </button>
+            <button id="restart-btn" style="display: none">повторить</button>
+          </div>
         </div>
       </div>
 
-      <!-- Тест -->
-      <div class="M_Test_QA">
-        <div class="A_Question"></div>
-        <div id="choices"></div>
-        <button id="prev-btn">назад</button>
-        <button id="next-btn">дальше</button>
-        <button id="restart-btn" style="display: none">повторить</button>
-      </div>
-
+      <!-- Результат -->
       <div id="result-container">
         <h2>Результат</h2>
         <p id="result-text"></p>
         <div id="result-image" alt="Картинка результата"></div>
+        <div class="O_Recs_Articles">
+          <p>Может быть интересно</p>
+          <div class="O_Cards_Line">
+            <div class="M_ArticleSmall Card1"></div>
+
+            <div class="A_Article_Image Shape1 Img1"></div>
+            <div class="A_Filter">
+              <p class="Q_Type">Статья</p>
+              <div class="C_Tags">
+                <p class="Q_Tag">#сбпч</p>
+                <p class="Q_Tag">#инди</p>
+              </div>
+            </div>
+            <div class="A_Title">
+              <h6 class="Q_Title">
+                Спектакль «Потерянное <br />зеркальце» от группы СПБЧ
+              </h6>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="../javascript/test.js"></script>
   </body>
-
   <heading></heading>
   <basement></basement>
 </html>

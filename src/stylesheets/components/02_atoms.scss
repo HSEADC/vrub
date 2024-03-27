@@ -12,6 +12,7 @@
   color: var(--black);
   text-decoration: none;
   transition: 0.2s;
+  cursor: pointer;
 
   .A_Button:hover {
     padding: 0.5vw 0.5vw;
@@ -22,16 +23,17 @@
 .A_Header_Text {
   display: flex;
   width: 28vw;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8vw;
+  color: var(--black);
   justify-content: space-between;
   padding-top: 1.4vw;
   transition: 0.4s;
 
   a {
     text-decoration: none;
-    font-size: 1.8vw;
-    font-family: 'Bebas Neue';
-    font-weight: bold;
-    font-style: normal;
     color: var(--white);
   }
 }
@@ -185,7 +187,7 @@
   background-image: url(images/DreamPop.webp);
 }
 .G_Img10 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/PsyRock.webp);
 }
 .G_Img11 {
   background-image: url(images/PopRock.webp);
@@ -200,7 +202,7 @@
   background-image: url(images/PopPunk.webp);
 }
 .G_Img15 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/Techno.webp);
 }
 .G_Img16 {
   background-image: url(images/House.webp);
@@ -215,10 +217,10 @@
   background-image: url(images/NoiseRock.webp);
 }
 .G_Img20 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/SpokenWord.webp);
 }
 .G_Img21 {
-  background-image: url(images/genre_img.webp);
+  background-image: url(images/Downtempo.webp);
 }
 
 // Главная / Наши рекомендации
@@ -298,6 +300,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 // Cортировка
@@ -364,4 +367,44 @@
   font-style: normal;
   font-size: 2vw;
   padding: 1vw;
+}
+
+.A_button_secondary_next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  gap: 0.5vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.A_button_secondary_back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  gap: 0.5vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+//стили для страниц жанров
+.A_Genre_Bg {
+  width: 100%;
+  height: 22vw;
+  background-image: url(images/Bg_genre1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c99aa9;
+  background-color: var(--pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vw;
+}
+.A_Text_Block {
+  width: fit-content;
+  height: fit-content;
 }
