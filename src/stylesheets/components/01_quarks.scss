@@ -1,13 +1,13 @@
 // Хэдер
 .Q_Menu_Text1:hover {
-  color: var(--green);
+  color: var(--pink);
 }
 .Q_Menu_Text2:hover {
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .Q_Menu_Text3:hover {
-  color: var(--blue);
+  color: var(--green);
 }
 
 // Главный экран
@@ -28,6 +28,9 @@
   text-decoration: none;
   color: var(--white);
   height: 3vw;
+}
+.Q_Chapter_Title:hover {
+  color: var(--pink);
 }
 .Q_Arrow {
   width: 4vw;

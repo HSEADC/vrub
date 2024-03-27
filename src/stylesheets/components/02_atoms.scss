@@ -79,18 +79,42 @@
     position: relative;
   }
 }
-// .A_Article_Image {
+.ArticleShape {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21vw;
+  height: 9.5vw;
+  margin: 4vw auto 0vw;
+}
 
-// }
+.A_Article_Image {
+  .TestShape {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21vw;
+    height: 11.5vw;
+    margin: 2vw auto 0vw;
+  }
+  .Img2 {
+    background-image: url(images/sasosh.webp);
+  }
+  .Img3 {
+    background-image: url(images/red.webp);
+  }
+  .Img4 {
+    background-image: url(images/red.webp);
+  }
+  .Img6 {
+    background-image: url(images/red.webp);
+  }
+}
 .A_Title {
-  width: 22.5vw;
-  padding: 1vw 1vw;
+  width: auto;
 }
 .A_Filter {
   display: flex;
-  width: 22.5vw;
+  width: 20vw;
   color: var(--grey);
-  padding: 0vw 1vw;
   align-items: center;
 
   .C_Tags {
@@ -107,37 +131,7 @@
   align-items: center;
 }
 .T_Card5 {
-  width: 69.5vw;
-  padding: 1vw 3vw;
-}
-.Shape1 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21vw;
-  height: 9.5vw;
-  margin: 4vw auto 0vw;
-}
-.Shape2 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21vw;
-  height: 11.5vw;
-  margin: 2vw auto 0vw;
-}
-.Img1 {
-  background-image: url(images/A_Article_Image.webp);
-}
-.Img2 {
-  background-image: url(images/sasosh.webp);
-}
-.Img3 {
-  background-image: url(images/red.webp);
-}
-.Img4 {
-  background-image: url(images/red.webp);
-}
-.Img6 {
-  background-image: url(images/red.webp);
+  // width: 69.5vw;
 }
 
 // Главная / Большая статья
@@ -145,9 +139,14 @@
   position: relative;
   width: 42.4vw;
   height: 26.6vw;
-  background-image: url(images/Big_Shape.webp);
+  background-image: url(images/dimanova.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.2s;
+}
+.A_Big_Shape:hover {
+  scale: 0.99;
+  opacity: 0.7;
 }
 
 // Главная / Блок с жанрами

@@ -48,49 +48,66 @@
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: center 6vw;
+  transition: 0.2s;
+  padding: 1vw;
 
   .A_Article_Image {
     position: relative;
   }
   .A_Filter {
-    margin: 3vw 0vw 1vw;
+    margin: 15vw 0vw 1vw;
     justify-content: space-between;
   }
-  .A_Title {
-    width: 22.5vw;
-    padding: 0vw 1vw;
-  }
+}
+.M_ArticleSmall:hover {
+  scale: 0.98;
+  opacity: 0.7;
+}
+.ArticleCard {
+  background-color: var(--green);
+}
+.PlaylistCard {
+  background-color: var(--pink);
+}
+.TestCard {
+  background-color: var(--blue);
 }
 .Card1 {
-  background-color: var(--green);
   grid-column: 1 / 7;
   grid-row: 1 / 2;
+  background-position-y: top;
+  background-image: url(images/pasosh.webp);
 }
 .Card2 {
-  background-color: var(--pink);
   grid-column: 7 / 13;
   grid-row: 1 / 2;
+  background-position-y: top;
+  background-image: url(images/playlist80.webp);
 }
 .Card3 {
-  background-color: var(--blue);
   grid-column: 13 / 19;
   grid-row: 1 / 2;
+  background-position-y: top;
+  background-image: url(images/yakut.webp);
 }
 .Card4 {
-  background-color: var(--green);
   grid-column: 19 / 25;
   grid-row: 1 / 2;
+  background-position-y: top;
+  background-image: url(images/test_bg.webp);
 }
 .M_ArticleBig {
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.2s;
+  padding: 12vw 2vw 1vw;
 
   .A_Filter {
-    margin: 11vw 2vw 1vw;
     justify-content: space-between;
+    width: auto;
   }
   .A_Title {
-    margin: 0vw auto;
+    margin: 1vw 0vw 0vw;
   }
   .Q_Title {
     font-family: 'Bebas Neue';
@@ -98,7 +115,12 @@
     font-style: normal;
     font-size: 4.7vw;
     color: var(--white);
+    transition: 0.2s;
   }
+}
+.M_ArticleBig:hover {
+  scale: 0.98;
+  opacity: 0.7;
 }
 .Card5 {
   background-image: url(images/panelki.webp);
@@ -107,9 +129,10 @@
 }
 
 .Card6 {
-  background-color: var(--green);
   grid-column: 19 / 25;
   grid-row: 2 / 3;
+  background-position-y: top;
+  background-image: url(images/rave.webp);
 }
 
 // Главная / Большая статья
