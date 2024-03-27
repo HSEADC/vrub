@@ -13,101 +13,109 @@
       <p class="Q_Sort_Title">сортировать по направлению:</p>
 
       <div class="A_Tags_Genres">
-        <p class="Q_Tag_Genre">#РОК</p>
-        <p class="Q_Tag_Genre">#ИНДИ</p>
-        <p class="Q_Tag_Genre">#ПОП</p>
-        <p class="Q_Tag_Genre">#ЭЛЕКТРОНИКА</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="all">ВСЕ</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="rock">#РОК</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="indie">#ИНДИ</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="pop">#ПОП</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="electronic">
+          #ЭЛЕКТРОНИКА
+        </p>
       </div>
     </div>
 
-    <div class="O_Genres_Grid All_Genres">
-      <div class="M_Genre Genre1">
+    <div class="O_Genres_Grid All_Genres" id="articles">
+      <!-- жанры -->
+      <div class="M_Genre Genre1 article" data-genres="indie,rock">
         <div class="A_Genre_Image G_Img1"></div>
         <p class="A_Genre_Title">Инди-рок</p>
       </div>
-      <div class="M_Genre Genre2">
+      <div class="M_Genre Genre2 article" data-genres="rock">
         <div class="A_Genre_Image G_Img2"></div>
         <p class="A_Genre_Title">Пост-панк</p>
       </div>
-      <div class="M_Genre Genre3">
+      <div class="M_Genre Genre3 article" data-genres="pop,electronic">
         <div class="A_Genre_Image G_Img3"></div>
         <p class="A_Genre_Title">Электропоп</p>
       </div>
-      <div class="M_Genre Genre4">
+      <div class="M_Genre Genre4 article" data-genres="rock">
         <div class="A_Genre_Image G_Img4"></div>
         <p class="A_Genre_Title">Панк-рок</p>
       </div>
-      <div class="M_Genre Genre5">
+      <div class="M_Genre Genre5 article" data-genres="electronic">
         <div class="A_Genre_Image G_Img5"></div>
         <p class="A_Genre_Title">Лоуфай</p>
       </div>
-      <div class="M_Genre Genre6">
+      <div class="M_Genre Genre6 article" data-genres="indie,pop">
         <div class="A_Genre_Image G_Img6"></div>
         <p class="A_Genre_Title">Инди-поп</p>
       </div>
-      <a href="genres/shoegaze.html" class="M_Genre Genre7">
+      <a
+        href="genres/shoegaze.html"
+        class="M_Genre Genre7 article"
+        data-genres="rock,indie"
+      >
         <div class="A_Genre_Image G_Img7"></div>
-        <h6 class="A_Genre_Title">Шугейз</h6>
+        <p class="A_Genre_Title">Шугейз</p>
       </a>
-      <div class="M_Genre Genre8">
+      <div class="M_Genre Genre8 article" data-genres="pop">
         <div class="A_Genre_Image G_Img8"></div>
         <p class="A_Genre_Title">Гиперпоп</p>
       </div>
-      <div class="M_Genre Genre9">
+      <div class="M_Genre Genre9 article" data-genres="pop,rock">
         <div class="A_Genre_Image G_Img9"></div>
         <p class="A_Genre_Title">Дрим-поп</p>
       </div>
-      <div class="M_Genre Genre10">
+      <div class="M_Genre Genre10 article" data-genres="rock">
         <div class="A_Genre_Image G_Img10"></div>
         <p class="A_Genre_Title">Психоделический рок</p>
       </div>
-      <div class="M_Genre Genre11">
+      <div class="M_Genre Genre11 article" data-genres="pop,rock">
         <div class="A_Genre_Image G_Img11"></div>
         <p class="A_Genre_Title">Поп-рок</p>
       </div>
-      <div class="M_Genre Genre12">
+      <div class="M_Genre Genre12 article" data-genres="rock">
         <div class="A_Genre_Image G_Img12"></div>
         <p class="A_Genre_Title">Гаражный рок</p>
       </div>
-      <div class="M_Genre Genre13">
+      <div class="M_Genre Genre13 article" data-genres="indie">
         <div class="A_Genre_Image G_Img13"></div>
-        <h6 class="A_Genre_Title">Инди-фолк</h6>
+        <p class="A_Genre_Title">Инди-фолк</p>
       </div>
-      <div class="M_Genre Genre14">
+      <div class="M_Genre Genre14 article" data-genres="pop,rock">
         <div class="A_Genre_Image G_Img14"></div>
-        <h6 class="A_Genre_Title">Поп-панк</h6>
+        <p class="A_Genre_Title">Поп-панк</p>
       </div>
-      <div class="M_Genre Genre15">
+      <div class="M_Genre Genre15 article" data-genres="electronic">
         <div class="A_Genre_Image G_Img15"></div>
-        <h6 class="A_Genre_Title">Техно</h6>
+        <p class="A_Genre_Title">Техно</p>
       </div>
-      <div class="M_Genre Genre16">
+      <div class="M_Genre Genre16 article" data-genres="electronic">
         <div class="A_Genre_Image G_Img16"></div>
-        <h6 class="A_Genre_Title">Хаус</h6>
+        <p class="A_Genre_Title">Хаус</p>
       </div>
-      <div class="M_Genre Genre17">
+      <div class="M_Genre Genre17 article" data-genres="pop">
         <div class="A_Genre_Image G_Img17"></div>
-        <h6 class="A_Genre_Title">Бедрум-поп</h6>
+        <p class="A_Genre_Title">Бедрум-поп</p>
       </div>
-      <div class="M_Genre Genre18">
+      <div class="M_Genre Genre18 article" data-genres="rock">
         <div class="A_Genre_Image G_Img18"></div>
-        <h6 class="A_Genre_Title">Дэнс-панк</h6>
+        <p class="A_Genre_Title">Дэнс-панк</p>
       </div>
-      <div class="M_Genre Genre19">
+      <div class="M_Genre Genre19 article" data-genres="rock">
         <div class="A_Genre_Image G_Img19"></div>
-        <h6 class="A_Genre_Title">Нойз-рок</h6>
+        <p class="A_Genre_Title">Нойз-рок</p>
       </div>
-      <div class="M_Genre Genre20">
-        <div class="A_Genre_Image G_Img8"></div>
-        <h6 class="A_Genre_Title">Spoken-word</h6>
-      </div>
-      <div class="M_Genre Genre21">
+      <div class="M_Genre Genre20 article" data-genres="rock">
         <div class="A_Genre_Image G_Img20"></div>
-        <h6 class="A_Genre_Title">Даунтэмпо</h6>
+        <p class="A_Genre_Title">Spoken-word</p>
+      </div>
+      <div class="M_Genre Genre21 article" data-genres="electronic">
+        <div class="A_Genre_Image G_Img21"></div>
+        <p class="A_Genre_Title">Даунтэмпо</p>
       </div>
     </div>
-    <heading></heading>
-    <basement></basement>
+
+    <script src="./javascript/filter.js"></script>
     <heading></heading>
     <basement></basement>
   </body>

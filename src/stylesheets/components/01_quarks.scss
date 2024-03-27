@@ -27,7 +27,18 @@
   font-size: 2.4vw;
   text-decoration: none;
   color: var(--white);
-  height: 3vw;
+  height: 2vw;
+}
+.pinkbg {
+  background-color: #c99aa9;
+  background-color: var(--pink);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5vw 0.5vw 0.2vw;
+  color: #211e1f;
+  color: var(--black);
 }
 .Q_Arrow {
   width: 4vw;
@@ -42,6 +53,64 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.Q_Arrow_next_black {
+  width: 4vw;
+  height: 3vw;
+  background: url(images/Q_Arrow_black.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  border: none;
+}
+
+.Q_Arrow_next_black:hover {
+  background: url(images/Q_Arrow_next_hover.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Q_Arrow_back_black {
+  width: 4vw;
+  height: 3vw;
+  background: url(images/Q_Arrow_black_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  border: none;
+}
+
+.Q_Arrow_back_black:hover {
+  background: url(images/Q_Arrow_back_hover.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Q_Arrow_back_white {
+  width: 4vw;
+  height: 3vw;
+  background: url(images/Q_Arrow_white_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  border: none;
+}
+
+.Q_Arrow_back_white:hover {
+  background: url(images/Q_Arrow_white_back_hover.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Q_Arrow_text {
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1vw;
+  color: var(--black);
+  text-decoration: none;
+}
+
 .Q_Type {
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
@@ -77,7 +146,6 @@
   font-style: normal;
   font-size: 5vw;
   color: var(--white);
-  margin-bottom: 1vw;
 }
 .Mag_Letter {
   font-family: 'Phorssa', sans-serif;
@@ -113,6 +181,12 @@
   border-radius: 0px 38px 38px 0px;
   height: fit-content;
   padding: 1vw 1.5vw 0.6vw 1vw;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.Q_Tag_Genre:hover {
+  background-color: var(--pink);
+  scale: 0.97;
 }
 
 // Футер
@@ -121,9 +195,9 @@
 }
 .Q_Socials {
   width: 2.4vw;
-  height: 2.2vw;
+  height: 3.2vw;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .Vk {
   background-image: url(images/vk.webp);
@@ -160,6 +234,7 @@
 
 .Q_Answer {
   //кнопка ответов теста
+  width: 35vw;
   margin: 0.5vw;
   padding: 1.5vw;
   background-color: var(--pink);
@@ -172,4 +247,53 @@
 }
 .Q_Answer:hover {
   opacity: 0.7;
+}
+.Q_test_text {
+  color: var(--black);
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+.h1genre {
+  font-size: 10vw;
+}
+
+.Q_Tag_Genre_Article {
+  width: fit-content;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2vw;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 38px 0px 0px 38px;
+  height: fit-content;
+  padding: 1vw 1.5vw 0.6vw 1.5vw;
+  gap: 1vw;
+}
+
+.Q_White {
+  color: var(--white);
+}
+.Q_P_text {
+  width: 43vw;
+  margin-top: 2vw;
+  color: var(--white);
+  line-height: 2vw;
+  font-size: 1.1vw;
+  text-decoration: none;
+  margin-bottom: 1.2vw;
+}
+.Q_h5 {
+  text-decoration: none;
+  transition: 0.2s;
+}
+.Q_h5:hover {
+  color: var(--pink);
+}
+a:visited {
+  text-decoration: none;
+  color: var(--white);
 }

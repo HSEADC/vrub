@@ -160,9 +160,25 @@ let score = {}
 
 const questionElement = document.querySelector('.A_Question')
 const choicesElement = document.getElementById('choices')
-const prevButton = document.getElementById('prev-btn')
-const nextButton = document.getElementById('next-btn')
+const prevButton = document.querySelector('.A_button_secondary_back')
+const nextButton = document.querySelector('.A_button_secondary_next')
 const restartButton = document.getElementById('restart-btn')
+
+document.addEventListener('DOMContentLoaded', () => {
+  const startScreen = document.getElementById('start-screen')
+  const startButton = document.getElementById('start-btn')
+  const questionContainerElement = document.getElementById('question-container')
+
+  startButton.addEventListener('click', () => {
+    startScreen.classList.add('hide') // Спрятать стратовый экран
+    startGame()
+  })
+
+  function startGame() {
+    startButton.classList.add('hide') // Спрятать кнопку старта
+    questionContainerElement.classList.remove('hide') // Показать тест
+  }
+})
 
 function selectChoice(choice) {
   score[currentQuestionIndex] = choice
@@ -188,7 +204,7 @@ function prevQuestion() {
     displayQuestion()
   }
 }
-
+// Считаем результат
 function calculateResult() {
   let scores = {}
 
@@ -196,7 +212,6 @@ function calculateResult() {
     scores[genre] = 0
   }
 
-  // Tally scores based on user choices
   Object.values(score).forEach((choice) => {
     for (let genre in genreScores) {
       if (genreScores[genre].includes(choice)) {
@@ -205,7 +220,7 @@ function calculateResult() {
     }
   })
 
-  // Determine the highest score
+  // Считаем самое большое кол-во баллов жанра
   let highestScore = 0
   let highestGenre = ''
   for (let genre in scores) {
@@ -222,55 +237,59 @@ function calculateResult() {
 
 function displayResult() {
   const finalGenre = calculateResult()
-  console.log(finalGenre) // Check if this logs the correct final genre
-  const resultText = `You are: ${finalGenre}`
+  const resultText = ` ${finalGenre}`
 
-  // Clear previous states
   questionElement.textContent = ''
   choicesElement.innerHTML = ''
   document.querySelector('.A_QuestionCount').textContent = ''
 
-  // Update and show result text
+  // Текст результата
   document.getElementById('result-text').textContent = resultText
 
   // const resultphoto = `<img id="result-image" alt="Картинка результата" src="%resultimage%" />`
 
-  // Update and show result image
+  // КАртинка результата
   document.getElementById('result-image').src = resultImageSrc
   console.log(resultImageSrc)
-  // resultImageSrc.innerHTML = ''
-  // resultImageSrc.innerHTML = resultphoto.replace(
-  //   '%resultimage%',
-  //   resultImages[finalGenre]
-  // )
+
   const resultImageSrc = resultImages[finalGenre]
 
-  console.log(resultImageSrc) // Check if this logs the correct image path
-  console.log(resultImages[finalGenre]) // Check if this logs the correct image path
+  console.log(resultImageSrc)
+  console.log(resultImages[finalGenre])
   // document.getElementById('result-image').style.display = 'inline' // Make sure the image is visible
   document
     .getElementById('result-image')
     .classList.add(resultImages[finalGenre])
 
-  // Show the result container
+  // Показать контейнер результата
   document.getElementById('result-container').style.display = 'block'
 
-  // Hide the progress bar
+  // Спрятать прогресс бар во время реазультата
   document.getElementById('progress-container').style.display = 'none'
 
   restartButton.style.display = 'inline'
+  hideNavigationButtons()
 }
 
 // Прогресс бар
+
 function updateProgressBar() {
   const totalQuestions = questions.length
   const currentProgress = ((currentQuestionIndex + 1) / totalQuestions) * 100
   document.querySelector('.A_ProgressBar').style.width = `${currentProgress}%`
 }
 
+// Спрятать кнопки
+function hideNavigationButtons() {
+  document.querySelector('.A_button_secondary_back').style.display = 'none'
+  document.querySelector('.A_button_secondary_next').style.display = 'none'
+}
+
+// Вопросы теста
+
 function displayQuestion() {
   questionElement.textContent = questions[currentQuestionIndex].question
-  choicesElement.innerHTML = '' // Clear previous choices
+  choicesElement.innerHTML = ''
   questions[currentQuestionIndex].choices.forEach((choice) => {
     const button = document.createElement('button')
     button.textContent = choice
@@ -278,20 +297,19 @@ function displayQuestion() {
     button.onclick = () => selectChoice(choice)
     choicesElement.appendChild(button)
   })
-  // Apply styles to the choices div
+  // Стили для контейнера
   choicesElement.style.display = 'flex'
   choicesElement.style.flexDirection = 'column'
+  choicesElement.style.alignItems = 'center'
 
-  prevButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline'
-  nextButton.style.display =
-    currentQuestionIndex === questions.length - 1 ? 'none' : 'inline'
-
-  // Update the progress bar
+  // Обновить прогресс бар
   updateProgressBar()
 
-  // Update the question counter
+  // Обновить счетчик вопросов
   updateQuestionCounter()
 }
+
+// Номер вопроса
 
 function updateQuestionCounter() {
   const totalQuestions = questions.length
@@ -308,14 +326,17 @@ function restartQuiz() {
   displayQuestion()
   restartButton.style.display = 'none'
 
-  // Hide the result container and reset image
+  // Спрятать текст и картинку результата
   document.getElementById('result-container').style.display = 'none'
-  document.getElementById('result-image').style.display = 'none' // Hide the image
-  document.getElementById('result-image').src = '' // Reset image source
+  document.getElementById('result-image').style.display = 'none' // Спрятать картинку
+  document.getElementById('result-image').src = '' // Сбросить путь к картинке
+  document.querySelector('.A_button_secondary_back').style.display = 'flex'
+  document.querySelector('.A_button_secondary_next').style.display = 'flex'
 
-  // Show the progress bar again
+  // Показать прогресс бар снова
   document.getElementById('progress-container').style.display = 'block'
 }
+
 prevButton.addEventListener('click', prevQuestion)
 nextButton.addEventListener('click', nextQuestion)
 restartButton.addEventListener('click', restartQuiz)
