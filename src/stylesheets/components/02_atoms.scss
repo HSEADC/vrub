@@ -378,7 +378,9 @@
   cursor: pointer;
   text-decoration: none;
 }
-
+.fixed {
+  position: fixed;
+}
 .A_button_secondary_back {
   display: flex;
   flex-direction: row;
@@ -387,6 +389,13 @@
   gap: 0.5vw;
   cursor: pointer;
   text-decoration: none;
+  background-color: transparent;
+}
+.serdobol {
+  .A_button_secondary_back {
+    margin: 0vw 0vw 0vw 3vw;
+    position: fixed;
+  }
 }
 
 //стили для страниц жанров
@@ -404,7 +413,39 @@
   align-items: center;
   margin-top: 6vw;
 }
+.A_Artist_Header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11.5vw;
+}
 .A_Text_Block {
   width: fit-content;
   height: fit-content;
+}
+.A_Album_Cover {
+  background-image: url(images/album_bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 30vw;
+  height: 20vw;
+}
+.A_Beginning_Block {
+  width: 54vw;
+  height: fit-content;
+  margin: 7vw auto 0vw;
+}
+.A_Quote_Block {
+  width: 72vw;
+  height: fit-content;
+  margin: 3vw auto 0vw;
+}
+.A_Works {
+  width: 54vw;
+  height: fit-content;
+  margin: 7vw auto 0vw;
 }

@@ -29,6 +29,27 @@
   color: var(--white);
   height: 2vw;
 }
+.Article_Chapter {
+  color: var(--black);
+  margin-left: 23vw;
+}
+.Article_Text_Chapter {
+  width: 60vw;
+  color: var(--black);
+  margin-bottom: 3vw;
+}
+.Quote_Title {
+  margin-left: 9vw;
+  color: var(--black);
+  margin-bottom: 3vw;
+}
+.Artist_Support {
+  color: var(--black);
+  margin-bottom: 1vw;
+}
+.noHover {
+  pointer-events: none;
+}
 .pinkbg {
   background-color: #c99aa9;
   background-color: var(--pink);
@@ -150,6 +171,16 @@
   font-size: 5vw;
   color: var(--white);
 }
+.ArtistName {
+  width: fit-content;
+  color: var(--black);
+  font-size: 7vw;
+
+  .Mag_Letter {
+    font-size: 7vw;
+    color: var(--black);
+  }
+}
 .Mag_Letter {
   font-family: 'Phorssa', sans-serif;
   font-weight: bold;
@@ -199,17 +230,25 @@
 .Q_Socials {
   width: 2.4vw;
   height: 3.2vw;
+  display: block;
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: 0.2s;
 }
 .Vk {
   background-image: url(images/vk.webp);
+}
+.Vk:hover {
+  background-image: url(images/vk_pink.webp);
 }
 .Tiktok {
   background-image: url(images/tiktok.webp);
 }
 .Telegram {
   background-image: url(images/tg.webp);
+}
+.invert {
+  filter: invert(1);
 }
 
 // 404
@@ -276,9 +315,23 @@
   padding: 1vw 1.5vw 0.6vw 1.5vw;
   gap: 1vw;
 }
-
+.Q_Tag_Genre_Articles {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2vw;
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 38px 0px 0px 38px;
+  padding: 1vw 1.5vw 0.6vw 1.5vw;
+  right: 0vw;
+  position: absolute;
+}
 .Q_White {
   color: var(--white);
+}
+.Q_Black {
+  color: var(--black);
 }
 .Q_P_text {
   width: 43vw;
@@ -299,4 +352,103 @@
 a:visited {
   text-decoration: none;
   color: var(--white);
+}
+.Q_Artist_Main_Image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26vw;
+  width: 50vw;
+  margin: 0vw auto;
+  position: relative;
+}
+.Serdobol_Main {
+  background-image: url(images/Serdobol_Main.webp);
+}
+.Q_Artist_Intro {
+  width: 54vw;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.4vw;
+  color: var(--black);
+  height: fit-content;
+  margin: 2vw auto 0vw;
+}
+.Q_Album_Cover {
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+.Serdobol_Album1 {
+  background-image: url(images/serdobol_veseloistrashno.webp);
+}
+.Serdobol_Album2 {
+  background-image: url(images/serdobol_nutro.webp);
+}
+.Serdobol_Album3 {
+  background-image: url(images/serdobol_vseproidet.webp);
+}
+.Q_Album_Title {
+  color: var(--white);
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2vw;
+  margin: 1vw 0vw 0vw 10vw;
+}
+.Q_Article_Text {
+  line-height: 1.8vw;
+  font-size: 1.4vw;
+  margin-bottom: 3vw;
+
+  a:hover {
+    color: var(--pink);
+  }
+}
+.Q_Article_Text a {
+  color: var(--black);
+}
+.Q_Serdobol_Image {
+  margin: 0 auto 3vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Serdobol_Image1 {
+  background-image: url(images/serdobol1.webp);
+  height: 27vw;
+  width: 45vw;
+}
+.Serdobol_Image2 {
+  background-image: url(images/serdobol2.webp);
+  height: 50.5vw;
+  width: 75vw;
+}
+.Serdobol_Image3 {
+  background-image: url(images/serdobol3.webp);
+  height: 29vw;
+  width: 45vw;
+}
+.Q_Quote {
+  font-weight: bold;
+  line-height: 2.2vw;
+  font-size: 1.8vw;
+  width: 54vw;
+  margin: 0 auto;
+}
+.Q_Quotations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72vw;
+  font-family: 'Phorssa';
+  font-size: 21vw;
+  margin: -13vw 0vw;
+}
+.Left_Quotation {
+  margin-top: 10vw;
+}
+.Right_Quotation {
+  margin-top: -6vw;
 }
