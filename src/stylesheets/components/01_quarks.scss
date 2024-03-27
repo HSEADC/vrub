@@ -40,9 +40,9 @@
   color: #211e1f;
   color: var(--black);
 }
-.Q_Chapter_Title:hover {
-  color: var(--pink);
-}
+// .Q_Chapter_Title:hover {
+//   color: var(--pink);
+// }
 .Q_Arrow {
   width: 4vw;
   height: 3vw;
@@ -140,6 +140,10 @@
   font-style: normal;
   font-size: 1.4vw;
   color: var(--white);
+  line-height: 1.8vw;
+}
+.line {
+  line-height: 4.5vw;
 }
 
 // Главная / Большая статья
@@ -149,6 +153,7 @@
   font-style: normal;
   font-size: 5vw;
   color: var(--white);
+  line-height: 5.4vw;
 }
 .Mag_Letter {
   font-family: 'Phorssa', sans-serif;
@@ -261,6 +266,7 @@
 }
 .h1genre {
   font-size: 10vw;
+  line-height: 10vw;
 }
 
 .Q_Tag_Genre_Article {
@@ -289,6 +295,15 @@
   text-decoration: none;
   margin-bottom: 1.2vw;
 }
+.Q_H_text {
+  width: 43vw;
+  margin-top: 5vw;
+  color: var(--white);
+  line-height: 2vw;
+  font-size: 1.1vw;
+  text-decoration: none;
+  margin-bottom: 1.2vw;
+}
 .Q_h5 {
   text-decoration: none;
   transition: 0.2s;
@@ -299,4 +314,24 @@
 a:visited {
   text-decoration: none;
   color: var(--white);
+}
+
+.Genre_Card {
+  width: 38vw;
+  height: 28vw;
+  background: url(images/genre_card.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: -2vw 0vw 0vw 49vw;
+}
+
+.Genre_Card2 {
+  width: 38vw;
+  height: 28vw;
+  background: url(images/C_indierock.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin: -2vw 0vw 0vw 49vw;
 }

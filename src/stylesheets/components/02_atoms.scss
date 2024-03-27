@@ -132,19 +132,20 @@
   padding: 0vw 1vw;
   align-items: center;
 }
-.T_Card5 {
-  // width: 69.5vw;
-}
+// .T_Card5 {
+//   // width: 69.5vw;
+// }
 
 // Главная / Большая статья
 .A_Big_Shape {
   position: relative;
-  width: 42.4vw;
+  width: 49.4vw;
   height: 26.6vw;
-  background-image: url(images/dimanova.webp);
+  background-image: url(images/soda.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   transition: 0.2s;
+  margin-top: 8vw;
 }
 .A_Big_Shape:hover {
   scale: 0.99;

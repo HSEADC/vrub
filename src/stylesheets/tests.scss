@@ -1,6 +1,8 @@
-.textcolor {
-  color: var(--black);
+.text1 {
   width: fit-content;
+}
+.bl_color {
+  color: var(--black);
 }
 
 .btnstyles {
@@ -20,26 +22,67 @@
 }
 
 #result-container {
-  display: none; /* Hide initially */
-  text-align: center; /* Center result text and image */
-  width: 10vw;
-  height: 10vw;
+  display: none;
+  text-align: center;
+  width: 27vw;
+  height: 37vw;
+  margin: -7vw 0vw -7vw 35vw;
 }
 
 #result-image {
   max-width: 100%;
   height: 20vw;
   width: 10vw;
-  margin-top: 20px;
+  margin-top: 1vw;
+  margin-left: 11.5vw;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 //Картинки ответов
+.indie-folk {
+  background: url('./images/IndieFolk.webp');
+}
+.shoegaze {
+  background: url('./images/Shoegaze.webp');
+}
+.electropop {
+  background: url('./images/ElectroPop.webp');
+}
+.punk-rock {
+  background: url('./images/PunkRock.webp');
+}
+.lo-fi {
+  background: url('./images/Lofi.webp');
+}
+.techno {
+  background: url('./images/Techno.webp');
+}
+.downtempo {
+  background: url('./images/Downtempo.webp');
+}
 .house {
   background: url('./images/House.webp');
 }
-
-.shoegaze {
-  background: url('./images/buerak.png');
+// .ambient {
+//   background: url('./images/Ambient.webp');
+// }
+.pop-rock {
+  background: url('./images/PopRock.webp');
 }
+// .grindecore {
+//   background: url('./images/Grindecore.webp');
+// }
+.hyperpop {
+  background: url('./images/Hyperpop.webp');
+}
+
+// .jazz {
+//   background: url('./images/FusionJazz.webp');
+// }
+// .metal {
+//   background: url('./images/BlackMetal.webp');
+// }
+
 .start-screen {
   display: flex;
   flex-direction: column;
@@ -56,4 +99,20 @@
 
 .hide {
   display: none;
+}
+.h2padding {
+  padding-left: 12.9vw;
+  width: 15vw;
+}
+.ppadding {
+  padding-right: 10vw;
+  padding-top: 1vw;
+  width: 42vw;
+}
+
+#restart-btn {
+  display: inline;
+  margin-top: 36vw;
+  position: absolute;
+  margin-left: -1vw;
 }

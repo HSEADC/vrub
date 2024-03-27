@@ -138,21 +138,20 @@ const genreScores = {
 //Картинки ответов
 
 const resultImages = {
-  'Инди-фолк': 'house',
-  Шугейз: 'shoegaze'
-  // Электропоп: 'images/rock.jpg',
-  // 'Панк-рок': 'images/pop.jpg',
-  // 'Лоу-фай': 'images/pop.jpg',
-  // Техно: 'images/pop.jpg',
-  // Даунтэмпо: 'images/pop.jpg',
-  // Хаус: 'images/pop.jpg',
-  // Эмбиент: 'images/pop.jpg',
-  // 'Поп-рок': 'images/pop.jpg',
-  // Грайндкор: 'images/pop.jpg',
-  // Гиперпоп: 'images/pop.jpg',
-  // 'Джаз фьюжн': 'images/pop.jpg',
-  // 'Блэк-метал': 'images/pop.jpg'
-  // Здесь добавлять картинки
+  'Инди-фолк': 'indie-folk',
+  Шугейз: 'shoegaze',
+  Электропоп: 'electropop',
+  'Панк-рок': 'punk-rock',
+  'Лоу-фай': 'lo-fi',
+  Техно: 'techno',
+  Даунтэмпо: 'downtempo',
+  Хаус: 'house',
+  Эмбиент: 'ambient',
+  'Поп-рок': 'pop-rock',
+  Грайндкор: 'grindecore',
+  Гиперпоп: 'hyperpop',
+  'Джаз фьюжн': 'jazz',
+  'Блэк-метал': 'metal'
 }
 
 let currentQuestionIndex = 0
@@ -237,7 +236,7 @@ function calculateResult() {
 
 function displayResult() {
   const finalGenre = calculateResult()
-  const resultText = ` ${finalGenre}`
+  const resultText = `${finalGenre}`
 
   questionElement.textContent = ''
   choicesElement.innerHTML = ''
