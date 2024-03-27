@@ -83,7 +83,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
+    // Main page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -91,6 +91,8 @@ module.exports = {
       filename: './index.html',
       chunks: ['index'] //откуда берет стиль
     }),
+
+    // 404 page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -98,6 +100,8 @@ module.exports = {
       filename: './404.html',
       chunks: ['index'] //откуда берет стиль
     }),
+
+    // Materials
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -108,10 +112,63 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/articles/sadrussianmusic.html',
+      filename: './articles/sadrussianmusic.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/newrussianwave.html',
+      filename: './articles/newrussianwave.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/yakutianpunk.html',
+      filename: './articles/yakutianpunk.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/ravemoscow.html',
+      filename: './articles/ravemoscow.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/top10punkrockalbums.html',
+      filename: './articles/top10punkrockalbums.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/howdimanova.html',
+      filename: './articles/howdimanova.html',
+      chunks: ['index']
+    }),
+
+    // Genres
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/genres.html',
       filename: './genres.html',
       chunks: ['index']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/shoegaze.html',
+      filename: './genres/shoegaze.html',
+      chunks: ['index']
+    }),
+
+    // Artists
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',

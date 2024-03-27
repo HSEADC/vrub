@@ -19,7 +19,6 @@
   position: relative;
   width: 100vw;
   height: 43.4vw;
-  margin-bottom: 5vw;
   margin-top: 9vw;
 }
 
@@ -28,11 +27,14 @@
   position: relative;
   display: grid;
   width: 93vw;
-  height: 54vw;
+  height: fit-content;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1vw;
   margin: 3vw auto 0vw;
+}
+.O_Articles_Grid a {
+  text-decoration: none;
 }
 
 // Главная / Большая статья
@@ -139,4 +141,24 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 12vw;
+}
+.O_Albums {
+  background-color: var(--black);
+  height: 27vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3vw;
+  gap: 2vw;
+  margin-top: 3vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  padding-right: 3.5vw;
+  transition: 0.2s;
+}
+.O_Albums a {
+  text-decoration: none;
 }

@@ -2,7 +2,19 @@
 
 @font-face {
   font-family: 'GolosUIWebRegular';
-  src: url('fonts/Golos-UI_Regular.woff') format('woff');
+  src: url('fonts/golos-ui_regular.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GolosUIWebRegular';
+  src: url('fonts/golos-ui_medium.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GolosUIWebRegular';
+  src: url('fonts/golos-ui_bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
