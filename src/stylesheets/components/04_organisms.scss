@@ -70,6 +70,17 @@
   margin: 3vw 3.4vw;
 }
 
+.O_Artists_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+  grid-gap: 1vw;
+  gap: 1vw;
+  margin: 3vw 3.4vw;
+}
+.All_Artists {
+  grid-template-rows: repeat(7, 1fr);
+}
+
 // Главная / Блок с артистами
 .O_Artists_Inline {
   width: 100vw;
@@ -95,16 +106,6 @@
 }
 
 // Раздел исполнители
-.O_Artists_Grid {
-  position: relative;
-  display: grid;
-  width: 94vw;
-  height: fit-content;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 1vw;
-  margin: 3vw auto 0vw;
-}
 
 .O_Sort_Title_Filter {
   margin-top: 9vw;
@@ -121,7 +122,7 @@
 
 // Раздел жанры
 .All_Genres {
-  height: 41vw;
+  // height: 41vw;
   grid-template-rows: repeat(7, 1fr);
 }
 
