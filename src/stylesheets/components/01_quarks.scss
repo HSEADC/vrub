@@ -364,6 +364,21 @@ a:visited {
 .Serdobol_Main {
   background-image: url(images/Serdobol_Main.webp);
 }
+.Ushko_Main {
+  background-image: url(images/ushko_main.webp);
+}
+.Hadndadn_Main {
+  background-image: url(images/hadndadn_main.webp);
+}
+.Sirotkin_Main {
+  background-image: url(images/sirotkin_main.webp);
+}
+.Sova_Main {
+  background-image: url(images/sova_main.webp);
+}
+.Sbpch_Main {
+  background-image: url(images/sbpch_main.webp);
+}
 .Q_Artist_Intro {
   width: 54vw;
   font-family: 'Bebas Neue';
@@ -372,7 +387,7 @@ a:visited {
   font-size: 2.4vw;
   color: var(--black);
   height: fit-content;
-  margin: 2vw auto 0vw;
+  margin: 2vw auto;
 }
 .Q_Album_Cover {
   width: 20vw;
@@ -390,18 +405,85 @@ a:visited {
 .Serdobol_Album3 {
   background-image: url(images/serdobol_vseproidet.webp);
 }
+.Ushko_Album1 {
+  background-image: url(images/ushko_silverhits.webp);
+}
+.Ushko_Album2 {
+  background-image: url(images/ushko_wethits.webp);
+}
+.Hadndadn_Album1 {
+  background-image: url(images/tainyi.webp);
+}
+.Hadndadn_Album2 {
+  background-image: url(images/podruzhki.webp);
+}
+.Hadndadn_Album3 {
+  background-image: url(images/laokyn.webp);
+}
+.Hadndadn_Album4 {
+  background-image: url(images/nostalgia.webp);
+}
+.Hadndadn_Album5 {
+  background-image: url(images/pereobuv.webp);
+}
+.Hadndadn_Album6 {
+  background-image: url(images/portugal.webp);
+}
+.Hadndadn_Album7 {
+  background-image: url(images/shepki.webp);
+}
+.Hadndadn_Album8 {
+  background-image: url(images/pocelui.webp);
+}
+.Sirotkin_Album1 {
+  background-image: url(images/challenger.webp);
+}
+.Sirotkin_Album2 {
+  background-image: url(images/mramor.webp);
+}
+.Sirotkin_Album3 {
+  background-image: url(images/echopark.webp);
+}
+.Sirotkin_Album4 {
+  background-image: url(images/isnom.webp);
+}
+.Sirotkin_Album5 {
+  background-image: url(images/dobryi.webp);
+}
+.Sirotkin_Album6 {
+  background-image: url(images/super.webp);
+}
+.Sova_Album1 {
+  background-image: url(images/siyanie.webp);
+}
+.Sova_Album2 {
+  background-image: url(images/vpamyati.webp);
+}
+.Sbpch_Album1 {
+  background-image: url(images/myne.webp);
+}
+.Sbpch_Album2 {
+  background-image: url(images/navernoe.webp);
+}
+.Sbpch_Album3 {
+  background-image: url(images/nichego.webp);
+}
+.Sbpch_Album4 {
+  background-image: url(images/vseravno.webp);
+}
 .Q_Album_Title {
   color: var(--white);
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin: 1vw 0vw 0vw 10vw;
 }
 .Q_Article_Text {
-  line-height: 1.8vw;
-  font-size: 1.4vw;
-  margin-bottom: 3vw;
+  line-height: 1.6vw;
+  font-size: 1.1vw;
+  margin: 0 auto 3vw;
+  width: 48vw;
 
   a:hover {
     color: var(--pink);
@@ -410,7 +492,7 @@ a:visited {
 .Q_Article_Text a {
   color: var(--black);
 }
-.Q_Serdobol_Image {
+.Q_Artist_Image {
   margin: 0 auto 3vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -428,6 +510,56 @@ a:visited {
 .Serdobol_Image3 {
   background-image: url(images/serdobol3.webp);
   height: 29vw;
+  width: 45vw;
+}
+.Ushko_Image1 {
+  background-image: url(images/ushko1.webp);
+  height: 29vw;
+  width: 45vw;
+}
+.Ushko_Image2 {
+  background-image: url(images/ushko2.webp);
+  height: 29vw;
+  width: 45vw;
+}
+.Hadndadn_Image1 {
+  background-image: url(images/hadndadn1.webp);
+  height: 19vw;
+  width: 45vw;
+}
+.Hadndadn_Image2 {
+  background-image: url(images/hadndadn2.webp);
+  height: 29vw;
+  width: 45vw;
+}
+.Sirotkin_Image1 {
+  background-image: url(images/sirotkin1.webp);
+  height: 24vw;
+  width: 45vw;
+}
+.Sirotkin_Image2 {
+  background-image: url(images/sirotkin2.webp);
+  height: 20vw;
+  width: 45vw;
+}
+.Sova_Image1 {
+  background-image: url(images/sova1.webp);
+  height: 26vw;
+  width: 45vw;
+}
+.Sova_Image2 {
+  background-image: url(images/sova2.webp);
+  height: 21vw;
+  width: 45vw;
+}
+.Sbpch_Image1 {
+  background-image: url(images/sbpch1.webp);
+  height: 22vw;
+  width: 45vw;
+}
+.Sbpch_Image2 {
+  background-image: url(images/sbpch2.webp);
+  height: 26vw;
   width: 45vw;
 }
 .Q_Quote {
