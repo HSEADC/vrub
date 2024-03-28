@@ -9,18 +9,26 @@
   </head>
   <body>
     <div class="O_Sort_Title_Filter">
-      <h2 class="Q_Page_Title">ИСПОЛНИТЕЛИ</h2>
+      <h2 class="Q_Page_Title">Артисты</h2>
       <p class="Q_Sort_Title">сортировать по направлению:</p>
 
       <div class="A_Tags_Genres">
-        <p class="Q_Tag_Genre">#РОК</p>
-        <p class="Q_Tag_Genre">#ИНДИ</p>
-        <p class="Q_Tag_Genre">#ПОП</p>
-        <p class="Q_Tag_Genre">#ЭЛЕКТРОНИКА</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="all">ВСЕ</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="rock">#РОК</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="indie">#ИНДИ</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="pop">#ПОП</p>
+        <p class="Q_Tag_Genre filter-div" data-genre="electronic">
+          #ЭЛЕКТРОНИКА
+        </p>
       </div>
     </div>
-    <div class="O_Artists_Grid">
-      <a href="artists/hadndadn.html" class="M_Artist_Card Artist1">
+
+    <div class="O_Artists_Grid All_Artists" id="articles">
+      <a
+        href="artists/hadndadn.html"
+        class="M_Artist_Card Artist1 article"
+        data-genres="indie,pop"
+      >
         <div class="A_Artist_Image artist_grid hadndadn_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Хадн Дадн</div>
@@ -30,7 +38,12 @@
           Трио созданное в 2016 году выпускницей ВГИКа Варварой Краминовой
         </div>
       </a>
-      <a href="artists/sirotkin.html" class="M_Artist_Card Artist2">
+
+      <a
+        href="artists/sirotkin.html"
+        class="M_Artist_Card Artist2 article"
+        data-genres="indie,rock"
+      >
         <div class="A_Artist_Image artist_grid sirotkin_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Сироткин</div>
@@ -40,7 +53,12 @@
           Группа, образованная в 2015-ом году Сергеем Сироткиным
         </div>
       </a>
-      <a href="artists/ushko.html" class="M_Artist_Card Artist3">
+
+      <a
+        href="artists/ushko.html"
+        class="M_Artist_Card Artist3 article"
+        data-genres="pop,electronic"
+      >
         <div class="A_Artist_Image artist_grid ushko_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Ушко</div>
@@ -51,7 +69,12 @@
           Ушко
         </div>
       </a>
-      <a href="artists/serdobol.html" class="M_Artist_Card Artist4">
+
+      <a
+        href="artists/serdobol.html"
+        class="M_Artist_Card Artist4 article"
+        data-genres="indie,rock"
+      >
         <div class="A_Artist_Image artist_grid serdobol_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Сердоболь</div>
@@ -62,7 +85,12 @@
            «Словоизтрехбукв» и  «Лоно»
         </div>
       </a>
-      <a href="artists/sova.html" class="M_Artist_Card Artist5">
+
+      <a
+        href="artists/sova.html"
+        class="M_Artist_Card Artist5 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid sova_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Сова</div>
@@ -70,7 +98,12 @@
         </div>
         <div class="A_Artists_Title">Пост-панк дуэт из Екатеринбурга</div>
       </a>
-      <a href="artists/sbpch.html" class="M_Artist_Card Artist6">
+
+      <a
+        href="artists/sbpch.html"
+        class="M_Artist_Card Artist6 article"
+        data-genres="electronic,pop"
+      >
         <div class="A_Artist_Image artist_grid sbpch_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">СБПЧ</div>
@@ -81,7 +114,12 @@
           дуэтом «Ёлочные игрушки»
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist7">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist7 article"
+        data-genres="pop"
+      >
         <div class="A_Artist_Image artist_grid mirele_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Mirele</div>
@@ -91,7 +129,12 @@
           Ева Гурари — со-автор группы МЫ, нынешнее сольное целое Mirèle
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist8">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist8 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid crispy_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Crispy Newspaper</div>
@@ -101,7 +144,12 @@
           Якутский панк-рок, наполненный агрессией, динамикой и грубым вокалом
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist9">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist9 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid laavu_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">LAAVU</div>
@@ -112,7 +160,12 @@
           напряженности повседневной жизни
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist10">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist10 article"
+        data-genres="electronic"
+      >
         <div class="A_Artist_Image artist_grid localcode_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Local Code</div>
@@ -123,7 +176,12 @@
           звучанием и динамичными ритмами
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist11">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist11 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid brothers_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Братья Грязь</div>
@@ -134,7 +192,12 @@
           текстами
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist12">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist12 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid sort_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">2-й сорт</div>
@@ -145,7 +208,12 @@
           духовой секцией и экспрессивным спокен-вордом
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist13">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist13 article"
+        data-genres="electronic"
+      >
         <div class="A_Artist_Image artist_grid gothic_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Gothic Princess</div>
@@ -156,7 +224,12 @@
           готической эстетики
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist14">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist14 article"
+        data-genres="indie"
+      >
         <div class="A_Artist_Image artist_grid kdimb_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">КДИМБ</div>
@@ -167,7 +240,12 @@
           нестандартным подходом к творчеству
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist15">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist15 article"
+        data-genres="indie,rock"
+      >
         <div class="A_Artist_Image artist_grid buerak_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Буерак</div>
@@ -177,7 +255,12 @@
           Романтичный постпанк из Сибири с абсурдно-ироничными текстами
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist16">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist16 article"
+        data-genres="pop,rock"
+      >
         <div class="A_Artist_Image artist_grid nonconf_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Нонконформистка</div>
@@ -188,7 +271,12 @@
           сцене
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist17">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist17 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid dosvidosh_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Досвидошь</div>
@@ -199,7 +287,12 @@
           пост-панка, абсурда и интенсивных ритмов
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist18">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist18 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid kity_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Деревянные киты</div>
@@ -210,7 +303,12 @@
           они создают своей музыкой
         </div>
       </a>
-      <a href="artists/mirele.html" class="M_Artist_Card Artist19">
+
+      <a
+        href="artists/mirele.html"
+        class="M_Artist_Card Artist19 article"
+        data-genres="rock"
+      >
         <div class="A_Artist_Image artist_grid garage_card"></div>
         <div class="A_Artists_Filter">
           <div class="Q_Title">Гараж говна</div>
@@ -222,6 +320,7 @@
         </div>
       </a>
     </div>
+    <script src="./javascript/filter.js"></script>
     <heading></heading>
     <basement></basement>
   </body>

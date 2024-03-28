@@ -78,4 +78,17 @@
 .C_Recs_Articles {
   height: fit-content;
   margin-top: 7vw;
+
+  .Recs_text {
+    color: #211e1f;
+    color: var(--black);
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.4vw;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 39vw;
+  }
 }
