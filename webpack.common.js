@@ -218,6 +218,97 @@ module.exports = {
       filename: './artists/sbpch.html',
       chunks: ['index']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/mirele.html',
+      filename: './artists/mirele.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/crispy.html',
+      filename: './artists/crispy.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/laavu.html',
+      filename: './artists/laavu.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/localcode.html',
+      filename: './artists/localcode.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/brothers.html',
+      filename: './artists/brothers.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/sort.html',
+      filename: './artists/sort.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/gothic.html',
+      filename: './artists/gothic.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/kdimb.html',
+      filename: './artists/kdimb.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/buerak.html',
+      filename: './artists/buerak.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/nonconf.html',
+      filename: './artists/nonconf.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/dosvidosh.html',
+      filename: './artists/dosvidosh.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/kity.html',
+      filename: './artists/kity.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/artists/garage.html',
+      filename: './artists/garage.html',
+      chunks: ['index']
+    }),
 
     // Жанры
     new HtmlWebpackPlugin({
@@ -407,6 +498,14 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/basement.html'),
         location: 'basement',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/recs.html'),
+        location: 'recommendations',
         template_filename: '*',
         priority: 'replace'
       }

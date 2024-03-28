@@ -125,6 +125,29 @@
     gap: 1vw;
   }
 }
+.A_Artists_Filter {
+  width: 18.5vw;
+  display: flex;
+  color: var(--grey);
+  align-items: center;
+  padding: 1vw 0vw;
+  justify-content: space-between;
+
+  .C_Tags {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+  }
+}
+.A_Artists_Title {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+  line-height: 1.1vw;
+  color: #eeeeee;
+  color: var(--white);
+}
 .F_Card5 {
   display: flex;
   width: 65.5vw;
@@ -232,7 +255,7 @@
 .artist_grid {
   width: 18.7vw;
   height: 17.7vw;
-  margin: 2vw auto 0vw;
+  margin: 0vw auto;
 }
 .hadndadn_card {
   background-image: url(images/hadndadn_card.webp);
@@ -251,6 +274,45 @@
 }
 .sbpch_card {
   background-image: url(images/sbpch_card.webp);
+}
+.mirele_card {
+  background-image: url(images/mirele_card.webp);
+}
+.crispy_card {
+  background-image: url(images/crispy_card.webp);
+}
+.laavu_card {
+  background-image: url(images/laavu_card.webp);
+}
+.localcode_card {
+  background-image: url(images/localcode_card.webp);
+}
+.brothers_card {
+  background-image: url(images/brothers_card.webp);
+}
+.sort_card {
+  background-image: url(images/sort_card.webp);
+}
+.gothic_card {
+  background-image: url(images/gothic_card.webp);
+}
+.kdimb_card {
+  background-image: url(images/kdimb_card.webp);
+}
+.buerak_card {
+  background-image: url(images/buerak_card.webp);
+}
+.nonconf_card {
+  background-image: url(images/nonconf_card.webp);
+}
+.dosvidosh_card {
+  background-image: url(images/dosvidosh_card.webp);
+}
+.kity_card {
+  background-image: url(images/kity_card.webp);
+}
+.garage_card {
+  background-image: url(images/garage_card.webp);
 }
 
 // Футер
@@ -436,7 +498,7 @@
   height: 20vw;
 }
 .A_Beginning_Block {
-  width: 54vw;
+  width: 48vw;
   height: fit-content;
   margin: 7vw auto 0vw;
 }
@@ -446,7 +508,7 @@
   margin: 3vw auto 0vw;
 }
 .A_Works {
-  width: 54vw;
+  width: 48vw;
   height: fit-content;
   margin: 7vw auto 0vw;
 }
