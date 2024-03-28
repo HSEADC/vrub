@@ -41,7 +41,9 @@ body {
   &.localcode,
   &.mirele,
   &.nonconf,
-  &.sort {
+  &.sort,
+  &.yakutianpunk,
+  &.top10punkrockalbums {
     background-color: var(--white);
   }
 }

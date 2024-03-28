@@ -349,6 +349,15 @@
   text-decoration: none;
   margin-bottom: 1.2vw;
 }
+.Q_A_text {
+  width: 43vw;
+  margin-top: 2vw;
+  color: var(--black);
+  line-height: 1.6vw;
+  font-size: 1.1vw;
+  text-decoration: none;
+  margin-bottom: 1.2vw;
+}
 .Q_H_text {
   width: 43vw;
   margin-top: 5vw;
@@ -358,9 +367,14 @@
   text-decoration: none;
   margin-bottom: 1.2vw;
 }
+.Article_Album {
+  width: 43vw;
+  margin: 1vw 0vw 1vw 26vw;
+}
 .Q_h5 {
   text-decoration: none;
   transition: 0.2s;
+  color: var(--black);
 }
 .Q_h5:hover {
   color: var(--pink);
@@ -414,6 +428,14 @@ a:visited {
 }
 .Sbpch_Main {
   background-image: url(images/sbpch_main.webp);
+}
+.Yakutian_Main {
+  background-image: url(images/yakutian1.webp);
+  margin: 3vw auto;
+}
+.Top10_Main {
+  background-image: url(images/Top10.webp);
+  margin: 3vw auto;
 }
 .Q_Artist_Intro {
   width: 54vw;
@@ -595,6 +617,21 @@ a:visited {
 }
 .Sbpch_Image2 {
   background-image: url(images/sbpch2.webp);
+  height: 26vw;
+  width: 45vw;
+}
+.Yakutian_Image1 {
+  background-image: url(images/yakutian2.webp);
+  height: 26vw;
+  width: 45vw;
+}
+.Yakutian_Image2 {
+  background-image: url(images/yakutian3.webp);
+  height: 26vw;
+  width: 45vw;
+}
+.Yakutian_Image3 {
+  background-image: url(images/yakutian4.webp);
   height: 26vw;
   width: 45vw;
 }
