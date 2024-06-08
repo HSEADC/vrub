@@ -66,7 +66,11 @@
         <a href="./materials.html" class="Q_Chapter_Title">
           <h4>МАТЕРИАЛЫ</h4>
         </a>
-        <a href="./materials.html" class="Q_Arrow"></a>
+        <a href="./materials.html" class="A_button_secondary_next">
+          <p class="Q_Arrow_text Q_White">перейти в раздел</p>
+          <div class="Q_Arrow_next_white"></div>
+        </a>
+        <!-- <a href="./materials.html" class="Q_Arrow"></a> -->
       </div>
       <div class="O_Articles_Grid">
         <a
@@ -197,7 +201,11 @@
         <a href="genres.html" class="Q_Chapter_Title">
           <h4>ЖАНРЫ</h4>
         </a>
-        <a href="genres.html" class="Q_Arrow"></a>
+        <a href="genres.html" class="A_button_secondary_next">
+          <p class="Q_Arrow_text Q_White">перейти в раздел</p>
+          <div class="Q_Arrow_next_white"></div>
+        </a>
+        <!-- <a href="genres.html" class="Q_Arrow_next_white"></a> -->
       </div>
 
       <div class="O_Genres_Grid">
@@ -342,67 +350,74 @@
     <div class="S_Artists_Block">
       <div class="A_Block_Title">
         <a href="artists.html" class="Q_Chapter_Title"><h4>АРТИСТЫ</h4></a>
-        <a href="artists.html" class="Q_Arrow"></a>
+        <a href="artists.html" class="A_button_secondary_next">
+          <p class="Q_Arrow_text Q_White">перейти в раздел</p>
+          <div class="Q_Arrow_next_white"></div>
+        </a>
+        <!-- <a href="artists.html" class="Q_Arrow_next_white"></a> -->
       </div>
-      <div class="O_Artists_Inline">
-        <div class="M_Recs_Grid Artists_Sroll">
-          <a
-            href="./artists/hadndadn.html"
-            class="A_Artist_Image hadndadn_card"
-          ></a>
-          <a
-            href="./artists/sirotkin.html"
-            class="A_Artist_Image sirotkin_card"
-          ></a>
-          <a href="./artists/ushko.html" class="A_Artist_Image ushko_card"></a>
-          <a
-            href="./artists/serdobol.html"
-            class="A_Artist_Image serdobol_card"
-          ></a>
-          <a href="./artists/sova.html" class="A_Artist_Image sova_card"></a>
-          <a href="./artists/sbpch.html" class="A_Artist_Image sbpch_card"></a>
-          <a
-            href="./artists/mirele.html"
-            class="A_Artist_Image mirele_card"
-          ></a>
-          <a
-            href="./artists/crispy.html"
-            class="A_Artist_Image crispy_card"
-          ></a>
-          <a href="./artists/laavu.html" class="A_Artist_Image laavu_card"></a>
-          <a
-            href="./artists/localcode.html"
-            class="A_Artist_Image localcode_card"
-          ></a>
-          <a
-            href="./artists/brothers.html"
-            class="A_Artist_Image brothers_card"
-          ></a>
-          <a href="./artists/sort.html" class="A_Artist_Image sort_card"></a>
-          <a
-            href="./artists/gothic.html"
-            class="A_Artist_Image gothic_card"
-          ></a>
-          <a href="./artists/kdimbh.html" class="A_Artist_Image kdimb_card"></a>
-          <a
-            href="./artists/buerak.html"
-            class="A_Artist_Image buerak_card"
-          ></a>
-          <a
-            href="./artists/nonconf.html"
-            class="A_Artist_Image nonconf_card"
-          ></a>
-          <a
-            href="./artists/dosvidosh.html"
-            class="A_Artist_Image dosvidosh_card"
-          ></a>
-          <a href="./artists/kity.html" class="A_Artist_Image kity_card"></a>
-          <a
-            href="./artists/garage.html"
-            class="A_Artist_Image garage_card"
-          ></a>
-        </div>
-      </div>
+      <div class="O_Artists_Grid" id="articles">
+        <a
+          href="artists/hadndadn.html"
+          class="M_Artist_Card Artist1 article"
+          data-genres="indie,pop"
+        >
+          <div class="A_Artist_Image artist_grid hadndadn_card"></div>
+          <div class="A_Artists_Filter">
+            <div class="Q_Title">Хадн Дадн</div>
+            <p class="Q_Tag">#инди-поп</p>
+          </div>
+          <div class="A_Artists_Title">
+            Трио созданное в 2016 году выпускницей ВГИКа Варварой Краминовой
+          </div>
+        </a>
+
+        <a
+          href="artists/sirotkin.html"
+          class="M_Artist_Card Artist2 article"
+          data-genres="indie,rock"
+        >
+          <div class="A_Artist_Image artist_grid sirotkin_card"></div>
+          <div class="A_Artists_Filter">
+            <div class="Q_Title">Сироткин</div>
+            <p class="Q_Tag">#инди-рок</p>
+          </div>
+          <div class="A_Artists_Title">
+            Группа, образованная в 2015-ом году Сергеем Сироткиным
+          </div>
+        </a>
+
+        <a
+          href="artists/ushko.html"
+          class="M_Artist_Card Artist3 article"
+          data-genres="pop,electronic"
+        >
+          <div class="A_Artist_Image artist_grid ushko_card"></div>
+          <div class="A_Artists_Filter">
+            <div class="Q_Title">Ушко</div>
+            <p class="Q_Tag">#гиперпоп</p>
+          </div>
+          <div class="A_Artists_Title">
+            Певица и DJ из Москвы Дарья Короткова, выступающая под псевдонимом
+            Ушко
+          </div>
+        </a>
+
+        <a
+          href="artists/serdobol.html"
+          class="M_Artist_Card Artist4 article"
+          data-genres="indie,rock"
+        >
+          <div class="A_Artist_Image artist_grid serdobol_card"></div>
+          <div class="A_Artists_Filter">
+            <div class="Q_Title">Сердоболь</div>
+            <p class="Q_Tag">#инди-рок</p>
+          </div>
+          <div class="A_Artists_Title">
+            Общее дело музыкантов из трех питерских команд: «Црвених Цветова»,
+             «Словоизтрехбукв» и  «Лоно»
+          </div>
+        </a>
     </div>
 
     <div class="O_Header">
@@ -415,10 +430,10 @@
         </div>
       </div>
 
-      <div class="A_Search_bar">
+      <!-- <div class="A_Search_bar">
         <input type="text" class="input_search" placeholder="Поиск" />
         <button class="btn_search">Найти</button>
-      </div>
+      </div> -->
       <div class="menu_mob_icon"></div>
     </div>
 

@@ -381,11 +381,16 @@
   }
 }
 .Artists_Sroll {
-  grid-template-columns: repeat(109, 1fr);
+  // grid-template-columns: repeat(109, 1fr);
+  // grid-template-rows: repeat(1, 1fr);
+  // width: 360vw;
+  // height: 18vw;
+  // margin: 0vw 3.5vw;
+  grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  width: 360vw;
+  width: 79vw;
   height: 18vw;
-  margin: 0vw 3.5vw;
+  margin: 0vw auto;
 }
 
 // Футер
@@ -559,6 +564,9 @@
   flex-direction: row;
   padding-left: 1vw;
   padding-left: 2.5vw;
+}
+.M_Album {
+  width: 15vw;
 }
 .M_Album:hover {
   scale: 0.99;

@@ -31,7 +31,8 @@
 }
 .Article_Chapter {
   color: var(--black);
-  margin-left: 23vw;
+  margin-left: 26svw;
+  margin-bottom: 3vw;
 }
 .Article_Text_Chapter {
   width: 60vw;
@@ -64,7 +65,7 @@
 // .Q_Chapter_Title:hover {
 //   color: var(--pink);
 // }
-.Q_Arrow {
+.Q_Arrow_next_white {
   width: 4vw;
   height: 3vw;
   background: url(images/Q_Arrow.svg);
@@ -72,7 +73,7 @@
   background-size: 100%;
   transition: 0.2s;
 }
-.Q_Arrow:hover {
+.Q_Arrow_next_white:hover {
   background: url(images/Q_Arrow_hover.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -188,7 +189,7 @@
 }
 .Mag_Letter {
   font-family: 'Phorssa', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-size: 5vw;
   color: var(--white);
@@ -259,7 +260,7 @@
 // 404
 .Q_Text_404 {
   font-family: 'Phorssa', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-size: 15vw;
   color: var(--pink);
@@ -447,8 +448,8 @@ a:visited {
   margin: 2vw auto;
 }
 .Q_Album_Cover {
-  width: 20vw;
-  height: 20vw;
+  width: 13vw;
+  height: 13vw;
   background-repeat: no-repeat;
   background-size: cover;
   float: right;
@@ -534,7 +535,8 @@ a:visited {
   font-weight: normal;
   font-style: normal;
   font-size: 1.1vw;
-  margin: 1vw 0vw 0vw 10vw;
+  line-height: 1.7vw;
+  margin: 1vw 0vw 0vw 5vw;
 }
 .Q_Article_Text {
   line-height: 1.6vw;
@@ -647,6 +649,8 @@ a:visited {
   justify-content: space-between;
   width: 72vw;
   font-family: 'Phorssa';
+  font-weight: normal;
+  font-style: normal;
   font-size: 21vw;
   margin: -13vw 0vw;
 }

@@ -16,7 +16,8 @@ module.exports = {
     articles: './src/articles.js',
     shoegaze: './src/shoegaze.js',
     test: './src/javascript/test.js',
-    filter: './src/javascript/filter.js'
+    filter: './src/javascript/filter.js',
+    searchVanilla: './src/search-vanilla.js'
   },
   output: {
     filename: '[name].js',
@@ -99,6 +100,15 @@ module.exports = {
       template: './src/404.html',
       filename: './404.html',
       chunks: ['index'] //откуда берет стиль
+    }),
+
+    // Search
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/search-vanilla.js',
+      filename: './search-vanilla.js',
+      chunks: ['searchVanilla '] //откуда берет стиль
     }),
 
     // Materials
