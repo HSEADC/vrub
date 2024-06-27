@@ -1,3 +1,5 @@
+<% const {menubar} = require('./menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,8 @@
   <title>Лоу-фай</title>
 </head>
 <body>
+  <div class="S_MenuBar"><%= menubar %></div>
+
   <div class="A_Genre_Bg bggreen">
     <div class="M_Genre_Bar">
       <a href="../genres.html" class="A_button_secondary_next">
@@ -117,7 +121,7 @@
       </div>
     </div>
     <recommendations></recommendations>
-    <div class="O_Header">
+    <!-- <div class="O_Header">
       <div class="M_HeaderText">
         <a href="../" class="A_Logo"></a>
         <div class="A_Header_Text">
@@ -132,7 +136,7 @@
         <button class="btn_search">Найти</button>
       </div>
       <div class="menu_mob_icon"></div>
-    </div>
+    </div> -->
 
     <div class="O_Footer">
       <div class="M_Form">

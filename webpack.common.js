@@ -174,14 +174,154 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/genres.ejs',
       filename: './genres.html',
-      chunks: ['index', 'menuBar']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/genres/shoegaze.html',
+      template: './src/genres/shoegaze.ejs',
       filename: './genres/shoegaze.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/bedroompop.ejs',
+      filename: './genres/bedroompop.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/dancepunk.ejs',
+      filename: './genres/dancepunk.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/downtempo.ejs',
+      filename: './genres/downtempo.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/dreampop.ejs',
+      filename: './genres/dreampop.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/electropop.ejs',
+      filename: './genres/electropop.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/garagerock.ejs',
+      filename: './genres/garagerock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/house.ejs',
+      filename: './genres/house.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/hyperpop.ejs',
+      filename: './genres/hyperpop.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/indiefolk.ejs',
+      filename: './genres/indiefolk.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/indiepop.ejs',
+      filename: './genres/indiepop.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/indierock.ejs',
+      filename: './genres/indierock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/lofi.ejs',
+      filename: './genres/lofi.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/noiserock.ejs',
+      filename: './genres/noiserock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/poppunk.ejs',
+      filename: './genres/poppunk.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/poprock.ejs',
+      filename: './genres/poprock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/postpunk.ejs',
+      filename: './genres/postpunk.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/psyrock.ejs',
+      filename: './genres/psyrock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/punkrock.ejs',
+      filename: './genres/punkrock.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/spokenword.ejs',
+      filename: './genres/spokenword.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/genres/techno.ejs',
+      filename: './genres/techno.html',
+      chunks: ['index', 'menuBar', 'search']
     }),
 
     // Artists
@@ -323,155 +463,6 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/artists/garage.html',
       filename: './artists/garage.html',
-      chunks: ['index']
-    }),
-
-    // Жанры
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/shoegaze.html',
-      filename: './genres/shoegaze.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/bedroompop.html',
-      filename: './genres/bedroompop.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/dancepunk.html',
-      filename: './genres/dancepunk.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/downtempo.html',
-      filename: './genres/downtempo.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/dreampop.html',
-      filename: './genres/dreampop.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/electropop.html',
-      filename: './genres/electropop.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/garagerock.html',
-      filename: './genres/garagerock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/house.html',
-      filename: './genres/house.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/hyperpop.html',
-      filename: './genres/hyperpop.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/indiefolk.html',
-      filename: './genres/indiefolk.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/indiepop.html',
-      filename: './genres/indiepop.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/indierock.html',
-      filename: './genres/indierock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/lofi.html',
-      filename: './genres/lofi.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/noiserock.html',
-      filename: './genres/noiserock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/poppunk.html',
-      filename: './genres/poppunk.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/poprock.html',
-      filename: './genres/poprock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/postpunk.html',
-      filename: './genres/postpunk.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/psyrock.html',
-      filename: './genres/psyrock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/punkrock.html',
-      filename: './genres/punkrock.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/spokenword.html',
-      filename: './genres/spokenword.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/genres/techno.html',
-      filename: './genres/techno.html',
       chunks: ['index']
     }),
 

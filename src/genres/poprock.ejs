@@ -1,3 +1,5 @@
+<% const {menubar} = require('./menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
   <analytics></analytics>
-  <title>Техно</title>
+  <title>Поп-рок</title>
 </head>
 <body>
-  <div class="A_Genre_Bg bgblue">
+  <div class="S_MenuBar"><%= menubar %></div>
+
+  <div class="A_Genre_Bg">
     <div class="M_Genre_Bar">
       <a href="../genres.html" class="A_button_secondary_next">
         <div class="Q_Arrow_back_white"></div>
         <p class="Q_Arrow_text Q_White">назад</p>
       </a>
-      <p class="Q_Tag_Genre_Article">#ЭЛЕКТРОНИКА</p>
+      <p class="Q_Tag_Genre_Article">#ПОП #РОК</p>
     </div>
     <h1 class="Q_Title_Mixed h1genre">
-      <span class="Mag_Letter h1genre">ТЕ</span>Х<span
+      <span class="Mag_Letter h1genre">П</span>оп<span
         class="Mag_Letter h1genre"
-        >Н</span
-      >о<span class="Mag_Letter h1genre"></span>
+        >-Р</span
+      >о<span class="Mag_Letter h1genre">к</span>
     </h1>
   </div>
   <div class="O_Genre_Body">
@@ -28,17 +32,16 @@
     <div class="A_Text_Block">
       <h4 class="Q_Chapter_Title pinkbg">О ЖАНРЕ</h4>
       <p class="Q_P_text">
-        Жанр техно является одним из самых популярных и влиятельных стилей электронной музыки в мире, и он не остался в стороне от развития в русскоязычном музыкальном пространстве. С появлением техно в 1980-х годах в Западной Европе, этот жанр быстро распространился по всему миру, включая Россию и страны СНГ.
+        Поп-рок — это музыкальный жанр, который сочетает в себе элементы поп-музыки и рока. В поп-роке обычно присутствуют мелодичные и легко запоминающиеся мелодии, характерные для поп-музыки, с элементами рок-музыки, такими как энергичные гитарные рифы, ударные и бас-линии. Этот жанр часто отличается динамичным звучанием, акцентом на мелодии и тексты, которые могут касаться широкого диапазона тем, от личных эмоций до социальных и политических вопросов. 
       </p>
     </div>
 
     <div class="A_Text_Block">
       <h4 class="Q_Chapter_Title pinkbg">с чего все началось</h4>
       <p class="Q_P_text">
-        История техно в русскоязычном мире началась с появления первых клубов и радиостанций, где диджеи и музыканты начали играть и создавать электронную музыку. В начале 2000-х годов российские и украинские музыканты активно начали экспериментировать с техно, добавляя в него национальные мотивы и элементы.
+        Истоки поп-рока уходят в середину 20-го века, когда поп-музыка и рок-н-ролл стали широко популярными жанрами. Первые проявления поп-рока можно увидеть в работах таких артистов, как Элвис Пресли, Битлз и Битлз. Со временем этот жанр стал все более популярным, привлекая внимание музыкантов и слушателей со всего мира.
         <br /><br />
-        С появлением социальных сетей и цифровых платформ в 2010-х годах, русскоязычные исполнители техно получили возможность легче распространять свою музыку и привлекать новую аудиторию. Среди них можно выделить такие коллективы и артистов, как "т.а.T.u.", "Little Big", "Ic3peak", "Buttechno", "VTGNIKE", "Nina Kraviz" и другие.
-        
+        В русскоязычной музыкальной индустрии поп-рок стал популярным в 1980-х и 1990-х годах. Исполнители этого жанра часто получали широкое признание благодаря своим мелодичным композициям, проникнутым энергией и позитивом. В последние десятилетия поп-рок продолжает оставаться одним из самых востребованных жанров в русскоязычной музыкальной индустрии, привлекая внимание как молодых, так и более опытных музыкантов.
       </p>
     </div>
 
@@ -46,7 +49,7 @@
       <h4 class="Q_Chapter_Title pinkbg">ИСПОЛНИТЕЛИ</h4>
       <!-- ПЕРВЫЙ -->
       <p class="Q_H_text">
-        <a class="Q_h5" href="https://vk.com/localcodemusic">
+        <a class="Q_h5" href="https://band.link/Xrb6j">
           <!-- мили иконка -->
           <span
             style="
@@ -60,19 +63,18 @@
             >♫♪</span
           >
           <!-- исполнитель -->
-          LOCAL CODE
+          ЭЛЕКТРОФОРЕЗ
         </a>
         
-        <p class="Q_P_text">Это острая игла, что пронизывает кожу и отравляет ваше тело своим звуком и ритмами.  
-          «Haraka» подготавливает ваш организм к приливу энергии. Но будьте аккуратны, агрессивная драм партия и перегруженный звук проникнут в вас за секунды. </p>
+        <p class="Q_P_text">Российская музыкальная группа, основанная в 2003 году в городе Санкт-Петербурге.</p>
         <!-- плейлист -->
         <iframe frameborder="0" style="border-style: none;"
-        width="100%" height='450' src="https://zvuk.com/embed/release?id=31488219" ></iframe>
+        width="100%" height='450' src="https://zvuk.com/embed/release?id=16232432" ></iframe>
       </p>
 
       <!-- ВТОРОЙ -->
       <p class="Q_H_text">
-        <a class="Q_h5" href="https://vk.com/ishome_home">
+        <a class="Q_h5" href="https://vk.com/parkssquaresandalleys">
           <!-- мили иконка -->
           <span
             style="
@@ -86,17 +88,17 @@
             >♫♪</span
           >
           <!-- исполнитель -->
-          ISHOME
+          НЕСОГЛАСИЕ
         </a>
 
-        <p class="Q_P_text">Ishome, она же Мирабелла Карьянова, родилась 12 декабря 1990 года в России, городе Находка, выросла в Краснодаре. Делает интересную электронную музыку, которая завораживает, успокаивает и одновременно веселит. Милая до потери пульса и очень необычная девушка.</p>
+        <p class="Q_P_text">Российская рок-группа, сформированная в 2016 году в Москве. Группа играет в жанре поп-рок с элементами альтернативного рока и пост-панка. </p>
           <!-- плейлист -->
           <iframe frameborder="0" style="border-style: none;"
-          width="100%" height='450' src="https://zvuk.com/embed/release?id=8083768" ></iframe>
+          width="100%" height='450' src="https://zvuk.com/embed/release?id=24113033" ></iframe>
         </p>
   
         <p class="Q_H_text">
-          <a class="Q_h5" href="https://vk.com/maria_music">
+          <a class="Q_h5" href="https://vk.com/aerofall_official">
             <span
               style="
                 display: inline-block;
@@ -108,17 +110,17 @@
               "
               >♫♪</span
             >
-            MARIA KON
+            НОНКОНФОРМИСТКА
           </a>
     
-          <p class="Q_P_text">Музыка MARIA KON это мощный водоворот индастриала, поп-рока и техно. Мощная энергетика артистки в совокупности с необычными по звучанию треками подарят не только каскад эмоций, но и погрузят в чувственные танцы, не оставят и без рефлексии.</p>
+          <p class="Q_P_text">Российская исполнительница Мария Непорожняя, первый альбом вышел в 2018 году.</p>
           <iframe frameborder="0" style="border-style: none;"
-          width="100%" height='450' src="https://zvuk.com/embed/release?id=30030840" ></iframe>
+          width="100%" height='450' src="https://zvuk.com/embed/release?id=16132250" ></iframe>
         </p>
       </div>
     </div>
     <recommendations></recommendations>
-    <div class="O_Header">
+    <!-- <div class="O_Header">
       <div class="M_HeaderText">
         <a href="../" class="A_Logo"></a>
         <div class="A_Header_Text">
@@ -133,7 +135,7 @@
         <button class="btn_search">Найти</button>
       </div>
       <div class="menu_mob_icon"></div>
-    </div>
+    </div> -->
 
     <div class="O_Footer">
       <div class="M_Form">
