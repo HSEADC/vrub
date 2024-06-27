@@ -1,8 +1,9 @@
+import { props } from './menubar-data.js'
 import './menubar.scss'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-import O_SearchBar from './components/S_MenuBar/S_MenuBar.jsx'
+import S_MenuBar from './components/S_MenuBar/S_MenuBar.jsx'
 
 console.clear()
 
