@@ -1,3 +1,5 @@
+<% const {menubar} = require('./menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +10,8 @@
     <analytics></analytics>
   </head>
   <body>
+    <div class="S_MenuBar"><%= menubar %></div>
+    <menubar></menubar>
     <div class="O_Sort_Title_Filter">
       <h2 class="Q_Page_Title">МАТЕРИАЛЫ</h2>
       <p class="Q_Sort_Title">сортировать по направлению:</p>

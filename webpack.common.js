@@ -17,7 +17,8 @@ module.exports = {
     shoegaze: './src/shoegaze.js',
     test: './src/javascript/test.js',
     filter: './src/javascript/filter.js',
-    searchVanilla: './src/search-vanilla.js'
+    menuBar: './src/menubar.jsx',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
@@ -88,9 +89,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index'] //откуда берет стиль
+      chunks: ['index', 'menuBar', 'search'] //откуда берет стиль
     }),
 
     // 404 page
@@ -106,18 +107,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/search-vanilla.js',
-      filename: './search-vanilla.js',
-      chunks: ['searchVanilla '] //откуда берет стиль
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['search', 'menuBar'] //откуда берет стиль
     }),
 
     // Materials
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/materials.html',
+      template: './src/materials.ejs',
       filename: './materials.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -166,9 +167,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/genres.html',
+      template: './src/genres.ejs',
       filename: './genres.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -182,9 +183,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists.html',
+      template: './src/artists.ejs',
       filename: './artists.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -492,6 +493,14 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/menubar.html'),
+        location: 'menubar',
         template_filename: '*',
         priority: 'replace'
       }

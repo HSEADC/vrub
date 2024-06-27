@@ -1,0 +1,9 @@
+.O_SearchBar {
+  font-family: 'GolosUIWebRegular';
+  .C_PostSuggestions {
+    position: absolute;
+    background-color: var(--white);
+    overflow-y: scroll;
+    max-height: 360px;
+  }
+}

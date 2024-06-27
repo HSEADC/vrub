@@ -1,0 +1,37 @@
+.A_Button {
+  &.primary {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--white);
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: 500;
+    font-style: normal;
+    border: 0.17vw solid var(--black);
+    padding: 1vw 2vw;
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+
+    .A_Button:hover {
+      padding: 0.5vw 0.5vw;
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+  &.resetField {
+    width: 40px;
+    background-color: none;
+    color: var(--black);
+    position: absolute;
+    font-weight: 500;
+    top: 12px;
+    left: 120px;
+  }
+}
