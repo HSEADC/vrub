@@ -43,7 +43,7 @@ export default class M_SearchForm extends React.Component {
         <A_Button
           text="Поиск"
           type="primary"
-          handleClick={andleSearchSubmit}
+          handleClick={handleSearchSubmit}
           disabled={isSearchButtonDisabled}
         />
       </div>

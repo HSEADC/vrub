@@ -103,7 +103,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/404.html',
+      template: './src/404.ejs',
       filename: './404.html',
       chunks: ['index'] //откуда берет стиль
     }),
