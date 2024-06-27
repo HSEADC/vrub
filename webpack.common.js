@@ -2,9 +2,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = ['/', '/artists.html/', '/genres.html/', '/materials.html/']
 
 module.exports = {
   entry: {
@@ -80,6 +83,8 @@ module.exports = {
     ]
   },
   plugins: [
+    new SitemapPlugin({ base: 'https://hseadc.github.io/vrub/', paths }),
+
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
