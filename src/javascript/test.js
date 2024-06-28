@@ -159,8 +159,8 @@ let score = {}
 
 const questionElement = document.querySelector('.A_Question')
 const choicesElement = document.getElementById('choices')
-const prevButton = document.querySelector('.A_button_secondary_back')
-const nextButton = document.querySelector('.A_button_secondary_next')
+const prevButton = document.querySelector('.A_SecondaryButtonLeft')
+const nextButton = document.querySelector('.A_SecondaryButtonRight')
 const restartButton = document.getElementById('restart-btn')
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -280,8 +280,8 @@ function updateProgressBar() {
 
 // Спрятать кнопки
 function hideNavigationButtons() {
-  document.querySelector('.A_button_secondary_back').style.display = 'none'
-  document.querySelector('.A_button_secondary_next').style.display = 'none'
+  document.querySelector('.A_SecondaryButtonLeft').style.display = 'none'
+  document.querySelector('.A_SecondaryButtonRight').style.display = 'none'
 }
 
 // Вопросы теста
@@ -329,8 +329,8 @@ function restartQuiz() {
   document.getElementById('result-container').style.display = 'none'
   document.getElementById('result-image').style.display = 'none' // Спрятать картинку
   document.getElementById('result-image').src = '' // Сбросить путь к картинке
-  document.querySelector('.A_button_secondary_back').style.display = 'flex'
-  document.querySelector('.A_button_secondary_next').style.display = 'flex'
+  document.querySelector('.A_SecondaryButtonLeft').style.display = 'flex'
+  document.querySelector('.A_SecondaryButtonRight').style.display = 'flex'
 
   // Показать прогресс бар снова
   document.getElementById('progress-container').style.display = 'block'

@@ -7,13 +7,15 @@ export default class A_Input extends React.Component {
     this.input = React.createRef()
   }
 
-  handleInput = (searchInputValue) => {
+  handleInput = () => {
     const { value } = this.input.current
     const { handleInput } = this.props
     handleInput(value)
   }
+
   render() {
-    const { value, handleSubmit, placeholder } = this.props
+    const { value, placeholder, handleSubmit } = this.props
+
     return (
       <input
         className="A_Input"

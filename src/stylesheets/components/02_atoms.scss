@@ -1,3 +1,19 @@
+.A_ChapterTitle {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.4vw;
+  text-decoration: none;
+  height: 3vw;
+}
+.A_ArticleType {
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  color: var(--white);
+}
 .A_Button {
   position: absolute;
   width: fit-content;
@@ -68,7 +84,7 @@
   width: 93vw;
   line-height: 3.5vw;
 
-  .Q_Chapter_Title {
+  .A_ChapterTitle {
     position: relative;
     height: 3vw;
   }
@@ -432,7 +448,7 @@
   padding: 1vw;
 }
 
-.A_button_secondary_next {
+.A_SecondaryButtonRight {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -440,11 +456,15 @@
   gap: 1vw;
   cursor: pointer;
   text-decoration: none;
+  color: var(--white);
+  font-size: 1vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
 }
 .fixed {
   position: fixed;
 }
-.A_button_secondary_back {
+.A_SecondaryButtonLeft {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -453,9 +473,13 @@
   cursor: pointer;
   text-decoration: none;
   background-color: transparent;
+  color: var(--white);
+  font-size: 1vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: normal;
 }
 .serdobol {
-  .A_button_secondary_back {
+  .A_SecondaryButtonLeft {
     margin: 0vw 0vw 0vw 3vw;
     position: fixed;
   }

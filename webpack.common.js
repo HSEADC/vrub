@@ -17,7 +17,6 @@ module.exports = {
     genres: './src/genres.js',
     artists: './src/artists.js',
     articles: './src/articles.js',
-    shoegaze: './src/shoegaze.js',
     test: './src/javascript/test.js',
     filter: './src/javascript/filter.js',
     menuBar: './src/menubar.jsx',
@@ -330,140 +329,140 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/artists.ejs',
       filename: './artists.html',
-      chunks: ['index', 'menuBar']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/serdobol.html',
+      template: './src/artists/serdobol.ejs',
       filename: './artists/serdobol.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/hadndadn.html',
+      template: './src/artists/hadndadn.ejs',
       filename: './artists/hadndadn.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/sirotkin.html',
+      template: './src/artists/sirotkin.ejs',
       filename: './artists/sirotkin.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/ushko.html',
+      template: './src/artists/ushko.ejs',
       filename: './artists/ushko.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/sova.html',
+      template: './src/artists/sova.ejs',
       filename: './artists/sova.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/sbpch.html',
+      template: './src/artists/sbpch.ejs',
       filename: './artists/sbpch.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/mirele.html',
+      template: './src/artists/mirele.ejs',
       filename: './artists/mirele.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/crispy.html',
+      template: './src/artists/crispy.ejs',
       filename: './artists/crispy.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/laavu.html',
+      template: './src/artists/laavu.ejs',
       filename: './artists/laavu.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/localcode.html',
+      template: './src/artists/localcode.ejs',
       filename: './artists/localcode.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/brothers.html',
+      template: './src/artists/brothers.ejs',
       filename: './artists/brothers.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/sort.html',
+      template: './src/artists/sort.ejs',
       filename: './artists/sort.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/gothic.html',
+      template: './src/artists/gothic.ejs',
       filename: './artists/gothic.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/kdimb.html',
+      template: './src/artists/kdimb.ejs',
       filename: './artists/kdimb.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/buerak.html',
+      template: './src/artists/buerak.ejs',
       filename: './artists/buerak.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/nonconf.html',
+      template: './src/artists/nonconf.ejs',
       filename: './artists/nonconf.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/dosvidosh.html',
+      template: './src/artists/dosvidosh.ejs',
       filename: './artists/dosvidosh.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/kity.html',
+      template: './src/artists/kity.ejs',
       filename: './artists/kity.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/artists/garage.html',
+      template: './src/artists/garage.ejs',
       filename: './artists/garage.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
 
     // Тесты

@@ -1,3 +1,5 @@
+<% const {menubar} = require('../menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,10 +10,12 @@
     <analytics></analytics>
   </head>
   <body class="ushko">
+    <div class="S_MenuBar"><%= menubar %></div>
+
     <div class="A_Artist_Header">
       <div class="M_Artist_Bar">
-        <a href="../artists.html" class="A_button_secondary_next fixed">
-          <div class="Q_Arrow_back_black"></div>
+        <a href="../artists.html" class="A_SecondaryButtonLeft fixed">
+          <div class="Q_ArrowLeftBlack"></div>
           <p class="Q_Arrow_text Q_Black">назад</p>
         </a>
         <p class="Q_Tag_Genre_Articles">#ГИПЕРПОП</p>
@@ -37,7 +41,7 @@
       существования.
     </div>
     <div class="S_Albums">
-      <div class="Q_Chapter_Title Article_Chapter noHover">АЛЬБОМЫ</div>
+      <div class="A_ChapterTitle Article_Chapter noHover">АЛЬБОМЫ</div>
       <div class="O_Albums noHorizontalScroll albums_2cards">
         <a href="https://music.yandex.ru/album/26748641" class="M_Album">
           <div class="A_Album_Cover">
@@ -54,7 +58,7 @@
       </div>
     </div>
     <div class="A_Beginning_Block">
-      <div class="Q_Chapter_Title Article_Text_Chapter noHover">ИСТОРИЯ</div>
+      <div class="A_ChapterTitle Article_Text_Chapter noHover">ИСТОРИЯ</div>
       <div class="Q_Article_Text">
         Изначально Дарья Короткова выпускала свои первые композиции
         на английском языке. В интернете до сих пор можно найти несколько таких
@@ -91,7 +95,7 @@
     <br />
     <br />
     <div class="A_Quote_Block">
-      <div class="Q_Chapter_Title Quote_Title noHover">
+      <div class="A_ChapterTitle Quote_Title noHover">
         УШКО О СВОЕМ ТВОРЧЕСТВЕ:
       </div>
       <div class="Q_Quote">
@@ -106,7 +110,7 @@
       </div>
     </div>
     <div class="A_Works">
-      <div class="Q_Chapter_Title Article_Text_Chapter noHover">ТВОРЧЕСТВО</div>
+      <div class="A_ChapterTitle Article_Text_Chapter noHover">ТВОРЧЕСТВО</div>
       <div class="Q_Article_Text">
         В творческой истории московской артистки Ушко, настоящее имя которой
         Дарья Короткова, можно выделить два альбома, которые абсолютно
@@ -141,7 +145,7 @@
         не хотела писать музыку в стиле лоу-фай, никогда!» — говорит она.
       </div>
       <div class="A_Support">
-        <div class="Q_Chapter_Title Artist_Support noHover">
+        <div class="A_ChapterTitle Artist_Support noHover">
           ПОДДЕРЖИТЕ АРТИСТКУ
         </div>
         <a href="https://vk.com/ushkothelion" class="Q_Socials Vk invert"></a>
@@ -149,28 +153,11 @@
     </div>
     <recommendations></recommendations>
 
-    <div class="O_Header">
-      <div class="M_HeaderText">
-        <a href="../" class="A_Logo"></a>
-        <div class="A_Header_Text">
-          <a href="../artists.html" class="Q_Menu_Text1">ИСПОЛНИТЕЛИ</a>
-          <a href="../genres.html" class="Q_Menu_Text2">ЖАНРЫ</a>
-          <a href="../materials.html" class="Q_Menu_Text3">МАТЕРИАЛЫ</a>
-        </div>
-      </div>
-
-      <div class="A_Search_bar">
-        <input type="text" class="input_search" placeholder="Поиск" />
-        <button class="btn_search">Найти</button>
-      </div>
-      <div class="menu_mob_icon"></div>
-    </div>
-
     <div class="O_Footer">
       <div class="M_Form">
         <a href="../" class="A_Logo"></a>
         <div class="A_Form_Input">
-          <h4 class="Q_Chapter_Title">
+          <h4 class="A_ChapterTitle">
             ПОМОГИ НАМ РАССКАЗЫВАТЬ ГРОМЧЕ <br />
             О ТВОИХ ЛЮБИМЫХ ИСПОЛНИТЕЛЯХ, ВРУБАЙСЯ!
           </h4>

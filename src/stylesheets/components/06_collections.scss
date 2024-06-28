@@ -16,7 +16,7 @@
 .ticker {
   display: inline-block;
   animation: take 30s linear infinite;
-  height: 4vw;
+  height: fit-content;
 }
 @keyframes take {
   0% {
@@ -29,12 +29,14 @@
 .item-collection-1 {
   animation: swap 30s linear infinite;
   display: inline-block;
-  height: 4vw;
+  height: fit-content;
+  align-content: center;
 }
 .item-collection-2 {
   animation: swap 30s linear infinite;
   display: inline-block;
-  height: 4vw;
+  height: fit-content;
+  align-content: center;
 }
 @keyframes swap {
   0%,
@@ -54,11 +56,11 @@
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-style: normal;
-  font-size: 1.5vw;
+  font-size: 2.4vw;
 }
 .star {
-  height: 3vw;
-  width: 3vw;
+  height: 2.5vw;
+  width: 2.5vw;
   background: url(images/star.webp);
   background-repeat: no-repeat;
   background-size: cover;
