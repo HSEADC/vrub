@@ -34,7 +34,7 @@
     margin-top: 13vw;
   }
   .O_ChapterFilter {
-    margin: 9vw 0vw 7vw 6.5vw;
+    margin: 9vw 0vw 3vw 6.5vw;
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -54,7 +54,7 @@
     margin: 3vw auto 0vw;
   }
   .O_Genre_Body {
-    margin: 6vw 7.5vw 0vw;
+    margin: 3vw 7.5vw 0vw;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -85,6 +85,24 @@
   }
   .O_Albums a {
     text-decoration: none;
+  }
+  .O_TopMusic {
+    .A_ArticleText {
+      color: var(--black);
+    }
+    .A_ArtistsLink {
+      display: inline-block;
+      font-size: 4.6vw;
+      color: var(--wnite);
+      background: var(--pink);
+      padding: 0.3vw 0.6vw;
+      margin-right: 1vw;
+      text-decoration: none;
+      transition: 0.2s;
+      color: var(--black);
+      width: fit-content;
+      padding: 2vw;
+    }
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
@@ -237,5 +255,23 @@
   }
   .O_Recs_Grid a {
     text-decoration: none;
+  }
+  .O_TopMusic {
+    .A_ArticleText {
+      color: var(--black);
+    }
+    .A_ArtistsLink {
+      display: inline-block;
+      font-size: 1vw;
+      color: var(--wnite);
+      background: var(--pink);
+      padding: 0.3vw 0.6vw;
+      margin-right: 1vw;
+      text-decoration: none;
+      transition: 0.2s;
+      color: var(--black);
+      width: fit-content;
+      padding: 1vw;
+    }
   }
 }

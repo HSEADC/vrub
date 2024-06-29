@@ -519,9 +519,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/tests/yourgenretest.html',
+      template: './src/tests/yourgenretest.ejs',
       filename: './tests/yourgenretest.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
 
     // Internal pages
