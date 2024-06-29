@@ -52,6 +52,7 @@
     font-size: 3vw;
     font-family: 'GolosUIWebRegular';
     font-weight: normal;
+    position: absolute;
   }
   .A_MainScreenTitle {
     background: url(images/MainScreen_TextBg.webp);
@@ -84,10 +85,7 @@
     font-size: 6.4vw;
     text-decoration: none;
     height: fit-content;
-    width: 48vw;
-    margin: 0vw auto;
-    color: var(--black);
-    margin-top: 3vw;
+    width: fit-content;
   }
   .A_TagGolos {
     font-family: 'GolosUIWebRegular';
@@ -374,7 +372,7 @@
     font-size: 7vw;
     color: var(--white);
   }
-  .A_TagBebas {
+  .A_TagBebasChapter {
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-style: normal;
@@ -383,6 +381,19 @@
     background-color: var(--darkgrey);
     border-radius: 0px 38px 38px 0px;
     height: fit-content;
+    padding: 3vw 3.5vw 2.6vw 2vw;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .A_TagBebasArticle {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
+    color: var(--white);
+    background-color: var(--darkgrey);
+    height: fit-content;
+    border-radius: 38px 0px 0px 38px;
     padding: 3vw 3.5vw 2.6vw 2vw;
     transition: 0.4s;
     cursor: pointer;
@@ -397,6 +408,58 @@
     height: fit-content;
     margin: 2vw auto;
   }
+  .A_ArticleText {
+    width: 88vw;
+    margin-top: 0vw;
+    color: var(--white);
+    line-height: 4.6vw;
+    font-size: 4vw;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  .A_ArtistsLink {
+    display: inline-block;
+    font-size: 4.6vw;
+    color: var(--black);
+    background: var(--white);
+    padding: 0.3vw 0.6vw;
+    margin-right: 1vw;
+    text-decoration: none;
+    transition: 0.2s;
+    color: var(--black);
+    width: fit-content;
+    padding: 2vw;
+  }
+  .A_Genre_Bg {
+    width: 100%;
+    height: 40vw;
+    background-image: url(images/Bg_genre1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c99aa9;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+  }
+  .A_Support {
+    .Q_Socials {
+      margin-left: 7.5vw;
+    }
+    .Vk {
+      background-image: url(images/vk_pink.webp);
+    }
+  }
+  .A_Album_Cover {
+    background-image: url(images/album_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 72vw;
+    height: 52vw;
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   .A_ChapterTitle {
@@ -406,6 +469,7 @@
     font-size: 2.4vw;
     text-decoration: none;
     height: fit-content;
+    margin-top: 3vw;
   }
   .A_ArticleType {
     font-family: 'GolosUIWebRegular';
@@ -870,11 +934,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6vw;
-  }
-  .A_Text_Block {
-    width: fit-content;
-    height: fit-content;
   }
   .A_Album_Cover {
     background-image: url(images/album_bg.webp);
@@ -919,7 +978,7 @@
     font-size: 4vw;
     color: var(--white);
   }
-  .A_TagBebas {
+  .A_TagBebasChapter {
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-style: normal;
@@ -927,6 +986,19 @@
     color: var(--white);
     background-color: var(--darkgrey);
     border-radius: 0px 38px 38px 0px;
+    height: fit-content;
+    padding: 1vw 1.5vw 0.6vw 1vw;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .A_TagBebasArticle {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    color: var(--white);
+    background-color: var(--darkgrey);
+    border-radius: 38px 0px 0px 38px;
     height: fit-content;
     padding: 1vw 1.5vw 0.6vw 1vw;
     transition: 0.4s;
@@ -941,5 +1013,35 @@
     color: var(--black);
     height: fit-content;
     margin: 2vw auto;
+  }
+  .A_ArticleText {
+    width: 43vw;
+    margin-top: 2vw;
+    color: var(--white);
+    line-height: 1.6vw;
+    font-size: 1.2vw;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  .A_ArtistsLink {
+    display: inline-block;
+    font-size: 1.4vw;
+    color: var(--black);
+    background: var(--white);
+    padding: 0.3vw 0.6vw;
+    margin-right: 1vw;
+    text-decoration: none;
+    transition: 0.2s;
+    color: var(--black);
+    width: fit-content;
+    padding: 1vw;
+  }
+  .A_ArtistsLink:hover {
+    color: var(--pink);
+  }
+  .A_Support {
+    .Vk {
+      background-image: url(images/vk_pink.webp);
+    }
   }
 }

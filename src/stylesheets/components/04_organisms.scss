@@ -44,6 +44,48 @@
     align-items: flex-start;
     gap: 4vw;
   }
+  .O_Recs_Grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: fit-content;
+    gap: 4vw;
+    margin: 3vw auto 0vw;
+  }
+  .O_Genre_Body {
+    margin: 6vw 7.5vw 0vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 12vw;
+
+    .A_ChapterTitle {
+      margin-top: 12vw;
+    }
+  }
+  .O_Albums {
+    background-color: var(--black);
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100vw;
+    align-items: center;
+    padding: 6vw 4vw 6vw 3.5vw;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7vw;
+    margin: 6vw auto 0vw;
+  }
+  .noHorizontalScroll {
+    overflow-x: hidden;
+  }
+  .albums_2cards {
+    padding-left: 18vw;
+  }
+  .O_Albums a {
+    text-decoration: none;
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   // Главная / Первый экран
@@ -149,25 +191,29 @@
   }
 
   .O_Genre_Body {
-    margin-left: 7.5vw;
-    margin-top: 8vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 12vw;
+    width: 86vw;
+    height: fit-content;
+    justify-content: space-between;
+    margin: 3vw auto 0vw;
   }
   .O_Albums {
     background-color: var(--black);
+    height: -moz-fit-content;
     height: fit-content;
     width: 100vw;
     align-items: center;
     padding: 3vw 4vw 3vw 3.5vw;
     transition: 0.2s;
-    grid-template-rows: repeat(auto-fit, minmax(18vw, 1fr));
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3vw;
     row-gap: 3vw;
-    column-gap: 1vw;
+    grid-column-gap: 1vw;
+    -moz-column-gap: 1vw;
+    column-gap: 6vw;
     margin: 0 auto;
   }
   .noHorizontalScroll {
@@ -184,7 +230,7 @@
     display: grid;
     width: 70vw;
     height: 25vw;
-    grid-template-columns: repeat(19, 1fr);
+    grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 1vw;
     margin: 3vw auto 0vw;

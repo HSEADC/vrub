@@ -57,7 +57,6 @@ const paths = [
   '/materials/ravemoscow.html/',
   '/materials/sadrussianmusic.html/',
   '/materials/top10punkrockalbums.html/',
-  '/materials/top10punkrockalbums.html/',
   '/tests/yourgenretest.html/'
 ]
 
@@ -68,7 +67,6 @@ module.exports = {
     materials: './src/materials.js',
     genres: './src/genres.js',
     artists: './src/artists.js',
-    articles: './src/articles.js',
     test: './src/javascript/test.js',
     filter: './src/javascript/filter.js',
     menuBar: './src/menubar.jsx',

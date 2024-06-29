@@ -38,7 +38,14 @@
 
     .A_ChapterTitle {
       position: relative;
-      height: 3vw;
+      width: fit-content;
+      font-family: 'Bebas Neue';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 6.4vw;
+      text-decoration: none;
+      height: fit-content;
+      width: fit-content;
     }
     .Q_Arrow {
       position: relative;
@@ -274,7 +281,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 11.5vw;
+    margin-top: 10.5vw;
+    gap: 10vw;
   }
   .W_ArticleText {
     display: flex;
@@ -282,8 +290,72 @@
     height: fit-content;
     gap: 4vw;
     width: 88vw;
-    align-items: flex-start;
-    margin: 0 auto;
+    align-items: self-start;
+
+    .A_ChapterTitle {
+      margin: 10vw 0vw 0vw 7.5vw;
+      position: relative;
+      width: fit-content;
+      font-family: 'Bebas Neue';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 6.4vw;
+      text-decoration: none;
+      height: fit-content;
+      width: fit-content;
+      margin-left: 7.5vw;
+    }
+  }
+  .C_Recs_Articles {
+    height: fit-content;
+    margin-top: 7vw;
+
+    .Recs_text {
+      color: #211e1f;
+      color: var(--black);
+      text-align: center;
+      font-family: 'Bebas Neue';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 6.4vw;
+      text-decoration: none;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  .C_GenreArtists {
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    height: fit-content;
+    margin-top: 4vw;
+  }
+  .W_Key {
+    font-family: 'GolosUIWebBold';
+    font-weight: bold;
+    color: var(--black);
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 21vw;
+    justify-content: space-between;
+    line-height: 3.2vw;
+  }
+  .W_Value {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    color: var(--black);
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 27vw;
+    justify-content: space-between;
+  }
+  .W_Genres {
+    position: relative;
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
@@ -363,6 +435,7 @@
     .A_ChapterTitle {
       position: relative;
       height: 3vw;
+      width: fit-content;
     }
     .Q_Arrow {
       position: relative;
@@ -393,7 +466,7 @@
       font-size: 2.4vw;
       text-decoration: none;
       width: fit-content;
-      margin-left: 39vw;
+      margin: 0 auto;
     }
   }
   .C_Articles {
@@ -633,7 +706,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 11.5vw;
+    margin-top: 6.5vw;
   }
   .W_ArticleText {
     display: flex;
@@ -643,5 +716,39 @@
     width: 48vw;
     align-items: flex-start;
     margin: 0 auto;
+  }
+  .C_GenreArtists {
+    width: 48vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    height: fit-content;
+    margin-top: 3vw;
+  }
+  .W_Key {
+    font-family: 'GolosUIWebBold';
+    font-weight: bold;
+    color: var(--black);
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 7vw;
+    justify-content: space-between;
+    line-height: 1.2vw;
+  }
+  .W_Value {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    color: var(--black);
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 11vw;
+    justify-content: space-between;
+  }
+  .W_Genres {
+    position: relative;
   }
 }

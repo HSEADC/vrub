@@ -20,11 +20,10 @@
     font-weight: normal;
     font-style: normal;
     font-size: 7vw;
-    color: var(--white);
   }
   .Q_ArrowRightWhite {
-    width: 8vw;
-    height: 6vw;
+    width: 9vw;
+    height: 7vw;
     background: url(images/Q_Arrow.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -37,8 +36,8 @@
     }
   }
   .Q_ArrowRightBlack {
-    width: 8vw;
-    height: 6vw;
+    width: 9vw;
+    height: 7vw;
     background: url(images/Q_Arrow_black.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -52,8 +51,8 @@
     }
   }
   .Q_ArrowLeftBlack {
-    width: 8vw;
-    height: 6vw;
+    width: 9vw;
+    height: 7vw;
     background: url(images/Q_Arrow_black_back.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -67,8 +66,8 @@
     }
   }
   .Q_ArrowLeftWhite {
-    width: 8vw;
-    height: 6vw;
+    width: 9vw;
+    height: 7vw;
     background: url(images/Q_Arrow_white_back.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -106,14 +105,10 @@
     color: var(--grey);
   }
   .Q_Article_Text {
-    line-height: 1.6vw;
-    font-size: 1.1vw;
-    margin: 0 auto;
-    width: 48vw;
-
-    a:hover {
-      color: var(--pink);
-    }
+    line-height: 4.6vw;
+    font-size: 4vw;
+    margin: 0vw 0vw 0vw 7.5vw;
+    width: fit-content;
   }
   .Q_Article_Text a {
     color: var(--black);
@@ -123,6 +118,278 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .Serdobol_Image1 {
+    background-image: url(images/serdobol1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Serdobol_Image2 {
+    background-image: url(images/serdobol2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Serdobol_Image3 {
+    background-image: url(images/serdobol3.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Ushko_Image1 {
+    background-image: url(images/ushko1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Ushko_Image2 {
+    background-image: url(images/ushko2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Hadndadn_Image1 {
+    background-image: url(images/hadndadn1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Hadndadn_Image2 {
+    background-image: url(images/hadndadn2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sirotkin_Image1 {
+    background-image: url(images/sirotkin1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sirotkin_Image2 {
+    background-image: url(images/sirotkin2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sova_Image1 {
+    background-image: url(images/sova1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sova_Image2 {
+    background-image: url(images/sova2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sbpch_Image1 {
+    background-image: url(images/sbpch1.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Sbpch_Image2 {
+    background-image: url(images/sbpch2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Yakutian_Image1 {
+    background-image: url(images/yakutian2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Yakutian_Image2 {
+    background-image: url(images/yakutian3.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Yakutian_Image3 {
+    background-image: url(images/yakutian4.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .NewRussian_Image1 {
+    background-image: url(images/NewRussian2.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .NewRussian_Image2 {
+    background-image: url(images/NewRussian3.webp);
+    height: 66vw;
+    width: 100vw;
+  }
+  .Q_Tag_Genre_Article {
+    width: fit-content;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 38px 0px 0px 38px;
+    height: fit-content;
+    padding: 1vw 1.5vw 0.6vw 1.5vw;
+    gap: 1vw;
+  }
+  .Q_Tag_Genre_Articles {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 38px 0px 0px 38px;
+    padding: 1vw 1.5vw 0.6vw 1.5vw;
+    right: 0vw;
+    position: absolute;
+  }
+  .ArtistName {
+    width: fit-content;
+    font-size: 13vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    text-align: center;
+
+    .Mag_Letter {
+      font-size: 13vw;
+    }
+  }
+  .Q_Artist_Main_Image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vw;
+    width: 91vw;
+    margin: 0vw auto;
+    position: relative;
+  }
+  .Serdobol_Main {
+    background-image: url(images/Serdobol_Main.webp);
+  }
+  .Ushko_Main {
+    background-image: url(images/ushko_main.webp);
+  }
+  .Hadndadn_Main {
+    background-image: url(images/hadndadn_main.webp);
+  }
+  .Sirotkin_Main {
+    background-image: url(images/sirotkin_main.webp);
+  }
+  .Sova_Main {
+    background-image: url(images/sova_main.webp);
+  }
+  .Sbpch_Main {
+    background-image: url(images/sbpch_main.webp);
+  }
+  .Yakutian_Main {
+    background-image: url(images/yakutian1.webp);
+    margin: 5vw auto;
+  }
+  .NewRussian_Main {
+    background-image: url(images/NewRussian1.webp);
+    margin: 5vw auto;
+  }
+  .Top10_Main {
+    background-image: url(images/Top10.webp);
+    margin: 3vw auto;
+  }
+
+  .Q_Album_Cover {
+    width: 50vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  .Serdobol_Album1 {
+    background-image: url(images/serdobol_veseloistrashno.webp);
+  }
+  .Serdobol_Album2 {
+    background-image: url(images/serdobol_nutro.webp);
+  }
+  .Serdobol_Album3 {
+    background-image: url(images/serdobol_vseproidet.webp);
+  }
+  .Ushko_Album1 {
+    background-image: url(images/ushko_silverhits.webp);
+  }
+  .Ushko_Album2 {
+    background-image: url(images/ushko_wethits.webp);
+  }
+  .Hadndadn_Album1 {
+    background-image: url(images/tainyi.webp);
+  }
+  .Hadndadn_Album2 {
+    background-image: url(images/podruzhki.webp);
+  }
+  .Hadndadn_Album3 {
+    background-image: url(images/laokyn.webp);
+  }
+  .Hadndadn_Album4 {
+    background-image: url(images/nostalgia.webp);
+  }
+  .Hadndadn_Album5 {
+    background-image: url(images/pereobuv.webp);
+  }
+  .Hadndadn_Album6 {
+    background-image: url(images/portugal.webp);
+  }
+  .Hadndadn_Album7 {
+    background-image: url(images/shepki.webp);
+  }
+  .Hadndadn_Album8 {
+    background-image: url(images/pocelui.webp);
+  }
+  .Sirotkin_Album1 {
+    background-image: url(images/challenger.webp);
+  }
+  .Sirotkin_Album2 {
+    background-image: url(images/mramor.webp);
+  }
+  .Sirotkin_Album3 {
+    background-image: url(images/echopark.webp);
+  }
+  .Sirotkin_Album4 {
+    background-image: url(images/isnom.webp);
+  }
+  .Sirotkin_Album5 {
+    background-image: url(images/dobryi.webp);
+  }
+  .Sirotkin_Album6 {
+    background-image: url(images/super.webp);
+  }
+  .Sova_Album1 {
+    background-image: url(images/siyanie.webp);
+  }
+  .Sova_Album2 {
+    background-image: url(images/vpamyati.webp);
+  }
+  .Sbpch_Album1 {
+    background-image: url(images/myne.webp);
+  }
+  .Sbpch_Album2 {
+    background-image: url(images/navernoe.webp);
+  }
+  .Sbpch_Album3 {
+    background-image: url(images/nichego.webp);
+  }
+  .Sbpch_Album4 {
+    background-image: url(images/vseravno.webp);
+  }
+  .pinkbg {
+    background-color: #c99aa9;
+    background-color: var(--pink);
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0.5vw 0.5vw 0.2vw;
+    color: var(--black);
+  }
+  .Article_Chapter {
+    color: var(--black);
+    margin-left: 26vw;
+    margin-bottom: 3vw;
+  }
+  .Q_Album_Title {
+    color: var(--white);
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 4.7vw;
+    margin: 1vw 0vw 0vw 22vw;
+    width: fit-content;
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   .MSButtonPosition {
@@ -131,7 +398,7 @@
   // Блок со статьями
   .Article_Chapter {
     color: var(--black);
-    margin-left: 26svw;
+    margin-left: 26vw;
     margin-bottom: 3vw;
   }
 
@@ -223,12 +490,13 @@
 
   .ArtistName {
     width: fit-content;
-    color: var(--black);
     font-size: 7vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    text-align: center;
 
     .Mag_Letter {
       font-size: 7vw;
-      color: var(--black);
     }
   }
   .Mag_Letter {
@@ -236,7 +504,6 @@
     font-weight: normal;
     font-style: normal;
     font-size: 5vw;
-    color: var(--white);
   }
   // Для страниц разделов ИСПОЛНИТЕЛИ/ЖАНРЫ/СТАТЬИ
 
@@ -328,10 +595,6 @@
     font-size: 1vw;
     line-height: 1vw;
   }
-  .h1genre {
-    font-size: 10vw;
-    line-height: 10vw;
-  }
 
   .Q_Tag_Genre_Article {
     width: fit-content;
@@ -364,15 +627,7 @@
   .Q_Black {
     color: var(--black);
   }
-  .Q_P_text {
-    width: 43vw;
-    margin-top: 2vw;
-    color: var(--white);
-    line-height: 1.6vw;
-    font-size: 1.1vw;
-    text-decoration: none;
-    margin-bottom: 1.2vw;
-  }
+
   .Q_A_text {
     width: 43vw;
     margin-top: 2vw;
@@ -382,46 +637,18 @@
     text-decoration: none;
     margin-bottom: 1.2vw;
   }
-  .Q_H_text {
-    width: 43vw;
-    margin-top: 5vw;
-    color: var(--white);
-    line-height: 2vw;
-    font-size: 1.1vw;
-    text-decoration: none;
-    margin-bottom: 1.2vw;
-  }
+  // .Q_H_text {
+  //   width: 43vw;
+  //   margin-top: 5vw;
+  //   color: var(--white);
+  //   line-height: 2vw;
+  //   font-size: 1.1vw;
+  //   text-decoration: none;
+  //   margin-bottom: 1.2vw;
+  // }
   .Article_Album {
     width: 43vw;
     margin: 1vw 0vw 1vw 26vw;
-  }
-  .Q_h5 {
-    text-decoration: none;
-    transition: 0.2s;
-    color: var(--black);
-  }
-  .Q_h5:hover {
-    color: var(--pink);
-  }
-
-  .Genre_Card {
-    width: 38vw;
-    height: 28vw;
-    background: url(images/genre_card.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    margin: -2vw 0vw 0vw 49vw;
-  }
-
-  .Genre_Card2 {
-    width: 38vw;
-    height: 28vw;
-    background: url(images/C_indierock.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    margin: -2vw 0vw 0vw 49vw;
   }
   .Q_Artist_Main_Image {
     background-repeat: no-repeat;
@@ -451,6 +678,10 @@
   }
   .Yakutian_Main {
     background-image: url(images/yakutian1.webp);
+    margin: 3vw auto;
+  }
+  .NewRussian_Main {
+    background-image: url(images/NewRussian1.webp);
     margin: 3vw auto;
   }
   .Top10_Main {
@@ -545,7 +776,7 @@
     font-family: 'GolosUIWebRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     line-height: 1.7vw;
     margin: 1vw 0vw 0vw 5vw;
   }
@@ -647,6 +878,17 @@
     height: 26vw;
     width: 45vw;
   }
+  .NewRussian_Image1 {
+    background-image: url(images/NewRussian2.webp);
+    height: 26vw;
+    width: 45vw;
+  }
+  .NewRussian_Image2 {
+    background-image: url(images/NewRussian3.webp);
+    height: 26vw;
+    width: 45vw;
+  }
+
   .Q_Quote {
     font-weight: bold;
     line-height: 2.2vw;

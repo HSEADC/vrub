@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.2s;
-    padding: 43vw 2vw 4.5vw;
+    padding: 43vw 4.5vw 4.5vw;
 
     .W_FilterArticles {
       justify-content: space-between;
@@ -90,6 +90,119 @@
     gap: 3vw;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    .A_TagBebas {
+      font-family: 'Bebas Neue';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 2vw;
+      color: var(--white);
+    }
+  }
+  .M_Genre_Bar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 1vw;
+    padding-left: 5.5vw;
+
+    .M_Filter {
+      right: 0vw;
+      position: absolute;
+      width: fit-content;
+
+      .A_TagBebasArticle {
+        background-color: var(--white);
+        color: var(--black);
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        font-style: normal;
+        font-size: 5vw;
+        height: -moz-fit-content;
+        height: fit-content;
+        border-radius: 38px 0px 0px 38px;
+        padding: 3vw 3.5vw 2.6vw 2vw;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+    }
+  }
+  .M_Artist_Bar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 4vw;
+    padding-left: 5.5vw;
+
+    .M_Filter {
+      right: 0vw;
+      position: absolute;
+      width: fit-content;
+    }
+  }
+  .M_Album {
+    width: 79vw;
+  }
+  .M_Album:hover {
+    scale: 0.99;
+    opacity: 0.7;
+  }
+  .Rec1 {
+    width: 88vw;
+    height: 66vw;
+    background-position-y: top;
+    background-image: url(images/pasosh.webp);
+  }
+  .Rec2 {
+    width: 88vw;
+    height: 66vw;
+    background-position-y: top;
+    background-image: url(images/playlist80.webp);
+  }
+  .Rec3 {
+    width: 88vw;
+    height: 66vw;
+    background-position-y: top;
+    background-image: url(images/test_bg.webp);
+  }
+  .M_GenreArtist {
+    width: 88vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: 5vw;
+  }
+  .M_GenreAbout {
+    width: 88vw;
+    height: 61vw;
+    background: url(images/genreCardBg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7vw 20vw 0vw 7vw;
+    rotate: -5deg;
+  }
+  .M_GenreText {
+    width: fit-content;
+    height: fit-content;
+
+    .A_ArticleText {
+      width: 88vw;
+      margin-top: 3vw;
+      color: var(--white);
+      line-height: 4.6vw;
+      font-size: 4vw;
+      font-weight: normal;
+      text-decoration: none;
+      font-family: 'GolosUIWebRegular';
+    }
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
@@ -280,11 +393,6 @@
     }
   }
   .Artists_Sroll {
-    // grid-template-columns: repeat(109, 1fr);
-    // grid-template-rows: repeat(1, 1fr);
-    // width: 360vw;
-    // height: 18vw;
-    // margin: 0vw 3.5vw;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(1, 1fr);
     width: 79vw;
@@ -336,82 +444,6 @@
     scale: 0.98;
     background-color: rgb(61, 61, 61);
   }
-  // .Artist1 {
-  //   grid-column: 1 / 7;
-  //   grid-row: 1 / 2;
-  // }
-  // .Artist2 {
-  //   grid-column: 7 / 13;
-  //   grid-row: 1 / 2;
-  // }
-  // .Artist3 {
-  //   grid-column: 13 / 19;
-  //   grid-row: 1 / 2;
-  // }
-  // .Artist4 {
-  //   grid-column: 19 / 25;
-  //   grid-row: 1 / 2;
-  // }
-  // .Artist5 {
-  //   grid-column: 1 / 7;
-  //   grid-row: 2 / 3;
-  // }
-  // .Artist6 {
-  //   grid-column: 7 / 13;
-  //   grid-row: 2 / 3;
-  // }
-  // .Artist7 {
-  //   grid-column: 13 / 19;
-  //   grid-row: 2 / 3;
-  // }
-  // .Artist8 {
-  //   grid-column: 19 / 25;
-  //   grid-row: 2 / 3;
-  // }
-  // .Artist9 {
-  //   grid-column: 1 / 7;
-  //   grid-row: 3 / 4;
-  // }
-  // .Artist10 {
-  //   grid-column: 7 / 13;
-  //   grid-row: 3 / 4;
-  // }
-  // .Artist11 {
-  //   grid-column: 13 / 19;
-  //   grid-row: 3 / 4;
-  // }
-  // .Artist12 {
-  //   grid-column: 19 / 25;
-  //   grid-row: 3 / 4;
-  // }
-  // .Artist13 {
-  //   grid-column: 1 / 7;
-  //   grid-row: 4 / 5;
-  // }
-  // .Artist14 {
-  //   grid-column: 7 / 13;
-  //   grid-row: 4 / 5;
-  // }
-  // .Artist15 {
-  //   grid-column: 13 / 19;
-  //   grid-row: 4 / 5;
-  // }
-  // .Artist16 {
-  //   grid-column: 19 / 25;
-  //   grid-row: 4 / 5;
-  // }
-  // .Artist17 {
-  //   grid-column: 1 / 7;
-  //   grid-row: 5 / 6;
-  // }
-  // .Artist18 {
-  //   grid-column: 7 / 13;
-  //   grid-row: 5 / 6;
-  // }
-  // .Artist19 {
-  //   grid-column: 13 / 19;
-  //   grid-row: 5 / 6;
-  // }
   .M_TestProgress {
     display: flex;
     flex-direction: column;
@@ -446,6 +478,16 @@
     flex-direction: row;
     padding-left: 1vw;
     padding-left: 2.5vw;
+
+    .M_Filter {
+      right: 0vw;
+      position: absolute;
+
+      .A_TagBebasArticle {
+        background-color: var(--white);
+        color: var(--black);
+      }
+    }
   }
   .M_Artist_Bar {
     display: flex;
@@ -455,6 +497,11 @@
     flex-direction: row;
     padding-left: 1vw;
     padding-left: 2.5vw;
+
+    .M_Filter {
+      right: 0vw;
+      position: absolute;
+    }
   }
   .M_Album {
     width: 15vw;
@@ -498,5 +545,34 @@
       font-size: 2vw;
       color: var(--white);
     }
+  }
+  .M_GenreArtist {
+    width: 48vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+    .A_ArticleText {
+      margin-top: 0vw;
+    }
+  }
+  .M_GenreAbout {
+    width: 38vw;
+    height: 28vw;
+    background: url(images/genreCardBg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vw 11vw 0vw 3vw;
+    rotate: (-5deg);
+    position: relative;
+  }
+  .M_GenreText {
+    width: fit-content;
+    height: fit-content;
   }
 }

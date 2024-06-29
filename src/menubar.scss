@@ -1,150 +1,170 @@
-.S_MenuBar {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  height: 5vw;
-  align-items: center;
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 1.5vw;
-  text-decoration: none;
-  color: var(--white);
-  padding: 0vw 3.5vw;
-}
-.C_MainMenu {
-  display: flex;
-  gap: 20px;
-}
-.S_SearchContent {
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px;
-}
-.O_SearchBar {
-  font-family: 'GolosUIWebRegular';
-  .C_PostSuggestions {
-    position: absolute;
-    background-color: var(--white);
-    overflow-y: scroll;
-    max-height: 360px;
-  }
-}
-.M_SearchForm {
-  display: flex;
-  position: relative;
-}
-.M_PostTeaser {
-  margin: 10px;
-  text-decoration: none;
-  width: 320px;
-  min-height: 350px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: var(--black);
-  font-family: 'GolosUIWebRegular';
-
-  .A_Text {
-    &.h3 {
-      font-weight: bold;
-      text-transform: capitalize;
-      font-size: 21px;
-      padding: 0 10px;
-    }
-
-    &.p {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-
-    &.tag {
-      background-color: aqua;
-      color: var(--black);
-      font-size: 12px;
-      line-height: 12px;
-      padding: 2px 5px;
-      border-radius: 12px;
-    }
-  }
-  .C_postTeaserText {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .S_MenuBar {
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 0 10px 10px;
-  }
-}
-.M_PostSuggestion {
-  margin: 10px;
-  color: var(--black);
-  text-decoration: none;
-
-  .A_Text {
-    &.h3 {
-      font-weight: bold;
-    }
-
-    &.p {
-      margin-top: 4px;
-    }
-  }
-}
-.A_Image {
-  &.postTeaser {
-    border-radius: 20px 20px 0 0;
-  }
-}
-.A_Button {
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  font-size: 1vw;
-  font-family: 'GolosUIWebRegular';
-  font-weight: 500;
-  font-style: normal;
-  border: 0.17vw solid var(--black);
-  padding: 1vw 2vw;
-  color: var(--black);
-  text-decoration: none;
-  transition: 0.2s;
-  cursor: pointer;
-  background-color: var(--white);
-
-  .Button_Text {
+    justify-content: space-between;
+    height: 11vw;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
     text-decoration: none;
-    color: var(--black);
-  }
-
-  &:hover {
-    .Button_Text {
-      color: var(--white);
-    }
-  }
-
-  &.disabled {
-    opacity: 0.4;
-    cursor: default;
-  }
-
-  &.resetField {
-    width: 40px;
-    background-color: none;
-    color: var(--black);
-    position: absolute;
-    font-weight: 500;
-    top: 12px;
-    left: 120px;
+    color: var(--white);
+    padding: 0vw 10.5vw;
+    background-color: var(--black);
   }
 }
-.A_MainMenu {
-  color: var(--white);
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2vw;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
+  .S_MenuBar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 5vw;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    text-decoration: none;
+    color: var(--white);
+    padding: 0vw 3.5vw;
+    background-color: var(--black);
+  }
+  .C_MainMenu {
+    display: flex;
+    gap: 20px;
+  }
+  .S_SearchContent {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+  }
+  .O_SearchBar {
+    font-family: 'GolosUIWebRegular';
+    .C_PostSuggestions {
+      position: absolute;
+      background-color: var(--white);
+      overflow-y: scroll;
+      max-height: 360px;
+    }
+  }
+  .M_SearchForm {
+    display: flex;
+    position: relative;
+  }
+  .M_PostTeaser {
+    margin: 10px;
+    text-decoration: none;
+    width: 320px;
+    min-height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--black);
+    font-family: 'GolosUIWebRegular';
+
+    .A_Text {
+      &.h3 {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 21px;
+        padding: 0 10px;
+      }
+
+      &.p {
+        font-size: 16px;
+        padding: 0 10px;
+      }
+
+      &.tag {
+        background-color: aqua;
+        color: var(--black);
+        font-size: 12px;
+        line-height: 12px;
+        padding: 2px 5px;
+        border-radius: 12px;
+      }
+    }
+    .C_postTeaserText {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 0 10px 10px;
+    }
+  }
+  .M_PostSuggestion {
+    margin: 10px;
+    color: var(--black);
+    text-decoration: none;
+
+    .A_Text {
+      &.h3 {
+        font-weight: bold;
+      }
+
+      &.p {
+        margin-top: 4px;
+      }
+    }
+  }
+  .A_Image {
+    &.postTeaser {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+  .A_Button {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: 500;
+    font-style: normal;
+    border: 0.17vw solid var(--black);
+    padding: 1vw 2vw;
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: var(--white);
+
+    .Button_Text {
+      text-decoration: none;
+      color: var(--black);
+    }
+
+    &:hover {
+      .Button_Text {
+        color: var(--white);
+      }
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    &.resetField {
+      width: 40px;
+      background-color: none;
+      color: var(--black);
+      position: absolute;
+      font-weight: 500;
+      top: 12px;
+      left: 120px;
+    }
+  }
+  .A_MainMenu {
+    color: var(--white);
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+  }
 }
