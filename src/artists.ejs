@@ -11,34 +11,36 @@
   </head>
   <body>
     <div class="S_MenuBar"><%= menubar %></div>
-    <!-- <menubar></menubar> -->
-    <div class="O_Sort_Title_Filter">
-      <h2 class="Q_Page_Title">Артисты</h2>
-      <p class="Q_Sort_Title">сортировать по направлению:</p>
 
-      <div class="A_Tags_Genres">
-        <p class="Q_Tag_Genre filter-div" data-genre="all">ВСЕ</p>
-        <p class="Q_Tag_Genre filter-div" data-genre="rock">#РОК</p>
-        <p class="Q_Tag_Genre filter-div" data-genre="indie">#ИНДИ</p>
-        <p class="Q_Tag_Genre filter-div" data-genre="pop">#ПОП</p>
-        <p class="Q_Tag_Genre filter-div" data-genre="electronic">
-          #ЭЛЕКТРОНИКА
-        </p>
+    <div class="O_ChapterFilter">
+      <h2 class="A_ChapterPageTitle">Артисты</h2>
+      <div class="W_Filter">
+        <p class="Q_Sort_Title">сортировать по направлению:</p>
+
+        <div class="M_Filter">
+          <p class="A_TagBebas filter-div" data-genre="all">ВСЕ</p>
+          <p class="A_TagBebas filter-div" data-genre="rock">#РОК</p>
+          <p class="A_TagBebas filter-div" data-genre="indie">#ИНДИ</p>
+          <p class="A_TagBebas filter-div" data-genre="pop">#ПОП</p>
+          <p class="A_TagBebas filter-div" data-genre="electronic">
+            #ЭЛЕКТРОНИКА
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="O_Artists_Grid All_Artists" id="articles">
+    <div class="C_Artists All_Artists" id="articles">
       <a
         href="artists/hadndadn.html"
         class="M_Artist_Card Artist1 article"
         data-genres="indie,pop"
       >
         <div class="A_Artist_Image artist_grid hadndadn_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Хадн Дадн</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Хадн Дадн</div>
           <p class="A_TagGolos">#инди-поп</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Трио созданное в 2016 году выпускницей ВГИКа Варварой Краминовой
         </div>
       </a>
@@ -49,11 +51,11 @@
         data-genres="indie,rock"
       >
         <div class="A_Artist_Image artist_grid sirotkin_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Сироткин</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Сироткин</div>
           <p class="A_TagGolos">#инди-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Группа, образованная в 2015-ом году Сергеем Сироткиным
         </div>
       </a>
@@ -64,11 +66,11 @@
         data-genres="pop,electronic"
       >
         <div class="A_Artist_Image artist_grid ushko_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Ушко</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Ушко</div>
           <p class="A_TagGolos">#гиперпоп</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Певица и DJ из Москвы Дарья Короткова, выступающая под псевдонимом
           Ушко
         </div>
@@ -80,11 +82,11 @@
         data-genres="indie,rock"
       >
         <div class="A_Artist_Image artist_grid serdobol_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Сердоболь</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Сердоболь</div>
           <p class="A_TagGolos">#инди-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Общее дело музыкантов из трех питерских команд: «Црвених Цветова»,
            «Словоизтрехбукв» и  «Лоно»
         </div>
@@ -96,11 +98,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid sova_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Сова</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Сова</div>
           <p class="A_TagGolos">#пост-панк</p>
         </div>
-        <div class="A_Artists_Title">Пост-панк дуэт из Екатеринбурга</div>
+        <div class="A_ArtistOverview">Пост-панк дуэт из Екатеринбурга</div>
       </a>
 
       <a
@@ -109,11 +111,11 @@
         data-genres="electronic,pop"
       >
         <div class="A_Artist_Image artist_grid sbpch_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">СБПЧ</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">СБПЧ</div>
           <p class="A_TagGolos">#электропоп</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Российская инди-группа, созданная в 2006 году Кириллом Ивановым и
           дуэтом «Ёлочные игрушки»
         </div>
@@ -125,11 +127,11 @@
         data-genres="pop"
       >
         <div class="A_Artist_Image artist_grid mirele_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Mirele</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Mirele</div>
           <p class="A_TagGolos">#бедрум-поп</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Ева Гурари — со-автор группы МЫ, нынешнее сольное целое Mirèle
         </div>
       </a>
@@ -140,11 +142,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid crispy_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Crispy Newspaper</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Crispy Newspaper</div>
           <p class="A_TagGolos">#панк-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Якутский панк-рок, наполненный агрессией, динамикой и грубым вокалом
         </div>
       </a>
@@ -155,11 +157,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid laavu_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">LAAVU</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">LAAVU</div>
           <p class="A_TagGolos">#шугейз</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Целый мир, в котором каждый слушатель может найти убежище от
           напряженности повседневной жизни
         </div>
@@ -171,11 +173,11 @@
         data-genres="electronic"
       >
         <div class="A_Artist_Image artist_grid localcode_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Local Code</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Local Code</div>
           <p class="A_TagGolos">#техно</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Московская техно-группа, которая взорвала музыкальную сцену сильным
           звучанием и динамичными ритмами
         </div>
@@ -187,11 +189,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid brothers_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Братья Грязь</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Братья Грязь</div>
           <p class="A_TagGolos">#нойз-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Группа из Владивостока, заслужившая признание оригинальным звучанием и
           текстами
         </div>
@@ -203,11 +205,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid sort_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">2-й сорт</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">2-й сорт</div>
           <p class="A_TagGolos">#spoken-word</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Группа создала уникальный звук, объединивший электронные фактуры с
           духовой секцией и экспрессивным спокен-вордом
         </div>
@@ -219,11 +221,11 @@
         data-genres="electronic"
       >
         <div class="A_Artist_Image artist_grid gothic_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Gothic Princess</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Gothic Princess</div>
           <p class="A_TagGolos">#техно</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Техно-группа, вдохновленная мрачной и таинственной атмосферой
           готической эстетики
         </div>
@@ -235,11 +237,11 @@
         data-genres="indie"
       >
         <div class="A_Artist_Image artist_grid kdimb_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">КДИМБ</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">КДИМБ</div>
           <p class="A_TagGolos">#инди-фолк</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Необычная группа, которая восхищает оригинальным звучанием и
           нестандартным подходом к творчеству
         </div>
@@ -251,11 +253,11 @@
         data-genres="indie,rock"
       >
         <div class="A_Artist_Image artist_grid buerak_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Буерак</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Буерак</div>
           <p class="A_TagGolos">#инди-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Романтичный постпанк из Сибири с абсурдно-ироничными текстами
         </div>
       </a>
@@ -266,11 +268,11 @@
         data-genres="pop,rock"
       >
         <div class="A_Artist_Image artist_grid nonconf_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Нонконформистка</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Нонконформистка</div>
           <p class="A_TagGolos">#поп-рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Мария Непорожняя - яркая звезда на современной российской музыкальной
           сцене
         </div>
@@ -282,11 +284,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid dosvidosh_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Досвидошь</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Досвидошь</div>
           <p class="A_TagGolos">#пост-панк</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Группа из Саратова представляет собой уникальный коктейль из
           пост-панка, абсурда и интенсивных ритмов
         </div>
@@ -298,11 +300,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid kity_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Деревянные киты</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Деревянные киты</div>
           <p class="A_TagGolos">#шугейз</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Не просто музыкальная группа, это целый мир звуков и эмоций, которые
           они создают своей музыкой
         </div>
@@ -314,11 +316,11 @@
         data-genres="rock"
       >
         <div class="A_Artist_Image artist_grid garage_card"></div>
-        <div class="A_Artists_Filter">
-          <div class="Q_Title">Гараж говна</div>
+        <div class="W_FilterArtists">
+          <div class="A_ArtistName">Гараж говна</div>
           <p class="A_TagGolos">#гаражный рок</p>
         </div>
-        <div class="A_Artists_Title">
+        <div class="A_ArtistOverview">
           Гараж Говна начинали с нойз-рока и авангарда, переходя постепенно к
           интригующему шугейзу и инди-року
         </div>
@@ -326,26 +328,10 @@
     </div>
     <script src="./javascript/filter.js"></script>
 
-    <!-- <div class="O_Header">
-      <div class="M_HeaderText">
-        <a href="./" class="A_Logo"></a>
-        <div class="A_Header_Text">
-          <a href="./artists.html" class="Q_Menu_Text1">ИСПОЛНИТЕЛИ</a>
-          <a href="./genres.html" class="Q_Menu_Text2">ЖАНРЫ</a>
-          <a href="./materials.html" class="Q_Menu_Text3">МАТЕРИАЛЫ</a>
-        </div>
-      </div>
-
-      <div class="A_Search_bar">
-        <input type="text" class="input_search" placeholder="Поиск" />
-        <button class="btn_search">Найти</button>
-      </div>
-      <div class="menu_mob_icon"></div>
-    </div> -->
-
     <div class="O_Footer">
-      <div class="M_Form">
-        <a href="./" class="A_Logo"></a>
+      <a href="./" class="A_Logo"></a>
+      <!-- <div class="M_Form">
+        
         <div class="A_Form_Input">
           <h4 class="Q_Chapter_Title">
             ПОМОГИ НАМ РАССКАЗЫВАТЬ ГРОМЧЕ <br />
@@ -363,7 +349,7 @@
             <p id="my-form-status"></p>
           </form>
         </div>
-      </div>
+      </div> -->
       <div class="M_Footer_Text">
         <div class="A_Links">
           <div class="Menu">
@@ -387,9 +373,10 @@
           </div>
         </div>
         <div class="A_Socials">
-          <a href="" class="Q_Socials Vk"></a>
-          <a href="" class="Q_Socials Tiktok"></a>
-          <a href="" class="Q_Socials Telegram"></a>
+          <a
+            href="https://t.me/vrubim_po_polnoy"
+            class="Q_Socials Telegram"
+          ></a>
         </div>
       </div>
     </div>

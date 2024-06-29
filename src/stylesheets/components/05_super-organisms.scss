@@ -1,88 +1,167 @@
-// Главная / Блок со статьями
-.S_Articles_Block {
-  position: relative;
-  width: 100%;
-  height: 60vw;
-  margin-top: 3vw;
-
-  .A_Block_Title {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .S_ArticlesMain {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5vw;
+
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 5vw;
+      align-items: center;
+    }
   }
-}
-.Recs_Grid {
-  height: 23vw;
-}
-
-// Главная / Блок с жанрами
-.S_Genres_Block {
-  position: relative;
-  width: 100%;
-  height: 29.7vw;
-  margin-top: 7vw;
-
-  .A_Block_Title {
+  .S_GenresMain {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10vw;
+
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 5vw;
+      align-items: center;
+    }
+    h6 {
+      font-family: 'GolosUIWebRegular';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 1.2vw;
+      color: var(--white);
+      margin-left: 1vw;
+    }
   }
-  h6 {
-    font-family: 'GolosUIWebRegular';
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1.2vw;
-    color: var(--white);
-    margin-left: 1vw;
-  }
-}
-
-// Главная / Блок с рекомендациями
-.S_OurRecs {
-  position: relative;
-  width: 100%;
-  height: 43.4vw;
-  margin-top: 7vw;
-  background-image: url(images/our_recs.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .Q_Title_Mixed {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 9vw 0vw 2vw;
-  }
-}
-
-// Главная / Блок с артистами
-.S_Artists_Block {
-  position: relative;
-  width: 100%;
-  height: 24.4vw;
-  margin-top: 7vw;
-
-  .A_Block_Title {
+  // Главная / Блок с рекомендациями
+  .S_Recs {
     position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10vw;
+    background-image: url(images/our_recs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10vw 0vw;
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    flex-direction: column;
     align-items: center;
+    gap: 7vw;
+
+    .A_ArTitleMixed {
+      width: fit-content;
+      margin: 0 auto 3vw;
+      padding: 9vw 0vw 2vw;
+    }
+  }
+  .S_ArtistsMain {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10vw;
+
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 5vw;
+      align-items: center;
+    }
   }
 }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
+  // Главная / Блок со статьями
+  .S_ArticlesMain {
+    position: relative;
+    width: 100%;
+    height: fit-content;
 
-.S_Test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 9vw;
-}
-.S_Albums {
-  height: fit-content;
-  width: 100vw;
-  margin-top: 7vw;
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 3vw;
+      align-items: center;
+    }
+  }
+  .Recs_Grid {
+    height: 23vw;
+  }
+
+  // Главная / Блок с жанрами
+  .S_GenresMain {
+    position: relative;
+    width: 100%;
+    height: 29.7vw;
+    margin-top: 7vw;
+
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 3vw;
+      align-items: center;
+    }
+    h6 {
+      font-family: 'GolosUIWebRegular';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 1.2vw;
+      color: var(--white);
+      margin-left: 1vw;
+    }
+  }
+
+  // Главная / Блок с рекомендациями
+  .S_Recs {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7vw;
+    background-image: url(images/our_recs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    .A_ArTitleMixed {
+      width: fit-content;
+      margin: 0 auto 3vw;
+      padding: 9vw 0vw 2vw;
+    }
+  }
+
+  // Главная / Блок с артистами
+  .S_ArtistsMain {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7vw;
+
+    .W_Chapter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 3vw;
+      align-items: center;
+    }
+  }
+
+  .S_Test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9vw;
+  }
+  .S_Albums {
+    height: fit-content;
+    width: 100vw;
+    margin-top: 7vw;
+  }
 }

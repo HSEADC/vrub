@@ -122,49 +122,49 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/materials.ejs',
       filename: './materials.html',
-      chunks: ['index', 'menuBar']
+      chunks: ['index', 'menuBar', 'filter', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/sadrussianmusic.html',
+      template: './src/articles/sadrussianmusic.ejs',
       filename: './articles/sadrussianmusic.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/newrussianwave.html',
+      template: './src/articles/newrussianwave.ejs',
       filename: './articles/newrussianwave.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/yakutianpunk.html',
+      template: './src/articles/yakutianpunk.ejs',
       filename: './articles/yakutianpunk.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/ravemoscow.html',
+      template: './src/articles/ravemoscow.ejs',
       filename: './articles/ravemoscow.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/top10punkrockalbums.html',
+      template: './src/articles/top10punkrockalbums.ejs',
       filename: './articles/top10punkrockalbums.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/articles/howdimanova.html',
+      template: './src/articles/howdimanova.ejs',
       filename: './articles/howdimanova.html',
-      chunks: ['index']
+      chunks: ['index', 'menuBar', 'search']
     }),
 
     // Genres
@@ -173,7 +173,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/genres.ejs',
       filename: './genres.html',
-      chunks: ['index', 'menuBar', 'search']
+      chunks: ['index', 'menuBar', 'search', 'filter']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -329,7 +329,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/artists.ejs',
       filename: './artists.html',
-      chunks: ['index', 'menuBar', 'search']
+      chunks: ['index', 'menuBar', 'search', 'filter']
     }),
     new HtmlWebpackPlugin({
       hash: true,

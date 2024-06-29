@@ -1,3 +1,5 @@
+<% const {menubar} = require('../menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,10 +10,12 @@
     <analytics></analytics>
   </head>
   <body class="yakutianpunk">
-    <div class="A_Artist_Header">
+        <div class="S_MenuBar"><%= menubar %></div>
+
+    <div class="W_GenreArtistTitle ">
       <div class="M_Artist_Bar">
-        <a href="../materials.html" class="A_button_secondary_next fixed">
-          <div class="Q_ArrowLeftBlack"></div>назад
+        <a href="../materials.html" class="A_SecondaryButtonLeft black fixed">
+          <div class="Q_ArrowLeftBlack black"></div>назад
         </a>
         <p class="Q_Tag_Genre_Articles">#АЛЬТ-РОК #ИНДИ-РОК</p>
       </div>
@@ -25,36 +29,13 @@
       </h1>
     </div>
     <div class="Q_Artist_Main_Image Yakutian_Main"></div>
-    <div class="Q_Artist_Intro">
+    <div class="A_ArticleIntro ">
       Якутск, административный центр Республики Саха (Якутии), является городом
       с уникальной атмосферой, обладающим тяжелым климатом и огромными
       размерами. В таких условиях местные жители вынуждены искать способы
       развлечения и самовыражения, и одним из таких способов стал панк-рок.
     </div>
-    <!-- <div class="S_Albums">
-      <div class="A_ChapterTitle Article_Chapter noHover">АЛЬБОМЫ</div>
-      <div class="O_Albums">
-        <a href="https://vk.com/music/playlist/-185014503_1" class="M_Album">
-          <div class="A_Album_Cover">
-            <div class="Q_Album_Cover Serdobol_Album1"></div>
-          </div>
-          <div class="Q_Album_Title">Сердоболь "Весело и страшно"</div>
-        </a>
-        <div class="M_Album noHover">
-          <div class="A_Album_Cover">
-            <div class="Q_Album_Cover Serdobol_Album2"></div>
-          </div>
-          <div class="Q_Album_Title">Сердоболь "Нутро"</div>
-        </div>
-        <a href="https://music.yandex.ru/album/19619830" class="M_Album">
-          <div class="A_Album_Cover">
-            <div class="Q_Album_Cover Serdobol_Album3"></div>
-          </div>
-          <div class="Q_Album_Title">Сердоболь "Все пройдет и страшно"</div>
-        </a>
-      </div> -->
-    </div>
-    <div class="A_Beginning_Block">
+    <div class="W_ArticleText">
       <div class="A_ChapterTitle Article_Text_Chapter noHover">
         Развитие панк-сцены в Якутске      </div>
       <div class="Q_Article_Text">

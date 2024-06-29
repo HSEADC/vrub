@@ -1,538 +1,945 @@
-.A_ChapterTitle {
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2.4vw;
-  text-decoration: none;
-  height: 3vw;
-}
-.A_ArticleType {
-  font-family: 'GolosUIWebRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1vw;
-  line-height: 1.2vw;
-  color: var(--white);
-}
-.A_Button {
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  background-color: var(--white);
-  font-size: 1vw;
-  font-family: 'GolosUIWebRegular';
-  font-weight: 500;
-  font-style: normal;
-  border: 0.17vw solid var(--black);
-  padding: 1vw 2vw;
-  color: var(--black);
-  text-decoration: none;
-  transition: 0.2s;
-  cursor: pointer;
-
-  .A_Button:hover {
-    padding: 0.5vw 0.5vw;
-  }
-}
-
-// Хэдер
-.A_Header_Text {
-  display: flex;
-  width: 28vw;
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 1.8vw;
-  color: var(--black);
-  justify-content: space-between;
-  padding-top: 1.4vw;
-  transition: 0.4s;
-
-  a {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .A_PrimaryButton {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: 500;
+    font-style: normal;
+    border: 0.17vw solid var(--black);
+    padding: 2vw 4vw;
+    color: var(--black);
     text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+
+    .Button_Text {
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    &:hover {
+      .Button_Text {
+        color: var(--black);
+      }
+    }
+  }
+  .A_SecondaryButtonRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    gap: 3vw;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .A_SecondaryButtonLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    gap: 3vw;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 3vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+  }
+  .A_MainScreenTitle {
+    background: url(images/MainScreen_TextBg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 43vw;
+    margin-left: -1vw;
+    width: 100vw;
+    height: 115vw;
+    .A_PrimaryButton {
+      .Button_Text {
+        text-decoration: none;
+        color: var(--white);
+      }
+    }
+    .A_PrimaryButton:hover {
+      background-color: transparent;
+
+      .Button_Text {
+        color: var(--black);
+      }
+    }
+  }
+  .A_ChapterTitle {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 6.4vw;
+    text-decoration: none;
+    height: fit-content;
+  }
+  .A_TagGolos {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: var(--black);
+    background-color: var(--white);
+    width: fit-content;
+    height: fit-content;
+    padding: 1.4vw;
+  }
+  .A_ArticleType {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 1.2vw;
     color: var(--white);
   }
-}
-.A_Logo {
-  width: 7vw;
-  height: 3.5vw;
-  background: url(images/A_Logo_White.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: 0.2s;
-
-  .Q_Icon_Search {
+  .A_ArTitleSmall {
+    width: auto;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4.6vw;
+    color: var(--white);
+    line-height: 4.8vw;
+  }
+  .A_ArTitleBig {
+    width: auto;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 8vw;
+    color: var(--white);
+    line-height: 8.5vw;
+  }
+  .A_Big_Shape {
     position: relative;
+    width: 79vw;
+    height: 40.9vw;
+    background-image: url(images/soda.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    transition: 0.2s;
+  }
+  .A_ArTitleMixed {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 9vw;
+    color: var(--white);
+    line-height: 11vw;
+  }
+  .A_Genre_Image {
+    position: relative;
+    width: 11.2vw;
+    height: 11.2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .G_Img1 {
+    background-image: url(images/IndieRock.webp);
+  }
+  .G_Img2 {
+    background-image: url(images/PostPunk.webp);
+  }
+  .G_Img3 {
+    background-image: url(images/ElectroPop.webp);
+  }
+  .G_Img4 {
+    background-image: url(images/PunkRock.webp);
+  }
+  .G_Img5 {
+    background-image: url(images/Lofi.webp);
+  }
+  .G_Img6 {
+    background-image: url(images/IndiePop.webp);
+  }
+  .G_Img7 {
+    background-image: url(images/Shoegaze.webp);
+  }
+  .G_Img8 {
+    background-image: url(images/Hyperpop.webp);
+  }
+  .G_Img9 {
+    background-image: url(images/DreamPop.webp);
+  }
+  .G_Img10 {
+    background-image: url(images/PsyRock.webp);
+  }
+  .G_Img11 {
+    background-image: url(images/PopRock.webp);
+  }
+  .G_Img12 {
+    background-image: url(images/GarageRock.webp);
+  }
+  .G_Img13 {
+    background-image: url(images/IndieFolk.webp);
+  }
+  .G_Img14 {
+    background-image: url(images/PopPunk.webp);
+  }
+  .G_Img15 {
+    background-image: url(images/Techno.webp);
+  }
+  .G_Img16 {
+    background-image: url(images/House.webp);
+  }
+  .G_Img17 {
+    background-image: url(images/BedroomPop.webp);
+  }
+  .G_Img18 {
+    background-image: url(images/DancePunk.webp);
+  }
+  .G_Img19 {
+    background-image: url(images/NoiseRock.webp);
+  }
+  .G_Img20 {
+    background-image: url(images/SpokenWord.webp);
+  }
+  .G_Img21 {
+    background-image: url(images/Downtempo.webp);
+  }
+  .A_RecsTitleMixed {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 11vw;
+    color: var(--white);
+    line-height: 5.9vw;
+
+    .Mag_Letter {
+      font-family: 'Phorssa', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 11vw;
+      color: var(--white);
+    }
+  }
+  .A_ArtistName {
+    width: auto;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4.6vw;
+    color: var(--white);
+    line-height: 4.8vw;
+  }
+
+  .A_ArtistOverview {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 4.8vw;
+    color: var(--white);
+    width: 33.7vw;
+  }
+  .A_Artist_Image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .artist_grid {
+    width: 34.7vw;
+    height: 32.7vw;
+    margin: 0vw auto;
+  }
+  .hadndadn_card {
+    background-image: url(images/hadndadn_card.webp);
+  }
+  .sirotkin_card {
+    background-image: url(images/sirotkin_card.webp);
+  }
+  .ushko_card {
+    background-image: url(images/ushko_card.webp);
+  }
+  .serdobol_card {
+    background-image: url(images/serdobol_card.webp);
+  }
+  .sova_card {
+    background-image: url(images/sova_card.webp);
+  }
+  .sbpch_card {
+    background-image: url(images/sbpch_card.webp);
+  }
+  .mirele_card {
+    background-image: url(images/mirele_card.webp);
+  }
+  .crispy_card {
+    background-image: url(images/crispy_card.webp);
+  }
+  .laavu_card {
+    background-image: url(images/laavu_card.webp);
+  }
+  .localcode_card {
+    background-image: url(images/localcode_card.webp);
+  }
+  .brothers_card {
+    background-image: url(images/brothers_card.webp);
+  }
+  .sort_card {
+    background-image: url(images/sort_card.webp);
+  }
+  .gothic_card {
+    background-image: url(images/gothic_card.webp);
+  }
+  .kdimb_card {
+    background-image: url(images/kdimb_card.webp);
+  }
+  .buerak_card {
+    background-image: url(images/buerak_card.webp);
+  }
+  .nonconf_card {
+    background-image: url(images/nonconf_card.webp);
+  }
+  .dosvidosh_card {
+    background-image: url(images/dosvidosh_card.webp);
+  }
+  .kity_card {
+    background-image: url(images/kity_card.webp);
+  }
+  .garage_card {
+    background-image: url(images/garage_card.webp);
+  }
+  .A_Logo {
+    width: 23vw;
+    height: 11.5vw;
+    background: url(images/A_Logo_White.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+  .A_Links {
+    height: fit-content;
+    width: 88vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #eeeeee;
+    color: var(--white);
+  }
+  .A_Links p {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 1.5vw;
+  }
+  .A_Links a {
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--white);
+    line-height: 4vw;
+  }
+  .Menu,
+  .Made_By,
+  .Curated_By {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: fit-content;
+  }
+  .A_Socials {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .A_ChapterPageTitle {
+    position: relative;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 7vw;
+    color: var(--white);
+  }
+  .A_TagBebas {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
+    color: var(--white);
+    background-color: var(--darkgrey);
+    border-radius: 0px 38px 38px 0px;
+    height: fit-content;
+    padding: 3vw 3.5vw 2.6vw 2vw;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .A_ArticleIntro {
+    width: 88vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 6.4vw;
+    color: var(--black);
+    height: fit-content;
+    margin: 2vw auto;
   }
 }
-.A_Logo:hover {
-  background: url(images/A_Logo_Green.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-// Главная / Первый экран
-.A_MainScreen_Title {
-  background: url(images/Q_MainScreen_Text.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-// Главная / Блок со статьями
-.A_Block_Title {
-  width: 93vw;
-  line-height: 3.5vw;
-
+@media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   .A_ChapterTitle {
-    position: relative;
-    height: 3vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.4vw;
+    text-decoration: none;
+    height: fit-content;
   }
-  // .Q_Chapter_Title:hover {
-  //   background-image: url(images/Q_Menu_Text1.webp);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
-  .Q_Arrow {
-    position: relative;
+  .A_ArticleType {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    color: var(--white);
   }
-}
-.ArticleShape {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21vw;
-  height: 9.5vw;
-  margin: 4vw auto 0vw;
-}
+  .A_PrimaryButton {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: 500;
+    font-style: normal;
+    border: 0.17vw solid var(--black);
+    padding: 1vw 2vw;
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
 
-.A_Article_Image {
-  .TestShape {
+    .Button_Text {
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    &:hover {
+      .Button_Text {
+        color: var(--black);
+      }
+    }
+  }
+  .A_SecondaryButtonRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    gap: 1vw;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .A_SecondaryButtonLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    gap: 1vw;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+  }
+
+  // Хэдер
+  .A_Logo {
+    width: 7vw;
+    height: 3.5vw;
+    background: url(images/A_Logo_White.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+  }
+  .A_Logo:hover {
+    background: url(images/A_Logo_Green.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .A_MainScreenTitle {
+    background: url(images/MainScreen_TextBg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -4vw;
+    margin-left: 16vw;
+    width: 70vw;
+    height: 58vw;
+    .A_PrimaryButton {
+      .Button_Text {
+        text-decoration: none;
+        color: var(--white);
+      }
+    }
+    .A_PrimaryButton:hover {
+      background-color: transparent;
+
+      .Button_Text {
+        color: var(--black);
+      }
+    }
+  }
+  // Главная / Блок со статьями
+  .A_TagGolos {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: var(--black);
+    background-color: var(--white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.4vw;
+  }
+  .ArticleShape {
     background-repeat: no-repeat;
     background-size: cover;
     width: 21vw;
-    height: 11.5vw;
-    margin: 2vw auto 0vw;
+    height: 9.5vw;
+    margin: 4vw auto 0vw;
   }
-  .Img2 {
-    background-image: url(images/sasosh.webp);
-  }
-  .Img3 {
-    background-image: url(images/red.webp);
-  }
-  .Img4 {
-    background-image: url(images/red.webp);
-  }
-  .Img6 {
-    background-image: url(images/red.webp);
-  }
-}
-.A_Title {
-  width: auto;
-}
-.A_Filter {
-  display: flex;
-  // width: 20vw;
-  color: var(--grey);
-  align-items: center;
 
-  .C_Tags {
+  .A_Article_Image {
+    .TestShape {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 21vw;
+      height: 11.5vw;
+      margin: 2vw auto 0vw;
+    }
+    .Img2 {
+      background-image: url(images/sasosh.webp);
+    }
+    .Img3 {
+      background-image: url(images/red.webp);
+    }
+    .Img4 {
+      background-image: url(images/red.webp);
+    }
+    .Img6 {
+      background-image: url(images/red.webp);
+    }
+  }
+  .A_ArTitleSmall {
+    width: auto;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.4vw;
+    color: var(--white);
+    line-height: 1.8vw;
+  }
+  .A_ArTitleBig {
+    width: auto;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
+    color: var(--white);
+    line-height: 4.5vw;
+  }
+  .A_ArtistName {
+    width: auto;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.4vw;
+    color: var(--white);
+    line-height: 1.8vw;
+  }
+
+  .A_ArtistOverview {
+    font-family: 'GolosUIWebRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    color: var(--white);
+    width: 19vw;
+  }
+  .F_Card5 {
     display: flex;
-    justify-content: space-between;
-    gap: 1vw;
+    width: 65.5vw;
+    color: var(--grey);
+    padding: 0vw 1vw;
+    align-items: center;
   }
-}
-.A_Artists_Filter {
-  width: 18.5vw;
-  display: flex;
-  color: var(--grey);
-  align-items: center;
-  padding: 1vw 0vw;
-  justify-content: space-between;
 
-  .C_Tags {
+  // Главная / Большая статья
+  .A_Big_Shape {
+    position: relative;
+    width: 49.4vw;
+    height: 25.6vw;
+    background-image: url(images/soda.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    transition: 0.2s;
+    margin-top: 8vw;
+  }
+  .A_Big_Shape:hover {
+    scale: 0.99;
+    opacity: 0.7;
+  }
+
+  // Главная / Блок с жанрами
+  .A_Genre_Image {
+    position: relative;
+    width: 4.2vw;
+    height: 4.2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .G_Img1 {
+    background-image: url(images/IndieRock.webp);
+  }
+  .G_Img2 {
+    background-image: url(images/PostPunk.webp);
+  }
+  .G_Img3 {
+    background-image: url(images/ElectroPop.webp);
+  }
+  .G_Img4 {
+    background-image: url(images/PunkRock.webp);
+  }
+  .G_Img5 {
+    background-image: url(images/Lofi.webp);
+  }
+  .G_Img6 {
+    background-image: url(images/IndiePop.webp);
+  }
+  .G_Img7 {
+    background-image: url(images/Shoegaze.webp);
+  }
+  .G_Img8 {
+    background-image: url(images/Hyperpop.webp);
+  }
+  .G_Img9 {
+    background-image: url(images/DreamPop.webp);
+  }
+  .G_Img10 {
+    background-image: url(images/PsyRock.webp);
+  }
+  .G_Img11 {
+    background-image: url(images/PopRock.webp);
+  }
+  .G_Img12 {
+    background-image: url(images/GarageRock.webp);
+  }
+  .G_Img13 {
+    background-image: url(images/IndieFolk.webp);
+  }
+  .G_Img14 {
+    background-image: url(images/PopPunk.webp);
+  }
+  .G_Img15 {
+    background-image: url(images/Techno.webp);
+  }
+  .G_Img16 {
+    background-image: url(images/House.webp);
+  }
+  .G_Img17 {
+    background-image: url(images/BedroomPop.webp);
+  }
+  .G_Img18 {
+    background-image: url(images/DancePunk.webp);
+  }
+  .G_Img19 {
+    background-image: url(images/NoiseRock.webp);
+  }
+  .G_Img20 {
+    background-image: url(images/SpokenWord.webp);
+  }
+  .G_Img21 {
+    background-image: url(images/Downtempo.webp);
+  }
+
+  // Главная / Наши рекомендации
+  .A_Artist_Image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .artist_grid {
+    width: 18.7vw;
+    height: 17.7vw;
+    margin: 0vw auto;
+  }
+  .hadndadn_card {
+    background-image: url(images/hadndadn_card.webp);
+  }
+  .sirotkin_card {
+    background-image: url(images/sirotkin_card.webp);
+  }
+  .ushko_card {
+    background-image: url(images/ushko_card.webp);
+  }
+  .serdobol_card {
+    background-image: url(images/serdobol_card.webp);
+  }
+  .sova_card {
+    background-image: url(images/sova_card.webp);
+  }
+  .sbpch_card {
+    background-image: url(images/sbpch_card.webp);
+  }
+  .mirele_card {
+    background-image: url(images/mirele_card.webp);
+  }
+  .crispy_card {
+    background-image: url(images/crispy_card.webp);
+  }
+  .laavu_card {
+    background-image: url(images/laavu_card.webp);
+  }
+  .localcode_card {
+    background-image: url(images/localcode_card.webp);
+  }
+  .brothers_card {
+    background-image: url(images/brothers_card.webp);
+  }
+  .sort_card {
+    background-image: url(images/sort_card.webp);
+  }
+  .gothic_card {
+    background-image: url(images/gothic_card.webp);
+  }
+  .kdimb_card {
+    background-image: url(images/kdimb_card.webp);
+  }
+  .buerak_card {
+    background-image: url(images/buerak_card.webp);
+  }
+  .nonconf_card {
+    background-image: url(images/nonconf_card.webp);
+  }
+  .dosvidosh_card {
+    background-image: url(images/dosvidosh_card.webp);
+  }
+  .kity_card {
+    background-image: url(images/kity_card.webp);
+  }
+  .garage_card {
+    background-image: url(images/garage_card.webp);
+  }
+
+  // Футер
+  .A_Form_Input {
+    position: relative;
+    width: 39.8vw;
+    height: 11vw;
+  }
+  .A_Links {
+    height: 8vw;
+    width: 32vw;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: #eeeeee;
+    color: var(--white);
+    margin-right: 1.5vw;
   }
-}
-.A_Artists_Title {
-  font-family: 'GolosUIWebRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1vw;
-  line-height: 1.1vw;
-  color: #eeeeee;
-  color: var(--white);
-}
-.F_Card5 {
-  display: flex;
-  width: 65.5vw;
-  color: var(--grey);
-  padding: 0vw 1vw;
-  align-items: center;
-}
-// .T_Card5 {
-//   // width: 69.5vw;
-// }
+  .A_Links p {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 1.5vw;
+  }
+  .A_Links a {
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--white);
+    line-height: 2vw;
+  }
+  .A_Links a:hover {
+    color: var(--pink);
+  }
+  .Menu,
+  .Made_By,
+  .Curated_By {
+    display: flex;
+    flex-direction: column;
+  }
+  .A_Socials {
+    width: 10vw;
+    height: 2.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-// Главная / Большая статья
-.A_Big_Shape {
-  position: relative;
-  width: 49.4vw;
-  height: 26.6vw;
-  background-image: url(images/soda.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: 0.2s;
-  margin-top: 8vw;
-}
-.A_Big_Shape:hover {
-  scale: 0.99;
-  opacity: 0.7;
-}
+  .A_Button_404 {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--white);
+    font-size: 1vw;
+    font-family: 'GolosUIWebRegular';
+    font-weight: 500;
+    font-style: normal;
+    border: 0.1vw solid var(--black);
+    padding: 1vw 2vw;
+    color: var(--black);
+    text-decoration: none;
 
-// Главная / Блок с жанрами
-.A_Genre_Image {
-  position: relative;
-  width: 4.2vw;
-  height: 4.2vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.G_Img1 {
-  background-image: url(images/IndieRock.webp);
-}
-.G_Img2 {
-  background-image: url(images/PostPunk.webp);
-}
-.G_Img3 {
-  background-image: url(images/ElectroPop.webp);
-}
-.G_Img4 {
-  background-image: url(images/PunkRock.webp);
-}
-.G_Img5 {
-  background-image: url(images/Lofi.webp);
-}
-.G_Img6 {
-  background-image: url(images/IndiePop.webp);
-}
-.G_Img7 {
-  background-image: url(images/Shoegaze.webp);
-}
-.G_Img8 {
-  background-image: url(images/Hyperpop.webp);
-}
-.G_Img9 {
-  background-image: url(images/DreamPop.webp);
-}
-.G_Img10 {
-  background-image: url(images/PsyRock.webp);
-}
-.G_Img11 {
-  background-image: url(images/PopRock.webp);
-}
-.G_Img12 {
-  background-image: url(images/GarageRock.webp);
-}
-.G_Img13 {
-  background-image: url(images/IndieFolk.webp);
-}
-.G_Img14 {
-  background-image: url(images/PopPunk.webp);
-}
-.G_Img15 {
-  background-image: url(images/Techno.webp);
-}
-.G_Img16 {
-  background-image: url(images/House.webp);
-}
-.G_Img17 {
-  background-image: url(images/BedroomPop.webp);
-}
-.G_Img18 {
-  background-image: url(images/DancePunk.webp);
-}
-.G_Img19 {
-  background-image: url(images/NoiseRock.webp);
-}
-.G_Img20 {
-  background-image: url(images/SpokenWord.webp);
-}
-.G_Img21 {
-  background-image: url(images/Downtempo.webp);
-}
+    .A_Button_404:hover {
+      padding: 0.8vw 0.8vw;
+    }
+  }
+  .A_Search_bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 24vw;
+    margin-left: 26vw;
+  }
+  .A_ProgressBar {
+    height: 0.5vw;
+    background-color: var(--green);
+    // width: 0%;
+    transition: width 0.4s ease-in-out;
+  }
 
-// Главная / Наши рекомендации
-.A_Artist_Image {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.artist_grid {
-  width: 18.7vw;
-  height: 17.7vw;
-  margin: 0vw auto;
-}
-.hadndadn_card {
-  background-image: url(images/hadndadn_card.webp);
-}
-.sirotkin_card {
-  background-image: url(images/sirotkin_card.webp);
-}
-.ushko_card {
-  background-image: url(images/ushko_card.webp);
-}
-.serdobol_card {
-  background-image: url(images/serdobol_card.webp);
-}
-.sova_card {
-  background-image: url(images/sova_card.webp);
-}
-.sbpch_card {
-  background-image: url(images/sbpch_card.webp);
-}
-.mirele_card {
-  background-image: url(images/mirele_card.webp);
-}
-.crispy_card {
-  background-image: url(images/crispy_card.webp);
-}
-.laavu_card {
-  background-image: url(images/laavu_card.webp);
-}
-.localcode_card {
-  background-image: url(images/localcode_card.webp);
-}
-.brothers_card {
-  background-image: url(images/brothers_card.webp);
-}
-.sort_card {
-  background-image: url(images/sort_card.webp);
-}
-.gothic_card {
-  background-image: url(images/gothic_card.webp);
-}
-.kdimb_card {
-  background-image: url(images/kdimb_card.webp);
-}
-.buerak_card {
-  background-image: url(images/buerak_card.webp);
-}
-.nonconf_card {
-  background-image: url(images/nonconf_card.webp);
-}
-.dosvidosh_card {
-  background-image: url(images/dosvidosh_card.webp);
-}
-.kity_card {
-  background-image: url(images/kity_card.webp);
-}
-.garage_card {
-  background-image: url(images/garage_card.webp);
-}
+  .A_QuestionCount {
+    color: var(--black);
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2vw;
+  }
+  .A_Question {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .serdobol {
+    .A_SecondaryButtonLeft {
+      margin: 0vw 0vw 0vw 3vw;
+      position: fixed;
+    }
+  }
 
-// Футер
-.A_Form_Input {
-  position: relative;
-  width: 39.8vw;
-  height: 11vw;
-}
-.A_Links {
-  height: 8vw;
-  width: 32vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: 'GolosUIWebRegular';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 1vw;
-  line-height: 1vw;
-  color: #eeeeee;
-  color: var(--white);
-  margin-right: 1.5vw;
-}
-.A_Links p {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--white);
-  margin-bottom: 1.5vw;
-}
-.A_Links a {
-  text-decoration: none;
-  font-weight: normal;
-  color: var(--white);
-  line-height: 2vw;
-}
-.A_Links a:hover {
-  color: var(--pink);
-}
-.Menu,
-.Made_By,
-.Curated_By {
-  display: flex;
-  flex-direction: column;
-}
-.A_Socials {
-  width: 10vw;
-  height: 2.2vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// Cортировка
-.A_Tags_Genres {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.5vw;
-  justify-content: space-between;
-
-  .Q_Tag_Genre {
+  //стили для страниц жанров
+  .A_Genre_Bg {
+    width: 100%;
+    height: 22vw;
+    background-image: url(images/Bg_genre1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c99aa9;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+  }
+  .A_Text_Block {
+    width: fit-content;
+    height: fit-content;
+  }
+  .A_Album_Cover {
+    background-image: url(images/album_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 18vw;
+    height: 13vw;
+  }
+  .A_Beginning_Block {
+    width: 48vw;
+    height: fit-content;
+    margin: 7vw auto 0vw;
+  }
+  .A_Quote_Block {
+    width: 72vw;
+    height: fit-content;
+    margin: 3vw auto 0vw;
+  }
+  .A_Works {
+    width: 48vw;
+    height: fit-content;
+    margin: 7vw auto 0vw;
+  }
+  .A_ArTitleMixed {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
+    color: var(--white);
+    line-height: 5.9vw;
+  }
+  .A_RecsTitleMixed {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
+    color: var(--white);
+    line-height: 5.9vw;
+  }
+  .A_ChapterPageTitle {
+    position: relative;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4vw;
+    color: var(--white);
+  }
+  .A_TagBebas {
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-style: normal;
     font-size: 2vw;
     color: var(--white);
+    background-color: var(--darkgrey);
+    border-radius: 0px 38px 38px 0px;
+    height: fit-content;
+    padding: 1vw 1.5vw 0.6vw 1vw;
+    transition: 0.4s;
+    cursor: pointer;
   }
-}
-
-.A_Button_404 {
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-  background-color: var(--white);
-  font-size: 1vw;
-  font-family: 'GolosUIWebRegular';
-  font-weight: 500;
-  font-style: normal;
-  border: 0.1vw solid var(--black);
-  padding: 1vw 2vw;
-  color: var(--black);
-  text-decoration: none;
-
-  .A_Button_404:hover {
-    padding: 0.8vw 0.8vw;
+  .A_ArticleIntro {
+    width: 54vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.4vw;
+    color: var(--black);
+    height: fit-content;
+    margin: 2vw auto;
   }
-}
-.A_Search_bar {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 24vw;
-  margin-left: 26vw;
-}
-.A_ProgressBar {
-  height: 0.5vw;
-  background-color: var(--green);
-  // width: 0%;
-  transition: width 0.4s ease-in-out;
-}
-
-.A_QuestionCount {
-  color: var(--black);
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 1.2vw;
-}
-.A_Question {
-  font-family: 'Bebas Neue';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2vw;
-  padding: 1vw;
-}
-
-.A_SecondaryButtonRight {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: none;
-  gap: 1vw;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1vw;
-  font-family: 'GolosUIWebRegular';
-  font-weight: normal;
-}
-.fixed {
-  position: fixed;
-}
-.A_SecondaryButtonLeft {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: none;
-  gap: 1vw;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: transparent;
-  color: var(--white);
-  font-size: 1vw;
-  font-family: 'GolosUIWebRegular';
-  font-weight: normal;
-}
-.serdobol {
-  .A_SecondaryButtonLeft {
-    margin: 0vw 0vw 0vw 3vw;
-    position: fixed;
-  }
-}
-
-//стили для страниц жанров
-.A_Genre_Bg {
-  width: 100%;
-  height: 22vw;
-  background-image: url(images/Bg_genre1.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #c99aa9;
-  background-color: var(--pink);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6vw;
-}
-.A_Artist_Header {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 11.5vw;
-}
-.A_Text_Block {
-  width: fit-content;
-  height: fit-content;
-}
-.A_Album_Cover {
-  background-image: url(images/album_bg.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-  width: 18vw;
-  height: 13vw;
-}
-.A_Beginning_Block {
-  width: 48vw;
-  height: fit-content;
-  margin: 7vw auto 0vw;
-}
-.A_Quote_Block {
-  width: 72vw;
-  height: fit-content;
-  margin: 3vw auto 0vw;
-}
-.A_Works {
-  width: 48vw;
-  height: fit-content;
-  margin: 7vw auto 0vw;
 }

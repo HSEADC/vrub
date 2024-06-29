@@ -74,12 +74,7 @@ export default class S_MenuBar extends React.Component {
 
     return (
       <>
-        <A_MainMenu
-          current={false}
-          text="Главная"
-          url={homeURL}
-          type="mainMenuLogo"
-        />
+        <A_MainMenu current={false} text="" url={homeURL} type="A_Logo" />
 
         <div className="C_MainMenu">{menuElements}</div>
 

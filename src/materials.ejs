@@ -11,157 +11,145 @@
   </head>
   <body>
     <div class="S_MenuBar"><%= menubar %></div>
-    <menubar></menubar>
-    <div class="O_Sort_Title_Filter">
-      <h2 class="Q_Page_Title">МАТЕРИАЛЫ</h2>
-      <p class="Q_Sort_Title">сортировать по направлению:</p>
+    <div class="O_ChapterFilter">
+      <h2 class="A_ChapterPageTitle">МАТЕРИАЛЫ</h2>
+      <div class="W_Filter">
+        <p class="Q_Sort_Title">сортировать по направлению:</p>
 
-      <div class="A_Tags_Genres">
-        <p class="Q_Tag_Genre">#РОК</p>
-        <p class="Q_Tag_Genre">#ИНДИ</p>
-        <p class="Q_Tag_Genre">#ПОП</p>
-        <p class="Q_Tag_Genre">#ЭЛЕКТРОНИКА</p>
+      <div class="M_Filter">
+        <p class="A_TagBebas filter-div" data-genre="all">ВСЕ</p>
+        <p class="A_TagBebas filter-div" data-genre="rock">#РОК</p>
+        <p class="A_TagBebas filter-div" data-genre="indie">#ИНДИ</p>
+        <p class="A_TagBebas filter-div" data-genre="pop">#ПОП</p>
+        <p class="A_TagBebas filter-div" data-genre="electronic">
+          #ЭЛЕКТРОНИКА
+        </p>
+      </div>
       </div>
     </div>
       
     </div>
 
-    <div class="O_Articles_Grid">
+    <div class="C_Articles" id="articles">
       <a
         href="./articles/newrussianwave.html"
         class="M_ArticleSmall ArticleCard Card1"
+        data-genres="indie"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#инди</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Новая русская волна – что это?</h6>
+        <div class="A_ArTitleSmall">2к17, Буерак, Фестиваль Боль. Новая русская волна – что это?
         </div>
       </a>
       <a
         href="https://music.yandex.ru/users/na.yan4/playlists/1012"
         class="M_ArticleSmall PlaylistCard Card2"
+        data-genres="rock"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Плейлист</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#пост-панк</p>
             <p class="A_TagGolos">#вайб</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Вдохновлено 80-ми</h6>
+        <div class="A_ArTitleSmall">Вдохновлено 80-ми
         </div>
       </a>
       <a
         href="./articles/yakutianpunk.html"
         class="M_ArticleSmall ArticleCard Card3"
+        data-genres="rock"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
 
           <div class="C_Tags">
             <p class="A_TagGolos">#панк</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Якутский панк: бегство от скуки и “терроризм”</h6>
+        <div class="A_ArTitleSmall">Якутский панк: бегство от скуки и “терроризм”
         </div>
       </a>
       <a
         href="./tests/yourgenretest.html"
         class="M_ArticleSmall TestCard Card4"
+        
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Тест</p>
-          <!-- <div class="C_Tags">
-            <p class="A_TagGolos">#вайб</p>
-          </div> -->
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Какой ты музыкальный жанр?</h6>
+        <div class="A_ArTitleSmall">Какой ты музыкальный жанр?
         </div>
       </a>
-      <a href="./articles/sadrussianmusic.html" class="M_ArticleBig Card5">
-        <div class="A_Filter">
+      <a href="./articles/sadrussianmusic.html" class="M_ArticleBig Card5"
+      data-genres="rock">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#пост-панк</p>
             <p class="A_TagGolos">#вайб</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h2 class="Q_Title">Почему русская музыка такая грустная?</h2>
+        <div class="A_ArTitleBig">Почему русская музыка <br>такая грустная?
         </div>
       </a>
       <a
         href="./articles/ravemoscow.html"
         class="M_ArticleSmall ArticleCard Card6"
+        data-genres="electronic"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#электроника</p>
             <p class="A_TagGolos">#места</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Куда сходить на рейв в москве?</h6>
+        <div class="A_ArTitleSmall">Куда сходить на рейв в москве?
         </div>
       </a>
       <a
         href="./articles/top10punkrockalbums.html"
         class="M_ArticleSmall ArticleCard Card7"
+        data-genres="rock"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#панк-рок</p>
             <p class="A_TagGolos">#топ</p>
           </div>
         </div>
-        <div class="A_Title">
-          <h6 class="Q_Title">Топ 10 альбомов панк-рока</h6>
+        <div class="A_ArTitleSmall">Топ 10 альбомов панк-рока
         </div>
       </a>
       <a
         href="./articles/howdimanova.html"
         class="M_ArticleSmall ArticleCard Card8"
+        data-genres="electronic"
       >
-        <div class="A_Filter">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#электроника</p>
           </div>
         </div>
-        <div class="A_Title">
+        <div class="A_ArTitleSmall">
           <h6 class="Q_Title">Как Дима Нова стал голосом поколения</h6>
         </div>
       </a>
     </div>
 
-    <!-- <div class="O_Header">
-      <div class="M_HeaderText">
-        <a href="./" class="A_Logo"></a>
-        <div class="A_Header_Text">
-          <a href="./artists.html" class="Q_Menu_Text1">ИСПОЛНИТЕЛИ</a>
-          <a href="./genres.html" class="Q_Menu_Text2">ЖАНРЫ</a>
-          <a href="./materials.html" class="Q_Menu_Text3">МАТЕРИАЛЫ</a>
-        </div>
-      </div>
-
-      <div class="A_Search_bar">
-        <input type="text" class="input_search" placeholder="Поиск" />
-        <button class="btn_search">Найти</button>
-      </div>
-      <div class="menu_mob_icon"></div>
-    </div> -->
+    <script src="./javascript/filter.js"></script>
 
     <div class="O_Footer">
-      <div class="M_Form">
+      <a href="./" class="A_Logo"></a>
+      <!-- <div class="M_Form">
         <a href="./" class="A_Logo"></a>
         <div class="A_Form_Input">
           <h4 class="Q_Chapter_Title">
@@ -180,7 +168,7 @@
             <p id="my-form-status"></p>
           </form>
         </div>
-      </div>
+      </div> -->
       <div class="M_Footer_Text">
         <div class="A_Links">
           <div class="Menu">
@@ -204,9 +192,7 @@
           </div>
         </div>
         <div class="A_Socials">
-          <a href="" class="Q_Socials Vk"></a>
-          <a href="" class="Q_Socials Tiktok"></a>
-          <a href="" class="Q_Socials Telegram"></a>
+          <a href="https://t.me/vrubim_po_polnoy" class="Q_Socials Telegram"></a>
         </div>
       </div>
     </div>

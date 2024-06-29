@@ -1,3 +1,5 @@
+<% const {menubar} = require('../menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,11 +9,12 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
   </head>
   <body class="top10punkrockalbums">
-    <div class="A_Artist_Header">
+    <div class="S_MenuBar"><%= menubar %></div>
+
+    <div class="W_GenreArtistTitle ">
       <div class="M_Artist_Bar">
-        <a href="../materials.html" class="A_button_secondary_next fixed">
-          <div class="Q_Arrow_back_black"></div>
-          <p class="Q_Arrow_text Q_Black">назад</p>
+        <a href="../materials.html" class="A_SecondaryButtonLeft black fixed">
+          <div class="Q_ArrowLeftBlack"></div>назад
         </a>
         <p class="Q_Tag_Genre_Articles">#ПАНК-РОК</p>
       </div>
@@ -24,7 +27,7 @@
       </h1>
     </div>
     <div class="Q_Artist_Main_Image Top10_Main"></div>
-    <div class="Q_Artist_Intro">
+    <div class="A_ArticleIntro ">
       Взрывная Энергия: Топ-10 Альбомов Современного Русскоязычного Панк-Рока
     </div>
     <div class="Q_Article_Text">

@@ -4,7 +4,9 @@ html {
   width: 100%;
 }
 body {
-  height: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   font-family: 'GolosUIWebRegular';
   font-weight: normal;
   font-style: normal;

@@ -1,17 +1,16 @@
 .S_MenuBar {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 5vw;
   align-items: center;
-  background-color: var(--black);
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-style: normal;
   font-size: 1.5vw;
-  border: 1px solid red;
   text-decoration: none;
   color: var(--white);
+  padding: 0vw 3.5vw;
 }
 .C_MainMenu {
   display: flex;
@@ -101,32 +100,37 @@
   }
 }
 .A_Button {
-  &.primary {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    background-color: var(--white);
-    font-size: 1vw;
-    font-family: 'GolosUIWebRegular';
-    font-weight: 500;
-    font-style: normal;
-    border: 0.17vw solid var(--black);
-    padding: 1vw 2vw;
-    color: var(--black);
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1vw;
+  font-family: 'GolosUIWebRegular';
+  font-weight: 500;
+  font-style: normal;
+  border: 0.17vw solid var(--black);
+  padding: 1vw 2vw;
+  color: var(--black);
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: var(--white);
+
+  .Button_Text {
     text-decoration: none;
-    transition: 0.2s;
-    user-select: none;
-    cursor: pointer;
+    color: var(--black);
+  }
 
-    .A_Button:hover {
-      padding: 0.5vw 0.5vw;
-    }
-
-    &.disabled {
-      opacity: 0.4;
-      cursor: default;
+  &:hover {
+    .Button_Text {
+      color: var(--white);
     }
   }
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
   &.resetField {
     width: 40px;
     background-color: none;
@@ -142,5 +146,5 @@
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-style: normal;
-  font-size: 2.1vw;
+  font-size: 2vw;
 }

@@ -13,10 +13,12 @@
   <body>
     <div class="S_MenuBar"><%= menubar %></div>
     <!-- Главный экран -->
-    <div class="O_MainScreen">
-      <div class="M_MainScreen_Text">
-        <div class="A_MainScreen_Title"></div>
-        <a href="./articles/top10punkrockalbums.html" class="A_Button">
+    <div class="O_ArMainScreen">
+      <div class="A_MainScreenTitle">
+        <a
+          href="./articles/top10punkrockalbums.html"
+          class="A_PrimaryButton blackPB MSButtonPosition"
+        >
           <p class="Button_Text">Читать статью</p>
         </a>
       </div>
@@ -64,118 +66,110 @@
     </div>
 
     <!-- Статьи -->
-    <div class="S_Articles_Block">
-      <div class="A_Block_Title">
+    <div class="S_ArticlesMain">
+      <div class="W_Chapter">
         <a href="./materials.html" class="A_ChapterTitle white"> МАТЕРИАЛЫ </a>
-        <a href="./materials.html" class="A_SecondaryButtonRight"
+        <a href="./materials.html" class="A_SecondaryButtonRight white"
           >перейти в раздел
           <div class="Q_ArrowRightWhite"></div>
         </a>
         <!-- <a href="./materials.html" class="Q_Arrow"></a> -->
       </div>
-      <div class="O_Articles_Grid">
+      <div class="C_Articles">
         <a
           href="./articles/newrussianwave.html"
           class="M_ArticleSmall ArticleCard Card1"
         >
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Статья</p>
             <div class="C_Tags">
               <p class="A_TagGolos">#инди</p>
             </div>
           </div>
-          <div class="A_Title">
-            <h6 class="Q_Title">
-              2к17, Буерак, Фестиваль Боль. Новая русская волна – что это?
-            </h6>
+          <div class="A_ArTitleSmall">
+            2к17, Буерак, Фестиваль Боль. Новая русская волна – что это?
           </div>
         </a>
         <a
           href="https://music.yandex.ru/users/na.yan4/playlists/1012"
           class="M_ArticleSmall PlaylistCard Card2"
         >
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Плейлист</p>
             <div class="C_Tags">
               <p class="A_TagGolos">#пост-панк</p>
               <p class="A_TagGolos">#вайб</p>
             </div>
           </div>
-          <div class="A_Title">
-            <h6 class="Q_Title">Любимые стилизации «под 80-е» в музыке</h6>
+          <div class="A_ArTitleSmall">
+            Любимые стилизации «под 80-е» в музыке
           </div>
         </a>
         <a
           href="./articles/yakutianpunk.html"
           class="M_ArticleSmall ArticleCard Card3"
         >
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Статья</p>
 
             <div class="C_Tags">
               <p class="A_TagGolos">#панк</p>
             </div>
           </div>
-          <div class="A_Title">
-            <h6 class="Q_Title">
-              Якутский панк: бегство от скуки и «терроризм»
-            </h6>
+          <div class="A_ArTitleSmall">
+            Якутский панк: бегство от скуки и «терроризм»
           </div>
         </a>
         <a
           href="./tests/yourgenretest.html"
           class="M_ArticleSmall TestCard Card4"
         >
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Тест</p>
             <!-- <div class="C_Tags">
               <p class="A_TagGolos">#вайб</p>
             </div> -->
           </div>
-          <div class="A_Title">
-            <h6 class="Q_Title">Какой ты музыкальный жанр?</h6>
-          </div>
+          <div class="A_ArTitleSmall">Какой ты музыкальный жанр?</div>
         </a>
         <a href="./articles/sadrussianmusic.html" class="M_ArticleBig Card5">
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Статья</p>
             <div class="C_Tags">
               <p class="A_TagGolos">#пост-панк</p>
               <p class="A_TagGolos">#вайб</p>
             </div>
           </div>
-          <div class="A_Title">
-            <h2 class="Q_Title line">Почему русская музыка такая грустная?</h2>
+          <div class="A_ArTitleBig">
+            Почему русская музыка <br />такая грустная?
           </div>
         </a>
         <a
           href="./articles/ravemoscow.html"
           class="M_ArticleSmall ArticleCard Card6"
         >
-          <div class="A_Filter">
+          <div class="W_FilterArticles">
             <p class="A_ArticleType">Статья</p>
             <div class="C_Tags">
               <p class="A_TagGolos">#электроника</p>
               <p class="A_TagGolos">#места</p>
             </div>
           </div>
-          <div class="A_Title">
-            <h6 class="Q_Title">Куда сходить на рейв в Москве?</h6>
-          </div>
+          <div class="A_ArTitleSmall">Куда сходить на рейв в Москве?</div>
         </a>
       </div>
     </div>
 
     <!-- Большая статья -->
-    <div class="O_Article_Mixed">
-      <div class="M_Article_Mixed_Text">
-        <div class="A_Filter">
+    <div class="O_ArMixed">
+      <div class="W_ArMixed">
+        <div class="W_FilterArticles">
           <p class="A_ArticleType">Статья</p>
           <div class="C_Tags">
             <p class="A_TagGolos">#инди</p>
           </div>
         </div>
-        <h2 class="Q_Title_Mixed">
+        <h2 class="A_ArTitleMixed">
           <span class="Mag_Letter">К</span>АК Д<span class="Mag_Letter">И</span
           >МА Н<span class="Mag_Letter">О</span>ВА С<span class="Mag_Letter"
             >т</span
@@ -183,13 +177,13 @@
             >О</span
           >СОМ ПО<span class="Mag_Letter">К</span>ОЛ<span class="Mag_Letter"
             >Е</span
-          >НИЯ
+          >НИЯ?
         </h2>
-        <p class="Ar_Mix_Text">
+        <p class="A_ArMixedOverview">
           Новатор, патимейкер, фэшн-энтузиаст и голос поколения — таким
           предстает в глазах зрителей продюсер и электронщик Дима Нова.
         </p>
-        <a href="./articles/howdimanova.html" class="A_Button">
+        <a href="./articles/howdimanova.html" class="A_PrimaryButton whitePB">
           <p class="Button_Text">Читать статью</p>
         </a>
       </div>
@@ -197,20 +191,20 @@
     </div>
 
     <!-- Жанры -->
-    <div class="S_Genres_Block">
-      <div class="A_Block_Title">
+    <div class="S_GenresMain">
+      <div class="W_Chapter">
         <a href="genres.html" class="A_ChapterTitle white"> ЖАНРЫ </a>
-        <a href="genres.html" class="A_SecondaryButtonRight">
+        <a href="genres.html" class="A_SecondaryButtonRight white">
           перейти в раздел
           <div class="Q_ArrowRightWhite"></div>
         </a>
         <!-- <a href="genres.html" class="Q_ArrowRightWhite"></a> -->
       </div>
 
-      <div class="O_Genres_Grid">
+      <div class="C_Genres">
         <a
           href="genres/indierock.html"
-          class="M_Genre Genre1 article"
+          class="W_Genre Genre1 article"
           data-genres="indie,rock"
         >
           <div class="A_Genre_Image G_Img1"></div>
@@ -219,7 +213,7 @@
 
         <a
           href="genres/postpunk.html"
-          class="M_Genre Genre2 article"
+          class="W_Genre Genre2 article"
           data-genres="rock"
         >
           <div class="A_Genre_Image G_Img2"></div>
@@ -228,7 +222,7 @@
 
         <a
           href="genres/electropop.html"
-          class="M_Genre Genre3 article"
+          class="W_Genre Genre3 article"
           data-genres="pop,electronic"
         >
           <div class="A_Genre_Image G_Img3"></div>
@@ -237,7 +231,7 @@
 
         <a
           href="genres/punkrock.html"
-          class="M_Genre Genre4 article"
+          class="W_Genre Genre4 article"
           data-genres="rock"
         >
           <div class="A_Genre_Image G_Img4"></div>
@@ -246,7 +240,7 @@
 
         <a
           href="genres/lofi.html"
-          class="M_Genre Genre5 article"
+          class="W_Genre Genre5 article"
           data-genres="electronic"
         >
           <div class="A_Genre_Image G_Img5"></div>
@@ -255,7 +249,7 @@
 
         <a
           href="genres/indiepop.html"
-          class="M_Genre Genre6 article"
+          class="W_Genre Genre6 article"
           data-genres="indie,pop"
         >
           <div class="A_Genre_Image G_Img6"></div>
@@ -264,7 +258,7 @@
 
         <a
           href="genres/shoegaze.html"
-          class="M_Genre Genre7 article"
+          class="W_Genre Genre7 article"
           data-genres="rock,indie"
         >
           <div class="A_Genre_Image G_Img7"></div>
@@ -273,7 +267,7 @@
 
         <a
           href="genres/hyperpop.html"
-          class="M_Genre Genre8 article"
+          class="W_Genre Genre8 article"
           data-genres="pop"
         >
           <div class="A_Genre_Image G_Img8"></div>
@@ -282,7 +276,7 @@
 
         <a
           href="genres/dreampop.html"
-          class="M_Genre Genre9 article"
+          class="W_Genre Genre9 article"
           data-genres="pop,rock"
         >
           <div class="A_Genre_Image G_Img9"></div>
@@ -291,7 +285,7 @@
 
         <a
           href="genres/psyrock.html"
-          class="M_Genre Genre10 article"
+          class="W_Genre Genre10 article"
           data-genres="rock"
         >
           <div class="A_Genre_Image G_Img10"></div>
@@ -300,7 +294,7 @@
 
         <a
           href="genres/poprock.html"
-          class="M_Genre Genre11 article"
+          class="W_Genre Genre11 article"
           data-genres="pop,rock"
         >
           <div class="A_Genre_Image G_Img11"></div>
@@ -309,7 +303,7 @@
 
         <a
           href="genres/garagerock.html"
-          class="M_Genre Genre12 article"
+          class="W_Genre Genre12 article"
           data-genres="rock"
         >
           <div class="A_Genre_Image G_Img12"></div>
@@ -319,55 +313,53 @@
     </div>
 
     <!-- Наши рекомендации -->
-    <div class="S_OurRecs">
-      <div class="O_Our_Recs">
-        <div class="Q_Title_Mixed">
-          Ч<span class="Mag_Letter">Т</span>О
-          <span class="Mag_Letter">с</span>Л<span class="Mag_Letter">У</span
-          >ША<span class="Mag_Letter">Е</span>М М<span class="Mag_Letter"
-            >Ы</span
-          >
-        </div>
-        <div class="M_Recs_Grid">
-          <a
-            href="https://music.yandex.ru/users/na.yan4/playlists/1010"
-            class="A_Artist_Image lisa"
-          ></a>
-          <a
-            href="https://music.yandex.ru/users/korshunovaania/playlists/1022"
-            class="A_Artist_Image anya"
-          ></a>
-          <a
-            href="https://music.yandex.ru/users/na.yan4/playlists/1011"
-            class="A_Artist_Image nana"
-          ></a>
-        </div>
+    <div class="S_Recs">
+      <div class="A_RecsTitleMixed">
+        Ч<span class="Mag_Letter">Т</span>О
+        <span class="Mag_Letter">с</span>Л<span class="Mag_Letter">У</span
+        >ША<span class="Mag_Letter">Е</span>М М<span class="Mag_Letter">Ы</span>
+      </div>
+      <div class="C_Recs">
+        <a
+          href="https://music.yandex.ru/users/na.yan4/playlists/1010"
+          class="A_Artist_Image lisa"
+        ></a>
+        <a
+          href="https://music.yandex.ru/users/korshunovaania/playlists/1022"
+          class="A_Artist_Image anya"
+        ></a>
+        <a
+          href="https://music.yandex.ru/users/na.yan4/playlists/1011"
+          class="A_Artist_Image nana"
+        ></a>
       </div>
     </div>
 
     <!-- Исполнители -->
-    <div class="S_Artists_Block">
-      <div class="A_Block_Title">
+    <div class="S_ArtistsMain">
+      <div class="W_Chapter">
         <a href="artists.html" class="A_ChapterTitle white">АРТИСТЫ</a>
-        <a href="artists.html" class="A_SecondaryButtonRight">
+        <a href="artists.html" class="A_SecondaryButtonRight white">
           перейти в раздел
           <div class="Q_ArrowRightWhite"></div>
         </a>
         <!-- <a href="artists.html" class="Q_ArrowRightWhite"></a> -->
       </div>
-      <div class="O_Artists_Grid" id="articles">
+      <div class="C_Artists" id="articles">
         <a
           href="artists/hadndadn.html"
           class="M_Artist_Card Artist1 article"
           data-genres="indie,pop"
         >
           <div class="A_Artist_Image artist_grid hadndadn_card"></div>
-          <div class="A_Artists_Filter">
-            <div class="Q_Title">Хадн Дадн</div>
-            <p class="A_TagGolos">#инди-поп</p>
-          </div>
-          <div class="A_Artists_Title">
-            Трио созданное в 2016 году выпускницей ВГИКа Варварой Краминовой
+          <div class="M_ArtistAbout">
+            <div class="W_FilterArtists">
+              <div class="A_ArtistName">Хадн Дадн</div>
+              <p class="A_TagGolos">#инди-поп</p>
+            </div>
+            <div class="A_ArtistOverview">
+              Трио созданное в 2016 году выпускницей ВГИКа Варварой Краминовой
+            </div>
           </div>
         </a>
 
@@ -377,11 +369,11 @@
           data-genres="indie,rock"
         >
           <div class="A_Artist_Image artist_grid sirotkin_card"></div>
-          <div class="A_Artists_Filter">
-            <div class="Q_Title">Сироткин</div>
+          <div class="W_FilterArtists">
+            <div class="A_ArtistName">Сироткин</div>
             <p class="A_TagGolos">#инди-рок</p>
           </div>
-          <div class="A_Artists_Title">
+          <div class="A_ArtistOverview">
             Группа, образованная в 2015-ом году Сергеем Сироткиным
           </div>
         </a>
@@ -392,11 +384,11 @@
           data-genres="pop,electronic"
         >
           <div class="A_Artist_Image artist_grid ushko_card"></div>
-          <div class="A_Artists_Filter">
-            <div class="Q_Title">Ушко</div>
+          <div class="W_FilterArtists">
+            <div class="A_ArtistName">Ушко</div>
             <p class="A_TagGolos">#гиперпоп</p>
           </div>
-          <div class="A_Artists_Title">
+          <div class="A_ArtistOverview">
             Певица и DJ из Москвы Дарья Короткова, выступающая под псевдонимом
             Ушко
           </div>
@@ -408,11 +400,11 @@
           data-genres="indie,rock"
         >
           <div class="A_Artist_Image artist_grid serdobol_card"></div>
-          <div class="A_Artists_Filter">
-            <div class="Q_Title">Сердоболь</div>
+          <div class="W_FilterArtists">
+            <div class="A_ArtistName">Сердоболь</div>
             <p class="A_TagGolos">#инди-рок</p>
           </div>
-          <div class="A_Artists_Title">
+          <div class="A_ArtistOverview">
             Общее дело музыкантов из трех питерских команд: «Црвених Цветова»,
              «Словоизтрехбукв» и  «Лоно»
           </div>
@@ -437,7 +429,8 @@
     </div>
 
     <div class="O_Footer">
-      <div class="M_Form">
+      <a href="./" class="A_Logo"></a>
+      <!-- <div class="M_Form">
         <a href="./" class="A_Logo"></a>
         <div class="A_Form_Input">
           <h4 class="A_ChapterTitle white">
@@ -456,7 +449,7 @@
             <p id="my-form-status"></p>
           </form>
         </div>
-      </div>
+      </div> -->
       <div class="M_Footer_Text">
         <div class="A_Links">
           <div class="Menu">
@@ -480,24 +473,12 @@
           </div>
         </div>
         <div class="A_Socials">
-          <a href="" class="Q_Socials Vk"></a>
-          <a href="" class="Q_Socials Tiktok"></a>
-          <a href="" class="Q_Socials Telegram"></a>
+          <a
+            href="https://t.me/vrubim_po_polnoy"
+            class="Q_Socials Telegram"
+          ></a>
         </div>
       </div>
     </div>
-
-    <!-- Меню мобилка -->
-    <!-- <div class="menu_mob none">
-      <div class="icons_menu">
-        <a href="index.html" class="logo_header"></a>
-        <div class="esc"></div>
-      </div>
-      <nav class="side_menu_text">
-        <a href="serdobol.html" class="menu_artists"><h2>ИСПОЛНИТЕЛИ</h2></a>
-        <a href="index.html" class="menu_genres"><h2>ЖАНРЫ</h2></a>
-        <a href="index.html" class="menu_articles"><h2>СТАТЬИ</h2></a>
-      </nav>
-    </div> -->
   </body>
 </html>
