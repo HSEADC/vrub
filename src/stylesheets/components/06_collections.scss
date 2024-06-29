@@ -275,6 +275,15 @@
     align-items: center;
     margin-top: 11.5vw;
   }
+  .W_ArticleText {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 4vw;
+    width: 88vw;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   // Бегущая строка
@@ -624,5 +633,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 11.5vw;
+  }
+  .W_ArticleText {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 2vw;
+    width: 48vw;
+    align-items: flex-start;
+    margin: 0 auto;
   }
 }

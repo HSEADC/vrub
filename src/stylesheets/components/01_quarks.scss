@@ -105,6 +105,24 @@
     font-size: 3vw;
     color: var(--grey);
   }
+  .Q_Article_Text {
+    line-height: 1.6vw;
+    font-size: 1.1vw;
+    margin: 0 auto;
+    width: 48vw;
+
+    a:hover {
+      color: var(--pink);
+    }
+  }
+  .Q_Article_Text a {
+    color: var(--black);
+  }
+  .Q_Artist_Image {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   .MSButtonPosition {
@@ -116,11 +134,7 @@
     margin-left: 26svw;
     margin-bottom: 3vw;
   }
-  .Article_Text_Chapter {
-    width: 60vw;
-    color: var(--black);
-    margin-bottom: 3vw;
-  }
+
   .Quote_Title {
     margin-left: 9vw;
     color: var(--black);
@@ -538,7 +552,7 @@
   .Q_Article_Text {
     line-height: 1.6vw;
     font-size: 1.1vw;
-    margin: 0 auto 3vw;
+    margin: 0 auto;
     width: 48vw;
 
     a:hover {
@@ -549,7 +563,7 @@
     color: var(--black);
   }
   .Q_Artist_Image {
-    margin: 0 auto 3vw;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -73,8 +73,8 @@ var currentQuestionIndex = 0;
 var score = {};
 var questionElement = document.querySelector('.A_Question');
 var choicesElement = document.getElementById('choices');
-var prevButton = document.querySelector('.A_button_secondary_back');
-var nextButton = document.querySelector('.A_button_secondary_next');
+var prevButton = document.querySelector('.A_SecondaryButtonLeft');
+var nextButton = document.querySelector('.A_SecondaryButtonRight');
 var restartButton = document.getElementById('restart-btn');
 document.addEventListener('DOMContentLoaded', function () {
   var startScreen = document.getElementById('start-screen');
@@ -184,8 +184,8 @@ function updateProgressBar() {
 
 
 function hideNavigationButtons() {
-  document.querySelector('.A_button_secondary_back').style.display = 'none';
-  document.querySelector('.A_button_secondary_next').style.display = 'none';
+  document.querySelector('.A_SecondaryButtonLeft').style.display = 'none';
+  document.querySelector('.A_SecondaryButtonRight').style.display = 'none';
 } // Вопросы теста
 
 
@@ -233,8 +233,8 @@ function restartQuiz() {
 
   document.getElementById('result-image').src = ''; // Сбросить путь к картинке
 
-  document.querySelector('.A_button_secondary_back').style.display = 'flex';
-  document.querySelector('.A_button_secondary_next').style.display = 'flex'; // Показать прогресс бар снова
+  document.querySelector('.A_SecondaryButtonLeft').style.display = 'flex';
+  document.querySelector('.A_SecondaryButtonRight').style.display = 'flex'; // Показать прогресс бар снова
 
   document.getElementById('progress-container').style.display = 'block';
 }

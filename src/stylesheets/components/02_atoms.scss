@@ -84,6 +84,10 @@
     font-size: 6.4vw;
     text-decoration: none;
     height: fit-content;
+    width: 48vw;
+    margin: 0vw auto;
+    color: var(--black);
+    margin-top: 3vw;
   }
   .A_TagGolos {
     font-family: 'GolosUIWebRegular';
@@ -880,11 +884,7 @@
     width: 18vw;
     height: 13vw;
   }
-  .A_Beginning_Block {
-    width: 48vw;
-    height: fit-content;
-    margin: 7vw auto 0vw;
-  }
+
   .A_Quote_Block {
     width: 72vw;
     height: fit-content;

@@ -65,21 +65,6 @@ function _handleSubmit() {
 
 addEventListener('submit', handleSubmit);
 
-/***/ }),
-
-/***/ 534:
-/***/ (() => {
-
-$(document).ready(function () {
-  $('.menu_mob_icon').click(function () {
-    $('.menu_mob').toggleClass('none');
-    $('.main_menu').toggleClass('none');
-  });
-  $('.esc').click(function () {
-    $('.menu_mob').toggleClass('none');
-  });
-});
-
 /***/ })
 
 /******/ 	});
@@ -143,10 +128,8 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _javascript_menu_mob_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(534);
-/* harmony import */ var _javascript_menu_mob_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_menu_mob_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _javascript_form_input_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(334);
-/* harmony import */ var _javascript_form_input_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_form_input_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _javascript_form_input_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(334);
+/* harmony import */ var _javascript_form_input_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_form_input_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
 
