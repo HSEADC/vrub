@@ -460,6 +460,22 @@
     width: 72vw;
     height: 52vw;
   }
+  .A_Test {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 5vw;
+  }
+  .A_TestTitle {
+    font-size: 7vw;
+    width: 70vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+
+    .Mag_letter {
+      font-size: 4vw;
+      font-family: 'Phorssa';
+    }
+  }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
   .A_ChapterTitle {
@@ -1042,6 +1058,22 @@
   .A_Support {
     .Vk {
       background-image: url(images/vk_pink.webp);
+    }
+  }
+  .A_Test {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  .A_TestTitle {
+    font-size: 5vw;
+    width: 70vw;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+
+    .Mag_letter {
+      font-size: 4vw;
+      font-family: 'Phorssa';
     }
   }
 }

@@ -1,3 +1,5 @@
+<% const {menubar} = require('../menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,26 +10,31 @@
     <analytics></analytics>
   </head>
   <body class="yourgenretest">
+    <div class="S_MenuBar"><%= menubar %></div>
+
     <!-- Стартовый экран -->
 
     <div id="start-screen" class="start-screen">
-      <p class="A_Header_Text text1 bl_color">ТЕСТ</p>
-      <h1 class="Q_Title_Mixed text1 bl_color">
-        <span class="Mag_Letter text1 bl_color">К</span>АК<span
-          class="Mag_Letter text1 bl_color"
-          >о</span
-        >й т<span class="Mag_Letter text1 bl_color">Ы</span> му<span
-          class="Mag_Letter text1 bl_color"
-          >з</span
-        >ык<span class="Mag_Letter text1 bl_color">А</span>аль<span
-          class="Mag_Letter text1 bl_color"
-          >нЫ</span
-        >й Жа<span class="Mag_Letter text1 bl_color">Н</span>р?
-      </h1>
-      <p class="Q_test_text">
-        Типы личности? Типы крови? Лучше! Узнайте какой музыкальный жанр лучше
-        всего соответствует вашей личности
-      </p>
+      <div class="M_Test">
+        <p class="A_Test text1 ">ТЕСТ</p>
+        <p class="A_TestTitle text1 ">
+          <span class="Mag_Letter text1 ">К</span>АК<span
+            class="Mag_Letter text1 "
+            >о</span
+          >й т<span class="Mag_Letter text1 ">Ы</span> му<span
+            class="Mag_Letter text1 "
+            >з</span
+          >ык<span class="Mag_Letter text1 ">А</span>аль<span
+            class="Mag_Letter text1 "
+            >нЫ</span
+          >й Жа<span class="Mag_Letter text1 ">Н</span>р?
+        </p>
+        <p class="Q_test_text">
+          Типы личности? Типы крови? Лучше! Узнайте какой музыкальный жанр лучше
+          всего соответствует вашей личности
+        </p>
+      </div>
+      
       <img
         src="../images/test_bg_2.webp"
         alt="Music Genres"
@@ -67,8 +74,8 @@
 
       <!-- Результат -->
       <div id="result-container">
-        <h2 class="A_Header_Text bl_color h2padding">Результат</h2>
-        <p id="result-text" class="Q_Title_Mixed bl_color ppadding"></p>
+        <h2 class="A_Test h2padding">Результат</h2>
+        <p id="result-text" class="A_TestTitle ppadding"></p>
         <div id="result-image" alt="Картинка результата"></div>
         <!-- <div class="O_Recs_Articles">
           <p>Может быть интересно</p>
@@ -98,7 +105,7 @@
   <div class="O_Header">
     <div class="M_HeaderText">
       <a href="../" class="A_Logo"></a>
-      <div class="A_Header_Text">
+      <div class="A_Test">
         <a href="../artists.html" class="Q_Menu_Text1">ИСПОЛНИТЕЛИ</a>
         <a href="../genres.html" class="Q_Menu_Text2">ЖАНРЫ</a>
         <a href="../materials.html" class="Q_Menu_Text3">МАТЕРИАЛЫ</a>
@@ -111,7 +118,7 @@
     </div>
     <div class="menu_mob_icon"></div>
   </div>
-
+  <recomendations></recomendations>
   <basement></basement>
 
 </html>
