@@ -5070,9 +5070,9 @@ var S_MenuBar = /*#__PURE__*/function (_React$Component) {
       });
       return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(A_MainMenu, {
         current: false,
-        text: "",
+        text: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F",
         url: homeURL,
-        type: "A_Logo"
+        type: "mainMenuItem"
       }), /*#__PURE__*/react.createElement("div", {
         className: "C_MainMenu"
       }, menuElements), /*#__PURE__*/react.createElement(O_SearchBar, {
