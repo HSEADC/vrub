@@ -154,7 +154,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/404.ejs',
       filename: './404.html',
-      chunks: ['index'] //откуда берет стиль
+      chunks: ['index', 'menuBar', 'search'] //откуда берет стиль
     }),
 
     // Search
